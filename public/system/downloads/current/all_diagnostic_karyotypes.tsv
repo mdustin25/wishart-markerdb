@@ -1,0 +1,264 @@
+biomarker_type	id	karyotype	description	conditions	indication_types
+Karyotype	1	t(1;14)(p22;q32)	Translocation: The segment from 1p22 to 1pter replaces the segment from 14q32 to 14qter and vice-versa.	Malt Lymphoma	Diagnostic
+Karyotype	2	t(1;14)(q21;q32)	Translocation: The segment from 1q21 to 1qter replaces the segment from 1432 to 143ter and vice-versa.	B-Cell Non-Hodgkin Lymphoma	Diagnostic
+Karyotype	2	t(1;14)(q21;q32)	Translocation: The segment from 1q21 to 1qter replaces the segment from 1432 to 143ter and vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	2	t(1;14)(q21;q32)	Translocation: The segment from 1q21 to 1qter replaces the segment from 1432 to 143ter and vice-versa.	Non Hodgkin lymphoma	Diagnostic
+Karyotype	3	t(1;22)(q21;q11)	Translocation: The segment from 1q21 to 1qter replaces the segment from 22q11 to 22qter and vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	3	t(1;22)(q21;q11)	Translocation: The segment from 1q21 to 1qter replaces the segment from 22q11 to 22qter and vice-versa.	Non Hodgkin lymphoma	Diagnostic
+Karyotype	5	t(3;14)(p14;q32)	Translocation: The segment from 3p14 to 3pter replaces the segment from 14q32 to 14qter and vice-versa.	Malt Lymphoma	Diagnostic
+Karyotype	6	t(3;14)(q27;q32)	Translocation: The segment from 3q27 to 3qter replaces the segment from 14q32 to 14qter and vice-versa.	Non Hodgkin lymphoma	Diagnostic
+Karyotype	6	t(3;14)(q27;q32)	Translocation: The segment from 3q27 to 3qter replaces the segment from 14q32 to 14qter and vice-versa.	Diffuse Large B Cell Lymphoma	Diagnostic
+Karyotype	7	t(6;14)(p21;q32)	Translocation: The segment from 6p21 to 6pter replaces the segment from 14q32 to 14qter and vice-versa.	Multiple Myeloma	Diagnostic
+Karyotype	8	t(7;14)(q21;q32)	Translocation: The segment from 7q21 to 7qter replaces the segment from 14q32 to 14qter and vice-versa.	Chronic Lymphocytic Leukemia	Diagnostic
+Karyotype	8	t(7;14)(q21;q32)	Translocation: The segment from 7q21 to 7qter replaces the segment from 14q32 to 14qter and vice-versa.	Marginal Zone Lymphoma	Diagnostic
+Karyotype	9	t(8;14)(q24;q32)	Translocation: The segment from8q24to8qterreplaces the segment from14q32to14qterand vice-versa.	Burkitt Lymphoma	Diagnostic
+Karyotype	9	t(8;14)(q24;q32)	Translocation: The segment from8q24to8qterreplaces the segment from14q32to14qterand vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	9	t(8;14)(q24;q32)	Translocation: The segment from8q24to8qterreplaces the segment from14q32to14qterand vice-versa.	Blastic plasmacytoid dendritic cell neoplasm	Diagnostic
+Karyotype	9	t(8;14)(q24;q32)	Translocation: The segment from8q24to8qterreplaces the segment from14q32to14qterand vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	9	t(8;14)(q24;q32)	Translocation: The segment from8q24to8qterreplaces the segment from14q32to14qterand vice-versa.	Non Hodgkin lymphoma	Diagnostic
+Karyotype	9	t(8;14)(q24;q32)	Translocation: The segment from8q24to8qterreplaces the segment from14q32to14qterand vice-versa.	Breast Cancer	Diagnostic
+Karyotype	10	t(9;14)(p13;q32)	Translocation: The segment from 9p13 to 9pter replaces the segment from 14q32 to 14qter and vice-versa.	Lymphoproliferative Disorders	Diagnostic
+Karyotype	11	t(10;14)(q24;q32)	Translocation: The segment from 10q24 to 10qter replaces the segment from 14q32 to 14qter and vice-versa.	Multiple Myeloma	Diagnostic
+Karyotype	11	t(10;14)(q24;q32)	Translocation: The segment from 10q24 to 10qter replaces the segment from 14q32 to 14qter and vice-versa.	Chronic Lymphocytic Leukemia	Diagnostic
+Karyotype	12	t(11;14)(q13;q32)	Translocation: The segment from 11q13 to 11qter replaces the segment from 14q32 to 14qter and vice-versa.	Multiple Myeloma	Diagnostic
+Karyotype	12	t(11;14)(q13;q32)	Translocation: The segment from 11q13 to 11qter replaces the segment from 14q32 to 14qter and vice-versa.	Chronic Lymphocytic Leukemia	Diagnostic
+Karyotype	12	t(11;14)(q13;q32)	Translocation: The segment from 11q13 to 11qter replaces the segment from 14q32 to 14qter and vice-versa.	Mantle Cell Lymphoma	Diagnostic
+Karyotype	13	t(11;14)(q23;q32)	Translocation: The segment from 11q23 to 11qter replaces the segment from 14q32 to 14qter and vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	14	t(12;14)(p13;q32)	Translocation: The segment from 12p13 to 12pter replaces the segment from 14q32 to 14qter and vice-versa.	Mantle Cell Lymphoma	Diagnostic
+Karyotype	17	t(14;18)(q32;q21)	Translocation: The segment from 14q32 to 14qter replaces the segment from 18q21 to 18qter and vice-versa.	Mantle Cell Lymphoma	Diagnostic
+Karyotype	17	t(14;18)(q32;q21)	Translocation: The segment from 14q32 to 14qter replaces the segment from 18q21 to 18qter and vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	17	t(14;18)(q32;q21)	Translocation: The segment from 14q32 to 14qter replaces the segment from 18q21 to 18qter and vice-versa.	Malt Lymphoma	Diagnostic
+Karyotype	19	t(14;19)(q32;q13)	Translocation: The segment from 14q32 to 14qter replaces the segment from 19q13 to 19qter and vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	19	t(14;19)(q32;q13)	Translocation: The segment from 14q32 to 14qter replaces the segment from 19q13 to 19qter and vice-versa.	Breast Cancer	Diagnostic
+Karyotype	19	t(14;19)(q32;q13)	Translocation: The segment from 14q32 to 14qter replaces the segment from 19q13 to 19qter and vice-versa.	Melanoma	Diagnostic
+Karyotype	20	t(14;22)(q32;q11)	Translocation: The segment from 14q32 to 14qter replaces the segment from 22q11 to 22qter and vice-versa.	Breast Cancer	Diagnostic
+Karyotype	20	t(14;22)(q32;q11)	Translocation: The segment from 14q32 to 14qter replaces the segment from 22q11 to 22qter and vice-versa.	Diffuse Large B Cell Lymphoma	Diagnostic
+Karyotype	21	t(9;22)(p24;q11)	Translocation: The segment from 9p24 to 9pter replaces the segment from 22q11 to 22qter and vice-versa.	Chronic Myeloid Leukemia	Diagnostic
+Karyotype	22	t(8;9)(p22;p24)	Translocation: The segment from 8p22 to 8pter replaces the segment from 9p24 to 9pter and vice-versa.	Atypical Chronic Myeloid Leukemia	Diagnostic
+Karyotype	22	t(8;9)(p22;p24)	Translocation: The segment from 8p22 to 8pter replaces the segment from 9p24 to 9pter and vice-versa.	Chronic Eosinophilic Leukemia	Diagnostic
+Karyotype	23	t(9;12)(p24;p13)	Translocation: The segment from9p24to9pterreplaces the segment from12p13to12pterand vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	23	t(9;12)(p24;p13)	Translocation: The segment from9p24to9pterreplaces the segment from12p13to12pterand vice-versa.	Myeloproliferative Disorder	Diagnostic
+Karyotype	24	t(4;22)(q12;q11)	Translocation: The segment from 4q12 to 4qter replaces the segment from 22q11 to 22qter and vice-versa.	Myeloproliferative Disorder	Diagnostic
+Karyotype	25	t(4;10)(q12;p11)	Translocation: The segment from 4q12 to 4qter replaces the segment from 10p11 to 10pter and vice-versa.	Myeloproliferative Disorder	Diagnostic
+Karyotype	26	ins(9;4)(q33;q12q25)	""	Chronic Eosinophilic Leukemia	Diagnostic
+Karyotype	27	t(4;12)(q12;p13)	Translocation: The segment from4q12to4qterreplaces the segment from12p13to12pterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	29	t(5;12)(q33;p13)	Translocation: The segment from 5q33 to 5qter replaces the segment from 12p13 to 12pter and vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	29	t(5;12)(q33;p13)	Translocation: The segment from 5q33 to 5qter replaces the segment from 12p13 to 12pter and vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	30	t(5;17)(q33;p13)	Translocation: The segment from 5q33 to 5qter replaces the segment from 17p13 to 17pter and vice-versa.	Juvenile Myelomonocytic Leukemia	Diagnostic
+Karyotype	31	t(5;17)(q33;p11.2)	Translocation: The segment from 5q33 to 5qter replaces the segment from 17p11.2 to 17pter and vice-versa.	Juvenile Myelomonocytic Leukemia	Diagnostic
+Karyotype	32	t(5;14)(q33;q32)	Translocation: The segment from 5q33 to 5qter replaces the segment from 14q32 to 14qter and vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	33	t(5;14)(q33;q24)	Translocation: The segment from 5q33 to 5qter replaces the segment from 14q24 to 14qter and vice-versa.	Myeloproliferative Disorder	Diagnostic
+Karyotype	34	t(5;15)(q33;q22)	Translocation: The segment from 5q33 to 5qter replaces the segment from 15q22 to 15qter and vice-versa.	Chronic Myeloid Leukemia	Diagnostic
+Karyotype	36	t(5;7)(q33;q11.2)	Translocation: The segment from 5q33 to 5qter replaces the segment from 7q11.2 to 7qter and vice-versa.	Chronic Myeloid Leukemia	Diagnostic
+Karyotype	37	t(5;10)(q33;q21)	Translocation: The segment from 5q33 to 5qter replaces the segment from 10q21 to 10qter and vice-versa.	Chronic Myeloid Leukemia	Diagnostic
+Karyotype	40	t(5;12)(q33;q24)	Translocation: The segment from 5q33 to 5qter replaces the segment from 12q24 to 12qter and vice-versa.	Myeloproliferative Disorder	Diagnostic
+Karyotype	42	t(4;5)(q21;q33)	Translocation: The segment from 4q21 to 4qter replaces the segment from 5q33 to 5qter and vice-versa.	Myeloproliferative Disorder	Diagnostic
+Karyotype	43	t(8;13)(p11;q12)	Translocation: The segment from 8p11 to 8pter replaces the segment from 13q12 to 13qter and vice-versa.	Myeloproliferative Disorder	Diagnostic
+Karyotype	44	t(6;8)(q27;p11)	Translocation: The segment from 6q27 to 6qter replaces the segment from 8p11 to 8pter and vice-versa.	Myeloproliferative Disorder	Diagnostic
+Karyotype	45	t(8;9)(p11;q33)	Translocation: The segment from 8p11 to 8pter replaces the segment from 9q33 to 9qter and vice-versa.	Chromosome 8p11 Myeloproliferative Syndrome	Diagnostic
+Karyotype	48	t(8;19)(p11;q13.3)	Translocation: The segment from8p11to8pterreplaces the segment from19q13.3to19qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	49	t(8;22)(p11;q11)	Translocation: The segment from8p11to8pterreplaces the segment from22q11to22qterand vice-versa.	Chronic Myeloid Leukemia	Diagnostic
+Karyotype	50	t(1;7)(p34;q34)	Translocation: The segment from 1p34 to 1pter replaces the segment from 7q34 to 7qter and vice-versa.	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	51	t(1;7)(p32;q34)	Translocation: The segment from1p32to1pterreplaces the segment from7q34to7qterand vice-versa.	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	52	t(1;11)(p32;q23)	Translocation: The segment from1p32to1pterreplaces the segment from11q23to11qterand vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	52	t(1;11)(p32;q23)	Translocation: The segment from1p32to1pterreplaces the segment from11q23to11qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	52	t(1;11)(p32;q23)	Translocation: The segment from1p32to1pterreplaces the segment from11q23to11qterand vice-versa.	Myelodysplastic Syndromes	Diagnostic
+Karyotype	53	t(1;14)(p32;q11)	""	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	55	t(1;19)(q23;p13.3)	Translocation: The segment from1q23to1qterreplaces the segment from19p13.3to19pterand vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	57	t(4;11)(q21;q23)	Translocation: The segment from4q21to4qterreplaces the segment from11q23to11qterand vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	58	t(5;14)(q35;q32)	Translocation: The segment from5q35to5qterreplaces the segment from14q32to14qterand vice-versa.	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	59	del(6)(q)	""	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	59	del(6)(q)	""	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	59	del(6)(q)	""	Chronic Lymphocytic Leukemia	Diagnostic
+Karyotype	59	del(6)(q)	""	Waldenstrom Macroglobulinemia	Diagnostic
+Karyotype	59	del(6)(q)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	59	del(6)(q)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	60	t(6;7)(q23;q34)	Translocation: The segment from6q23to6qterreplaces the segment from7q34to7qterand vice-versa.	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	61	t(6;11)(q27;q23)	""	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	62	t(6;14)(p22;q32)	Translocation: The segment from6p22to6pterreplaces the segment from14q32to14qterand vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	63	inv(7)(p15q34)	""	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	63	inv(7)(p15q34)	""	Non Hodgkin lymphoma	Diagnostic
+Karyotype	65	t(7;14)(p15;q11)	Translocation: The segment from7p15to7pterreplaces the segment from14q11to14qterand vice-versa.	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	66	t(7;14)(p15;q32)	Translocation: The segment from7p15to7pterreplaces the segment from14q32to14qterand vice-versa.	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	68	i(7)(q10)	""	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	68	i(7)(q10)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	69	t(7;9)(q34;q32)	Translocation: The segment from7q34to7qterreplaces the segment from9q32to9qterand vice-versa.	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	70	t(7;9)(q34;q34.3)	Translocation: The segment from7q34to7qterreplaces the segment from9q34.3to9qterand vice-versa.	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	71	t(7;10)(q34;q24)	Translocation: The segment from7q34to7qterreplaces the segment from10q24to10qterand vice-versa.	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	73	t(7;11)(q34;p15)	Translocation: The segment from7q34to7qterreplaces the segment from 11p15to 11pterand vice-versa.	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	74	t(7;12)(q36;p13)	Translocation: The segment from7q36to7qterreplaces the segment from12p13to12pterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	75	t(7;19)(q34;p13)	Translocation: The segment from7q34to7qterreplaces the segment from19p13to19pterand vice-versa.	Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	76	t(8;14)(q11;q32)	Translocation: The segment from8q11to8qterreplaces the segment from14q32to14qterand vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	77	t(8;14)(q24;q11)	Translocation: The segment from8q24to8qterreplaces the segment from14q11to14qterand vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	78	t(8;22)(q24;q11)	Translocation: The segment from8q24to8qterreplaces the segment from22q11to22qterand vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	78	t(8;22)(q24;q11)	Translocation: The segment from8q24to8qterreplaces the segment from22q11to22qterand vice-versa.	Burkitt Lymphoma	Diagnostic
+Karyotype	78	t(8;22)(q24;q11)	Translocation: The segment from8q24to8qterreplaces the segment from22q11to22qterand vice-versa.	Diffuse Large B Cell Lymphoma	Diagnostic
+Karyotype	79	del(9)(p)	""	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	79	del(9)(p)	""	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	81	del(7)(q)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	81	del(7)(q)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	81	del(7)(q)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	81	del(7)(q)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	82	del(5)(q)	""	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	82	del(5)(q)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	83	del(20)(q)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	83	del(20)(q)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	83	del(20)(q)	""	Myeloproliferative Disorder	Diagnostic
+Karyotype	85	del(13)(q)	""	Myeloproliferative Disorder	Diagnostic
+Karyotype	85	del(13)(q)	""	Chronic Lymphocytic Leukemia	Diagnostic
+Karyotype	86	del(11)(q)	""	Non Hodgkin lymphoma	Diagnostic
+Karyotype	87	del(9)(q)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	88	idic(X)(q13)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	88	idic(X)(q13)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	89	t(1;3)(p36.3;q21)	Translocation: The segment from1p36.3to1pterreplaces the segment from3q21to3qterand vice-versa.	Chronic Myeloid Leukemia	Diagnostic
+Karyotype	89	t(1;3)(p36.3;q21)	Translocation: The segment from1p36.3to1pterreplaces the segment from3q21to3qterand vice-versa.	Myelodysplastic Syndromes	Diagnostic
+Karyotype	89	t(1;3)(p36.3;q21)	Translocation: The segment from1p36.3to1pterreplaces the segment from3q21to3qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	93	der(1;7)(q10;p10)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	93	der(1;7)(q10;p10)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	94	t(3;21)(q26.2;q22.1)	""	Chronic Myeloid Leukemia	Diagnostic
+Karyotype	94	t(3;21)(q26.2;q22.1)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	94	t(3;21)(q26.2;q22.1)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	96	t(1;3)(p36;q21)	Translocation: The segment from1p36to1pterreplaces the segment from3q21to3qterand vice-versa.	Myelodysplastic Syndromes	Diagnostic
+Karyotype	96	t(1;3)(p36;q21)	Translocation: The segment from1p36to1pterreplaces the segment from3q21to3qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	98	t(1;11)(q21;q23)	Translocation: The segment from1q21to1qterreplaces the segment from11q23to11qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	100	inv(3)(q21q26)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	102	t(3;12)(q26;p13)	Translocation: The segment from 3q26to 3qterreplaces the segment from12p13to12pterand vice-versa.	Myelodysplastic Syndromes	Diagnostic
+Karyotype	102	t(3;12)(q26;p13)	Translocation: The segment from 3q26to 3qterreplaces the segment from12p13to12pterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	102	t(3;12)(q26;p13)	Translocation: The segment from 3q26to 3qterreplaces the segment from12p13to12pterand vice-versa.	Chronic Myeloid Leukemia	Diagnostic
+Karyotype	103	t(3;21)(q26;q22)	Translocation: The segment from3q26to3qterreplaces the segment from21q22to21qterand vice-versa.	Myelodysplastic Syndromes	Diagnostic
+Karyotype	103	t(3;21)(q26;q22)	Translocation: The segment from3q26to3qterreplaces the segment from21q22to21qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	103	t(3;21)(q26;q22)	Translocation: The segment from3q26to3qterreplaces the segment from21q22to21qterand vice-versa.	Chronic Myeloid Leukemia	Diagnostic
+Karyotype	107	t(5;17)(q35;q21)	Translocation: The segment from5q35to5qterreplaces the segment from17q21to17qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	108	t(6;9)(p22;q34)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	108	t(6;9)(p22;q34)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	108	t(6;9)(p22;q34)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	108	t(6;9)(p22;q34)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	109	t(7;11)(p15;p15)	Translocation: The segment from7p15to7pterreplaces the segment from11p15to11pterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	111	t(8;16)(p11;p13)	Translocation: The segment from8p11to8pterreplaces the segment from16p13to16pterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	112	t(8;21)(q22;q22)	Translocation: The segment from8q22to8qterreplaces the segment from21q22to21qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	113	t(9;11)(p21;q23)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	114	t(9;22)(q34;q11)	Translocation: The segment from9q34to9qterreplaces the segment from22q11to22qterand vice-versa.	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	114	t(9;22)(q34;q11)	Translocation: The segment from9q34to9qterreplaces the segment from22q11to22qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	114	t(9;22)(q34;q11)	Translocation: The segment from9q34to9qterreplaces the segment from22q11to22qterand vice-versa.	Chronic Myeloid Leukemia	Diagnostic
+Karyotype	117	inv(11)(p15q22)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	117	inv(11)(p15q22)	""	Chronic Myeloid Leukemia	Diagnostic
+Karyotype	117	inv(11)(p15q22)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	120	t(11;17)(q23;q21)	Translocation: The segment from11q23to11qterreplaces the segment from17q21to17qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	121	t(11;17)(q23;q25)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	121	t(11;17)(q23;q25)	""	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	121	t(11;17)(q23;q25)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	122	t(11;19)(q23;p13.1)	Translocation: The segment from11q23to11qterreplaces the segment from19p13.1to19pterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	123	t(11;19)(q23;p13.3)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	123	t(11;19)(q23;p13.3)	""	Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	125	t(15;17)(q22;q21)	Translocation: The segment from15q22to15qterreplaces the segment from17q21to17qterand vice-versa.	Myelodysplastic Syndromes	Diagnostic
+Karyotype	125	t(15;17)(q22;q21)	Translocation: The segment from15q22to15qterreplaces the segment from17q21to17qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	126	inv(16)(p13q22)	""	Acute Myeloid Leukemia	Diagnostic
+Karyotype	126	inv(16)(p13q22)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	127	t(16;21)(p11;q22)	Translocation: The segment from16p11to16pterreplaces the segment from21q22to21qterand vice-versa.	Acute Myeloid Leukemia	Diagnostic
+Karyotype	127	t(16;21)(p11;q22)	Translocation: The segment from16p11to16pterreplaces the segment from21q22to21qterand vice-versa.	Ewing Sarcoma	Diagnostic
+Karyotype	128	i(17)(q10)	""	Myelodysplastic Syndromes	Diagnostic
+Karyotype	128	i(17)(q10)	""	Myeloproliferative Disorder	Diagnostic
+Karyotype	131	t(2;14)(p13-16;q32)		Chronic Lymphocytic Leukemia	Diagnostic
+Karyotype	132	t(1;5)(q21-23;q31-33)		Myelodysplastic Syndromes	Diagnostic
+Karyotype	132	t(1;5)(q21-23;q31-33)		Myeloproliferative Disorder	Diagnostic
+Karyotype	133	t(5;16)(q32;p13)		Myelodysplastic Syndromes	Diagnostic
+Karyotype	133	t(5;16)(q32;p13)		Myeloproliferative Disorder	Diagnostic
+Karyotype	134	dup(1)(q11-q44)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	134	dup(1)(q11-q44)		Myeloproliferative Disorder	Diagnostic
+Karyotype	135	dic(7;9)(p11-13;p11)		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	136	dic(7;9)(p11-12;p12-13)		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	137	dic(9;12)(p13;p13)		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	138	dic(5;17)(q11-14;p11-13)		Myelodysplastic Syndromes	Diagnostic
+Karyotype	138	dic(5;17)(q11-14;p11-13)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	139	Trisomy 4		Acute Myeloid Leukemia	Diagnostic
+Karyotype	139	Trisomy 4		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	140	Trisomy 11		Acute Myeloid Leukemia	Diagnostic
+Karyotype	140	Trisomy 11		Myelodysplastic Syndromes	Diagnostic
+Karyotype	141	Trisomy 13		Acute Myeloid Leukemia	Diagnostic
+Karyotype	141	Trisomy 13		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	141	Trisomy 13		Chronic Myeloid Leukemia	Diagnostic
+Karyotype	141	Trisomy 13		Myelodysplastic Syndromes	Diagnostic
+Karyotype	142	Trisomy 21		Acute Myeloid Leukemia	Diagnostic
+Karyotype	142	Trisomy 21		Myelodysplastic Syndromes	Diagnostic
+Karyotype	142	Trisomy 21		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	142	Trisomy 21		Down Syndrome	Diagnostic
+Karyotype	143	Trisomy 22		Acute Myeloid Leukemia	Diagnostic
+Karyotype	144	t(1;11)(q24;p15)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	144	t(1;11)(q24;p15)		Chronic Myeloid Leukemia	Diagnostic
+Karyotype	145	der(11)t(1;11)(q11-23;q14-25)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	145	der(11)t(1;11)(q11-23;q14-25)		Myelodysplastic Syndromes	Diagnostic
+Karyotype	145	der(11)t(1;11)(q11-23;q14-25)		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	145	der(11)t(1;11)(q11-23;q14-25)		Multiple Myeloma	Diagnostic
+Karyotype	146	del(5q)		Chromosome 5q Deletion Syndrome	Diagnostic
+Karyotype	146	del(5q)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	147	Trisomy 8		Chronic Myeloid Leukemia	Diagnostic
+Karyotype	147	Trisomy 8		Myelodysplastic Syndromes	Diagnostic
+Karyotype	147	Trisomy 8		Juvenile Myelomonocytic Leukemia	Diagnostic
+Karyotype	147	Trisomy 8		Acute Myeloid Leukemia	Diagnostic
+Karyotype	147	Trisomy 8		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	147	Trisomy 8		Wilms Tumor	Diagnostic
+Karyotype	147	Trisomy 8		Ewing Sarcoma	Diagnostic
+Karyotype	147	Trisomy 8		Non Hodgkin lymphoma	Diagnostic
+Karyotype	148	t(3;5)(q25.1;q34)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	149	inv(3)(q21;q26)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	149	inv(3)(q21;q26)		Chronic Myeloid Leukemia	Diagnostic
+Karyotype	150	dic(1;15)(p11;p11)		Myelodysplastic Syndromes	Diagnostic
+Karyotype	150	dic(1;15)(p11;p11)		Myeloproliferative Disorder	Diagnostic
+Karyotype	151	t(Y;1)(q12;q12)		Myelodysplastic Syndromes	Diagnostic
+Karyotype	152	t(1;16)(q11;q11)		Myelodysplastic Syndromes	Diagnostic
+Karyotype	153	del(12)(p)		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	153	del(12)(p)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	154	t(11;16)(q23;p13.3)		Myelodysplastic Syndromes	Diagnostic
+Karyotype	154	t(11;16)(q23;p13.3)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	155	Y loss in Leukemia		Myeloproliferative Disorder	Diagnostic
+Karyotype	155	Y loss in Leukemia		Myelodysplastic Syndromes	Diagnostic
+Karyotype	156	t(12;22)(p13;q12)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	156	t(12;22)(p13;q12)		Myelodysplastic Syndromes	Diagnostic
+Karyotype	156	t(12;22)(p13;q12)		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	157	del(17)(p)		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	157	del(17)(p)		Myelodysplastic Syndromes	Diagnostic
+Karyotype	157	del(17)(p)		Chronic Myeloid Leukemia	Diagnostic
+Karyotype	158	Trisomy 9		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	158	Trisomy 9		Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	159	Trisomy 16		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	159	Trisomy 16		Acute Myeloid Leukemia	Diagnostic
+Karyotype	159	Trisomy 16		Myelodysplastic Syndromes	Diagnostic
+Karyotype	160	der(6)t(1;6)(q21-23;p21)		Myeloproliferative Disorder	Diagnostic
+Karyotype	160	der(6)t(1;6)(q21-23;p21)		Chronic Lymphocytic Leukemia	Diagnostic
+Karyotype	161	del(1)(q21.1)		1q21.1 microdeletion syndrome	Diagnostic
+Karyotype	161	del(1)(q21.1)		TAR Syndrome	Diagnostic
+Karyotype	162	11q terminal deletion		Jacobsen syndrome	Diagnostic
+Karyotype	163	del(22)(q13)		Chromosome 22q13.3 Deletion Syndrome	Diagnostic
+Karyotype	164	t(12;21)(p13;q22)		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	165	t(14;19)(q32;p13)		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	166	t(7;12)(q34;p13)		Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	167	Trisomy 18		Trisomy 18	Diagnostic
+Karyotype	168	15q13.3 microdeletion		15q13.3 microdeletion syndrome	Diagnostic
+Karyotype	169	del(16)(p11.2)		16p11.2 deletion syndrome	Diagnostic
+Karyotype	170	17q23.1q23.2 microdeletion		17q23.1q23.2 microdeletion syndrome	Diagnostic
+Karyotype	171	t(5;14)(q35;q32.2)		Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	172	t(6;11)(q13;q12)		Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	172	t(6;11)(q13;q12)		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	173	t(8;12)(q13;p13)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	173	t(8;12)(q13;p13)		Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	173	t(8;12)(q13;p13)		Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	174	t(1;2)(q25;p23)		Anaplastic large cell lymphoma	Diagnostic
+Karyotype	175	t(14;15)(q32;q11)		Diffuse Large B Cell Lymphoma	Diagnostic
+Karyotype	176	t(14;16)(q32;q23)		Multiple Myeloma	Diagnostic
+Karyotype	177	t(2;19)(p12;q13.3)		Chronic Lymphocytic Leukemia	Diagnostic
+Karyotype	178	t(2;17)(p23;q23)		Anaplastic large cell lymphoma	Diagnostic
+Karyotype	179	t(2;5)(p23;q35)		Anaplastic large cell lymphoma	Diagnostic
+Karyotype	180	t(2;6)(p12;p25)		Multiple Myeloma	Diagnostic
+Karyotype	180	t(2;6)(p12;p25)		Therapy Related Myelodysplastic Syndrome	Diagnostic
+Karyotype	181	t(6;14)(p25;q32)		Multiple Myeloma	Diagnostic
+Karyotype	181	t(6;14)(p25;q32)		Therapy Related Myelodysplastic Syndrome	Diagnostic
+Karyotype	182	t(6;22)(p25;q11)		Multiple Myeloma	Diagnostic
+Karyotype	182	t(6;22)(p25;q11)		Therapy Related Myelodysplastic Syndrome	Diagnostic
+Karyotype	183	inv(2)(p23q35)		Anaplastic large cell lymphoma	Diagnostic
+Karyotype	184	t(3;7)(q27;q32)		Splenic Lymphoma	Diagnostic
+Karyotype	185	Trisomy 3		T-Cell Non-Hodgkin Lymphoma	Diagnostic
+Karyotype	186	t(6;7)(p25.3;q32.3)		Anaplastic large cell lymphoma	Diagnostic
+Karyotype	187	t(11;20)(p15;q11)		Acute Myeloid Leukemia	Diagnostic
+Karyotype	188	t(16;21)(q24;q22)		Myelodysplastic Syndromes	Diagnostic
+Karyotype	189	t(10;11)(p12;q21)		Somatic T Cell Acute Lymphoblastic Leukemia	Diagnostic
+Karyotype	190	t(2;11)(q31;p15)		Acute Myeloid Leukemia	Diagnostic

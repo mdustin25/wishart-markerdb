@@ -1,0 +1,100 @@
+<%= column_wrapper do %>
+  <%= left_column do %>
+    <% gene_title = Gene.find_by(:id => @sequence_variants.gene_id) %>
+    <% if @sequence_variants.marker_type == 'PCR Primer'%>
+      <h1><%= @sequence_variants.variation %> </h1>
+    <%else%>
+      <% if @sequence_variants.variation.nil? %>
+        <% gene_title = gene_title.name.capitalize %> <h1><%= title gene_title %> </h1>
+      <% else %>
+        <% gene_title = @sequence_variants.variation + " in " + gene_title.name.capitalize %> <h1><%= title gene_title %> </h1>
+      <% end %>
+      
+    <%end%>
+  <% end %>
+<% end %>
+
+
+<%= left_column do %>
+  <% gene_object = Gene.where("id = ?", @sequence_variants.gene_id).first %>
+  <%= box_description gene_object do %>
+    <%= info_row "Source",simple_format(gene_object.info_source)%>
+  <% end %>
+
+  <%= box_list "Sequence Variants", SequenceVariant.where(id: params[:id]) %>
+  <% unless @sequence_variants.parent_id.blank? %>
+    <%= box_list "Found In", SequenceVariant.where(id: @sequence_variants.parent_id) %>
+  <% end %>
+  <%= box "Sequence Change" do %>
+    <% seq = "GATAATGAAAATAATTGTTTAAATTCTATGTTCTTTTTCCTCACCAATTTTTATTTCAGATGATACCATCTTCCAAAATCCTATGGTACAAGAAGCTATACGAATGGGGTTCAGTTTCAAGGACATTAAGAAAATAATGGAGGAAAAAATTCAGATATCTGGGAGCAACTATAAATCACTTGAGGTTCTGGTTGCAGATCT" %>
+    <div style = "font-family:monospace"><%= "123900434 GATAATGAAA ATAATTGTTT AAATTCTATG TTCTTTTTCC TCACCAATTT TTATTTCAGA"%></div>
+    <div style = "font-family:monospace"><%= "123900494 TGATACCATC TTCCAAAATC CTATGGTACA AGAAGCTATA " %><span style = "color: red"><%="T"%></span><%= "GAATGGGGT TCAGTTTCAA" %></div>
+    <text style = "font-family:monospace; color:red"><% "GAATGGGGT TCAGTTTCAA" %>
+    <div style = "font-family:monospace; color:black"><%= "123900554 GGACATTAAG AAAATAATGG AGGAAAAAAT TCAGATATCT GGGAGCAACT ATAAATCACT" %></div>
+    <div style = "font-family:monospace; color:black"><%= "123900614 TGAGGTTCTG GTTGCAGATC" %></div>
+  <% end %>
+<% end %>
+
+<%= right_column do %>
+  <%= box @sequence_variants.marker_mdbid.mdbid do %>
+    <%= info_table do %>
+      <th style="text-align:left; font-size:1em; width:50%">
+      <%= info_row "Creation Date:", "2020-08-01" %> 
+      <%= info_row "Update Date:", "2020-08-15" %>
+    <% end %>
+  <% end %>
+
+  <% gene_object = Gene.where("id = ?", @sequence_variants.gene_id).first %>
+  <%= box "Species Info" do %>
+    <%= info_table do %>
+      <% unless @sequence_variants.marker_type == 'PCR Primer'%>
+        <%unless gene_object.source_common.nil?%>
+          <%= info_row "Common name", gene_object.source_common.capitalize %>
+        <%else%>
+          <%= info_row "Common name", nah(value=nil, message="No Additional Data") %>
+        <%end%>
+        <%unless gene_object.source_taxname.nil?%>
+          <%= info_row "Taxonomy", gene_object.source_taxname %>
+        <%else%>
+          <%= info_row "Taxonomy", nah(value=nil, message="No Additional Data")  %>
+        <%end%>
+      <%else%>
+        <%unless @sequence_variants.source.nil?%>
+          <%= info_row "Common name", @sequence_variants.source.capitalize %>
+        <%else%>
+          <%= info_row "Common name", nah(value=nil, message="No Additional Data") %>
+        <%end%>
+        <%unless @sequence_variants.organism.nil?%>
+          <%= info_row "Taxonomy", @sequence_variants.organism %>
+        <%else%>
+          <%= info_row "Taxonomy", nah(value=nil, message="No Additional Data")  %>
+        <%end%>
+      <%end%>
+      <% gene_seqs = gene_object.gene_sequences%>
+      <% if gene_seqs.length>0%>
+        <%gene_seq = gene_seqs[0]%>
+        <% info_row "Gene length", gene_seq.chain.length %>
+      <%end%>
+      <% rna_seqs = gene_object.rna_sequences%>
+      <% if rna_seqs.length>0%>
+        <%rna_seq = rna_seqs[0]%>
+        <% info_row "RNA length", rna_seq.chain.length %>
+      <%end%>
+
+
+    <% end %>
+  <% end %>
+  <%= box "External Links" do %>
+    <%= info_table do %>
+      <% unless gene_object.omim_id.nil? %>
+        <% link_id = gene_object.omim_id.to_s %>
+        <%= link_to " OMIM ID: " + link_id.to_s,  "https://omim.org/entry/" + link_id %><br><br>
+      <% end %>
+      <% unless gene_object.entrez_gene_id.nil? %>
+        <% genbank_link_id = gene_object.entrez_gene_id.to_s %>
+        <%= link_to "GenBank ID: " + genbank_link_id, "https://www.ncbi.nlm.nih.gov/gene/?term=" + genbank_link_id %>
+      <% end %>
+    <% end %>
+  <% end %>
+
+<% end %>

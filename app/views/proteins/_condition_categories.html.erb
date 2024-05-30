@@ -1,0 +1,10 @@
+<%= box "General Conditions" do %>
+  <ul>
+    <% categories.each do |cat| %>
+      <% unless cat.name == "Others" %>
+      	<li style="list-style-position: outside; margin-left: 1.2em; list-style-type: disc;"><%= link_to cat.name, category_path(cat.name) %></li>
+      <% end %>
+    <% end %>
+    <li style="list-style-position: outside; margin-left: 1.2em; list-style-type: disc;"><%= link_to "Others", category_path("Others") %></li>
+  </ul>
+<% end %>

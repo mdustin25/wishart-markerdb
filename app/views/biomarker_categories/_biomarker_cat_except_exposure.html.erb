@@ -1,0 +1,134 @@
+<%= column_wrapper do %>
+	<%= left_column do %>
+		<%= render_filter_bars %>
+    
+		<%= will_paginate sorted_page_num %><br>
+				
+		<% if params[:filter] == "false" or params[:filter].blank?%>
+			<%= page_entries_info sorted_page_num, options={:model => 'Biomarker'}%>
+  	<%else%>
+  		<%= page_entries_info sorted_page_num%>
+  	<%end%>
+
+		<div class="box">
+			<div class="table-responsive">
+				<table class="table table-striped table-condensed table-hover metabolites" style="table-layout: fixed;">
+					<thead>
+						<tr>
+							<th style="text-align: left;"><%=table_sort_link("MarkerDB ID","MarkerDB ID")%></th>
+							<th style="text-align: left;">Biomarker Structure</th>
+							<th style="text-align: left;"><%=table_sort_link("Biomarker Name","Biomarker Name")%></th>
+							<th style="text-align: left;">Condition Name</th>
+						</tr>
+					</thead>
+					<tbody>
+						<% sorted_page_num.each do |each_marker| %>
+							<% cache each_marker, expires_in: 7.days do %>
+								<% each_marker_class = each_marker["biomarker_type"]%>
+								<% if each_marker_class == "Chemical"%>
+									<% chem_marker_conds = sorted_markers[each_marker]%>
+									<tr>
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%=link_to(each_marker["mdbid"],main_app.chemical_path(id: each_marker["biomarker_id"]))%></td>
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%= image_tag(moldb_url( each_marker["biomarker"], :image_full),:width => "100%") %></td>
+										
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;" class="right" width="70%">
+											Chemical: <%= link_to each_marker["biomarker_name"], main_app.chemical_path(id: each_marker["biomarker_id"]) %>
+										</td>
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;">
+											<%= info_table do %>
+												<ul>
+												<% chem_marker_conds.each do |condition_hash| %>
+													<li style="font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em"><%= link_to condition_hash["condition_name"], condition_path(condition_hash["condition_id"]) %></li>
+												<%end%>
+												</ul>
+											<%end%>
+										</td>
+									</tr>
+								<% elsif each_marker_class == "Protein"%>
+									<% prot_marker_conds = sorted_markers[each_marker]%>
+									<tr>
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%=link_to(each_marker["mdbid"],main_app.protein_path(id: each_marker["biomarker_id"]))%></td>
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%= image_tag(each_marker["biomarker"].structure_image.url(),:width => "100%") %></td>
+										
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;" class="right" width="70%">
+											Protein: <%= link_to(each_marker["biomarker_name"], main_app.protein_path(id: each_marker["biomarker_id"])) %>
+										</td>
+										<td style="padding-left: 20px; vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;">
+											<%= info_table do %>
+												<ul>
+												<% prot_marker_conds.each do |condition_hash| %>
+													<li style="font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em"><%= link_to condition_hash["condition_name"], condition_path(condition_hash["condition_id"]) %></li>
+												<%end%>
+												</ul>
+											<%end%>
+										</td>
+									</tr>
+								<% elsif each_marker_class == "Gene"%>
+									<% gene_marker_conds = sorted_markers[each_marker]%>
+									<tr>
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%=link_to(each_marker["mdbid"],main_app.gene_path(id: each_marker["biomarker_id"]))%></td>
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%= image_tag(each_marker["biomarker"].structure_image.url(),:width => "100%") %></td>
+										
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;" class="right" width="70%">
+											Gene: <%= link_to(each_marker["biomarker_name"], main_app.gene_path(id: each_marker["biomarker_id"])) %>
+										</td>
+										<td style="padding-left: 20px; vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;">
+											<%= info_table do %>
+												<ul>
+												<% gene_marker_conds.each do |condition_hash| %>
+													<li style="font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em"><%= link_to condition_hash["condition_name"], condition_path(condition_hash["condition_id"]) %></li>
+												<%end%>
+												</ul>
+											<%end%>
+										</td>
+									</tr>
+								<% elsif each_marker_class == "Karyotype"%>
+									<% karyotype_conds = sorted_markers[each_marker]%>
+									<tr>
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%=link_to(each_marker["mdbid"],main_app.karyotype_path(id: each_marker["biomarker_id"]))%></td>
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;" class="thumb-image"><%= image_tag each_marker["biomarker"].diagram.url, :style => "20rem" %></td>
+										
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;" class="right" width="70%">
+											Karyotype: <%= link_to each_marker["biomarker_name"], main_app.karyotype_path(each_marker["biomarker_id"]) %>
+										</td>
+										<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;">
+											<%= info_table do %>
+												<ul>
+												<% karyotype_conds.each do |condition_hash| %>
+													<li style="font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em"><%= link_to condition_hash["condition_name"], condition_path(condition_hash["condition_id"])%></li>
+												<%end%>
+												</ul>
+											<%end%>
+										</td>
+									</tr>
+								<% elsif each_marker_class == "SequenceVariant"%>
+									<% seqvar_conds = sorted_markers[each_marker]%>
+										<tr>
+											<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%=link_to(each_marker["mdbid"],main_app.sequence_variant_path(id: each_marker["biomarker_id"]))%></td>
+											<td></td>
+											<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;" class="right" width="70%">
+												<%= link_to link_to(each_marker["biomarker_name"],main_app.sequence_variant_path(id: each_marker["biomarker_id"])) %></td>
+											
+											<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;">	
+												<%= info_table do %>
+														<ul>
+														<% seqvar_conds.each do |condition_hash| %>
+															<li style="font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em"><%= link_to condition_hash["condition_name"], condition_path(condition_hash["condition_id"]) %></li>
+														<%end%>
+														</ul>
+												<%end%>
+											</td>
+										</tr>
+								<% end %>
+							<%end%>
+						<%end%>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<%= will_paginate sorted_page_num %><br>
+	<% end %>
+	<%= right_column do %>
+	  <%= render 'condition_categories', :categories => cond_categories %>
+	<% end %>
+<% end %>

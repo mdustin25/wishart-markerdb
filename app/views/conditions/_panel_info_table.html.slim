@@ -1,0 +1,86 @@
+/ 1) Biofluid                                                      
+/ 2) Sensitivity   
+/ 3) Specificity
+/ 4) ROC-AUC
+/ 5) Clinical Status
+/ 6) Notes/Limits:
+/ 7) ROC Curve
+/ 8) Logistic equation
+
+table.info-table
+  tr
+    td
+      strong Biofluid: 
+    td
+      = concentration.biofluid
+
+  tr
+    td
+      | &nbsp;&nbsp;
+    td
+      | &nbsp;&nbsp;
+
+  tr
+    td
+      strong Specificity/Sensitivity:
+    td
+      - if concentration.quality.nil?
+        = nah(value=nil, message="No Additional Data")
+      - elsif concentration.quality.specificity.blank? or concentration.quality.sensitivity.blank?
+        = nah(value=nil, message="No Additional Data")
+      - else
+        = "#{concentration.quality.specificity} / #{concentration.quality.sensitivity}"
+  tr
+    td
+      strong AUC:
+    td
+      - if concentration.quality.nil? # this is for protein biomarker
+        = nah(value=nil, message="No Additional Data")
+      - elsif concentration.quality.roc_auc.blank?
+        = nah(value=nil, message="No Additional Data")
+      - else
+        = concentration.quality.roc_auc
+         br
+  tr
+    td
+      strong Logistic equation:
+    td
+      - if concentration.logistic_equation.nil? # this is for protein biomarker
+        = nah(value=nil, message="No Additional Data")
+      - else
+        = concentration.logistic_equation
+         br
+
+  tr
+    td
+      | &nbsp;&nbsp;
+    td
+      | &nbsp;&nbsp;
+
+  tr
+    td
+      strong Clinical Status:
+    td
+      - if concentration.status.blank?
+        = nah(value=nil, message="No Additional Data")
+      - else
+        = concentration.status
+
+  tr
+    td
+      strong Notes/Limits:
+    td
+      = nah(value=nil, message="No Additional Data")
+
+
+
+
+
+
+
+
+
+
+
+
+

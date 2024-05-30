@@ -1,0 +1,36 @@
+<%= will_paginate proteins %><br>
+    <%= page_entries_info proteins %>
+
+    <%= sorted_box_table "Protein Biomarkers", ["MarkerDB ID", "Protein Name","Marker Type"], ["MarkerDB ID", "Protein Structure", "Protein Name", "Marker Type","Condition Name"],
+      proteins do |protein| %>
+        <% cache protein, expires_in: 7.days do %>
+        	<td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%=link_to(protein.marker_mdbid.mdbid,protein)%></td>
+    	    <td class="protein-structure" style=class="thumb-image" style="background-color: white; vertical-align: middle;  text-align: left;"><%= image_tag protein.structure_image.url(:thumb) %></td>
+    	    <td style="vertical-align: middle; text-align: left;  border-left:1px solid #ababab; border-right:1px solid #ababab;"><%= link_to protein.name, protein %></td>
+          <% unless protein.panel_single.nil?%>
+            <td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%=protein.panel_single%></td>
+          <%else%>
+            <td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;">Not available</td>
+          <%end%>
+    	    <td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;">
+            <% associated_cond_id = protein.get_associated_condition_ids()%>
+            <% unless associated_cond_id.length > 4%>
+              <% associated_cond_id.each do |each_cond_id| %>
+                <% cond = Condition.where("id = ?",each_cond_id).first %>
+                <% conc_obj = Concentration.where("solute_type =\"Protein\" and exported = true and solute_id = ? and condition_id = ?",protein.id, cond.id).first%>
+              <ul>
+                <% if conc_obj.status.nil?%>
+                  <li style="font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em"><%= link_to(cond.name,cond)%></li>
+                <%else%>
+                  <li style="font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em"><%= link_to("#{cond.name} (#{conc_obj.status})",cond)%></li>
+                <%end%>
+              </ul>
+              <% end %>
+            <% else %>
+              Multiple conditions <%="(#{associated_cond_id.length})"%>
+            <% end %>
+          </td>
+        <% end %>
+    <% end %>
+    
+    <%= paginate proteins %>

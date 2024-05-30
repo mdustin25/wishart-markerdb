@@ -1,0 +1,18 @@
+<tr>
+	<td class="left" width="30%">
+		<td><%= image_tag(moldb_url( chemical, :image_full),:width => "100%", :crop => :fill) %></td>
+	</td>
+	<td class="right" width="70%">
+		<h3 style="text-align:left"><%= link_to chemical.name, chemical %></h3>
+		<br/>
+		<%= info_table do %>
+			<td><strong>Outcomes:</strong>
+				<ul>
+				<% chemical.concentrations.map(&:condition).uniq.each do |condition| %>
+					<li style="list-style-type: disc;"><%= link_to condition.name, condition %></li>
+				<%end%>
+				</ul>
+			</td>
+		<%end%>
+	</td>
+</tr>

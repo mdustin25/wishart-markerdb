@@ -1,0 +1,7 @@
+.hit-name = link_to hit.name, main_app.protein_path(hit.id)
+.unearth-search-highlights
+  - if hit.highlights.present?
+    - hit.highlights.each do |field, highlights|
+      ' Matched #{field}:
+      ' &hellip; #{highlights.join(' ... ').html_safe} &hellip;
+      br

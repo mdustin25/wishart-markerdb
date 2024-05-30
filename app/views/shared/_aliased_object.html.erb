@@ -1,0 +1,7 @@
+<%= box "Names" do %>
+  <ul>
+    <% aliased_object.aliases.each do |a| %>
+      <li><%= a.name %></li>
+    <% end %>
+  </ul>
+<% end %>

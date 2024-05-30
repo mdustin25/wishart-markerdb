@@ -1,0 +1,185 @@
+<%= column_wrapper do %>
+  <%= left_column do %>
+    <h1><%= title @gene.name.capitalize %></h1>
+  <% end %>
+  <%= right_column do %>
+  <% end %>
+<% end %>
+
+ 
+<%= left_column do %>
+ 
+  <%= box_description @gene  do %>
+    <% if @gene.id == 5811 %>
+      <%= info_table do %>
+        <%= info_row "Oncotype DX Breast Recurrence Score 0-25", "The cancer has a low risk of recurrence. The benefits of chemotherapy likely will not outweigh the risks of side effects." %>
+        <%= info_row "Oncotype DX Breast Recurrence Score > 30", "The cancer has a high risk of recurrence. The benefits of chemotherapy are likely to be greater than the risks of side effects." %>
+        <%= info_row "Status", "Clincally Approved" %>
+        <%= info_row "Included gene", "<a href='https://www.ncbi.nlm.nih.gov/gene/4288'>Ki-67</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/6790'>STK15</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/332'>Survivin</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/891'>Cyclin B1</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/4605'>MYBL2</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/4320'>Stromelysin 3</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/1515'>Cathepsin L2</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/2886'>GRB7</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/2064'>HER2</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/2099'>ER</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/5241'>PR</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/596'>Bcl2</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/57758'>SCUBE2</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/2944'>GSTM1</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/573'>BAG1</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/968'>CD68</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/60'>Beta-actin</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/2597'>GAPDH</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/6175'>RPLPO</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/2990'>GUS</a>; 
+                                       <a href='https://www.ncbi.nlm.nih.gov/gene/7037'>TFRC</a>.".html_safe %>
+        <%= info_row "Source",simple_format(@gene.info_source)%>
+      <%end%>
+    <% elsif @gene.id == 5812 %>
+        <%= info_row "MammaPrint Index <= 0.4", "The cancer has a high risk of recurrence." %>
+        <%= info_row "MammaPrint Index > 0.4", "The cancer has a low risk of recurrence." %>
+        <%= info_row "Status", "Clincally Approved" %>
+        <%= info_row "Included gene", "AA555029_RC;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/8659'>ALDH4A1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/79888'>AYTL2</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/27113'>BBC3</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/56942'>C16orf61</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/55321'>C20orf46</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/91283'>C9orf30</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/9134'>CCNE2</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/8476'>CDC42BPA</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/83879'>CDCA7</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/1058'>CENPA</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/1284'>COL4A2</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/1633'>DCK</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/56419'>DIAPH3</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/51514'>DTL</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/57593'>EBF4</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/1894'>ECT2</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/54583'>EGLN1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/11082'>ESM1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/2131'>EXT1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/8817'>FGF18</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/2321'>FLT1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/2321'>FLT1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/8833'>GMPS</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/2781'>GNAZ</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/57211'>GPR126</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/58245'>GPR180</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/2947'>GSTM3</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/57110'>HRASLS</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/3488'>IGFBP5</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/10403'>KNTC2</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/286826'>LIN9</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/100131053'>LOC100131053</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/100288906'>LOC100288906</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/730018'>LOC730018</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/4175'>MCM6</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/9833'>MELK</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/4318'>MMP9</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/92140'>MTDH</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/51203'>NUSAP1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/23594'>ORC6L</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/5019'>OXCT1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/445815'>PALM2</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/10455'>PECI</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/10531'>PITRM1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/9055'>PRC1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/169714'>QSCN6L1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/8045'>RASSF7</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/9400'>RECQL5</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/5984'>RFC4</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/146760'>RTN4RL1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/146923'>RUNDC1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/57758'>SCUBE2</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/8293'>SERF1A</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/6515'>SLC2A3</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/55351'>STK32B</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/7043'>TGFB3</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/85453'>TSPYL5</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/8840'>WISP1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/151126'>ZNF533</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/79132'>LGP2</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/10874'>NMU</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/51377'>UCHL5</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/80853'>JHDM1D</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/163'>AP2B1</a>;
+                                      <a href='https://www.ncbi.nlm.nih.gov/gene/109225'>MS4 A7</a>;
+                                      RAB6Bh".html_safe %>
+        <%= info_row "Source",simple_format(@gene.info_source)%>
+    <% else %>
+      <%= info_table do %>
+        <% if @gene.respond_to? :aliases %>
+          <%= info_row("Alternate names", @gene.names * "; ") %>
+        <%end%>
+        <%= info_row "Source",simple_format(@gene.info_source)%>
+      <%end%>
+
+    <% end %>
+      
+  <%end%>
+  
+  <% unless @gene_sequence_variants.blank? %>
+    <%= box_list "Sequence Variations", @gene_sequence_variants %>
+    <%= will_paginate @gene_sequence_variants %>
+    <!-- for custom pagination name <%= will_paginate @gene_sequence_variants %> :params => {:controller => 'human-readable', :action => 'show', :name => 'xyz'}-->
+  <% end %>
+  
+  <% unless @gene.single_nucleotide_polymorphisms.blank? %>
+    <%= box_list "GWAS-ROCS Study", @gene.single_nucleotide_polymorphisms %>
+  <% end %>
+
+<% end %>
+
+<%= right_column do %>
+  <% if @gene.marker_mdbid.nil? %>
+    <%= box "" do %> 
+      <%= info_table do %>
+        <th style="text-align:left; font-size:1em; width:50%">
+        <% if @gene.gene_symbol.nil? %>
+          <%= info_row "Gene Symbol:", "NA" %>
+        <% else %>
+          <%= info_row "Gene Symbol:", @gene.gene_symbol %>
+        <% end %>
+        
+        <%= info_row "Creation Date:", @gene.created_at %>
+        <%= info_row "Update Date:", @gene.updated_at %>
+        
+      <% end %>
+    <% end %>
+  <% else %>
+    <%= box @gene.marker_mdbid.mdbid do %> 
+      <%= info_table do %>
+        <th style="text-align:left; font-size:1em; width:50%">
+        <% if @gene.gene_symbol.nil? %>
+          <%= info_row "Gene Symbol:", "NA" %>
+        <% else %>
+          <%= info_row "Gene Symbol:", @gene.gene_symbol %>
+        <% end %>
+        
+        <%= info_row "Creation Date:", @gene.created_at %>
+        <%= info_row "Update Date:", @gene.updated_at %>
+        
+      <% end %>
+    <% end %>
+  <% end %>
+
+  
+
+  <%= box "Molecular Info" do %>
+
+    <%= info_table do %>
+      <%= info_row "Source Common name", @gene.source_common %>
+      <%= info_row "Source Taxonomy", @gene.source_taxname %>
+      <% unless @gene.fasta.nil? %>
+        <%= info_row "Sequence Length", @gene.fasta.length %>
+      <% end %>
+    <% end %>
+  <% end %>
+  
+  <%= render :partial => 'shared/linked_object', :object => @gene, cached: true %>
+  
+<% end %>

@@ -1,0 +1,60 @@
+<%= column_wrapper do %>
+  <%= left_column do %>
+    <h1><%= title @karyotype.name %></h1>
+  <% end %>
+<% end %>
+
+<%= left_column do %>
+  <%= box "Description" do %>
+    <tr>
+      <%= left_column_karyo do %>
+        <td rowspan="3"><%= image_tag @karyotype.diagram.url, :style => "margin: auto;" %></td>
+      <% end %>
+      <%= right_column_karyo do %>
+        <th><strong>Description: </strong></th>
+          <td style="word-wrap:break-word;width:44%">
+            <%= @karyotype.description %></td>
+        <%= info_table do %>
+          <%# This is just to add an extra space%>
+          <%= info_row "",""%>
+          <%= info_row "Source",simple_format(@karyotype.info_source)%>
+        <% end %>
+      <% end %>
+    </tr>
+  <% end %>
+  
+  <%= box_list "Indications", @karyotype.karyotype_indications %>
+<% end %>
+
+
+
+<%= right_column do %>
+  <%= box @karyotype.marker_mdbid.mdbid do %>
+    <%= info_table do %>
+      <th style="text-align:left; font-size:1em; width:50%">
+      <%= info_row "Creation Date:", "2020-08-01" %> 
+      <%= info_row "Update Date:", "2020-08-15" %>
+    <% end %>
+  <% end %>
+  <%= box "Idiogram" do %>
+    <a data-toggle="modal" data-target="#karyotype-image-modal" >
+      <%= image_tag @karyotype.diagram.url() %>
+      <%= link_to "Image", @karyotype.diagram.url %>
+    </a>
+  <% end %>
+<% end %>
+
+
+<!-- Modal -->
+<div class="modal fade image-modal" id="karyotype-image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Idiogram: <%= @karyotype.name %></h4>
+      </div>
+      <div class="modal-body">
+          <%= image_tag @karyotype.diagram.url() %>
+      </div>
+    </div>
+  </div>

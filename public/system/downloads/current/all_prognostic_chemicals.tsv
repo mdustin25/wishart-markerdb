@@ -1,0 +1,2 @@
+biomarker_type	id	name	hmdb_id	conditions	indication_types	concentration	age	sex	biofluid	citation
+Chemical	1284	20-Hydroxyeicosatetraenoic acid	HMDB0005998	Kidney Transplantation	Prognostic	<0 pg/mL	""	""	Serum	Dolegowska, B., Blogowski, W. & Domanski, L. Is it possible to predict the early post-transplant allograft function using 20-HETE measurements? A preliminary report. Transpl Int 22, 546-553 (2009).

@@ -1,0 +1,6 @@
+<% unless linked_object.links.empty? %>
+  <%= box_table "External links", [],
+    linked_object.links do |link| %>
+      <td><%= link_to link.name + " ID: " + link.key.to_s, link.path %></td>
+  <% end %>
+<% end %>

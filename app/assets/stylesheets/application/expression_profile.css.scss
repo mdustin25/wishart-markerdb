@@ -1,0 +1,80 @@
+// Place all the styles related to the ExpressionProfile controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+img.expr-roc {
+  float: left;
+  width: 450px;
+}
+
+div.marker-set {
+  float: left;
+  width: 100%;
+
+  table#expression-summary {
+     display: table;
+     margin-top: 30px;
+     width: 510px;
+
+     th {
+       font-size: 11px;
+     }
+
+    thead tr {
+      background-color: #C2D1F0;
+    }
+
+     td {
+       padding-left: 10px;
+     }
+  }
+
+}
+
+table#expression-summary {
+  display: block;
+  float: left;
+  width: auto;
+  padding-top: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  thead {
+  }
+
+  tbody {
+    
+  }
+
+  tr:nth-child(odd)    { background-color:#eee; }
+  tr:nth-child(even)    { background-color:#fff; }
+
+  td.thin {
+    max-width: 70px;
+  }
+  
+  td.exp-set {
+      width: 10px;
+      padding: 0;
+  }
+
+
+  td.exp-set.color5   {background: #ff0000 }
+  td.exp-set.color10  {background: #33CC33 }
+  td.exp-set.color15  {background: #0033CC }
+  td.exp-set.color25  {background: #00CCFF }
+  td.exp-set.color50  {background: #FF33CC }
+  td.exp-set.color100 {background: #FFFF00 }
+
+  td.exp-set.colorlow  {background: #ff0000 }
+  td.exp-set.colorhigh {background: #33CC33 }
+
+  td {
+    padding: 0;
+    line-height: 13px;
+    font-size: 10px;
+    padding-right: 10px;
+    max-width: 100px;
+  }
+ 
+
+}

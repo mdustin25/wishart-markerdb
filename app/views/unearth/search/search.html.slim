@@ -1,0 +1,37 @@
+.page-header: h1
+  = title "Search Results <small>for #{search_name(@search.index)}</small>"
+
+#unearth-search-info
+  - if @search.query.blank?
+    .no-results No results for empty search.
+  - elsif @search.total == 0
+    .no-results
+      ' Searching #{search_name(@search.index)} for <strong>#{@search.query}</strong> 
+      ' returned no results.
+  - else
+    .alert.alert-success
+      ' Searching #{search_name(@search.index)} for <strong>#{@search.query}</strong> 
+      ' returned #{pluralize @search.total, 'result'}.
+      - if @search.searcher_type.to_s =~ /fuzzy/
+        br
+        strong Could not find exact results for your query. The results below are approximate.
+
+- if @suggestions.present? 
+  - if @search.total == 0
+    #didyoumean.search-info.well.well-sm
+      h2 Did you mean?
+      ul
+        - @suggestions.each do |suggestion|
+          li = link_to suggestion, url_for(params.merge({ query: suggestion }))
+  - else
+    #didyoumean.search-info: strong 
+        | Did you mean 
+        | #{link_to @suggestions.first, url_for(params.merge({ query: @suggestions.first }))}?
+
+= will_paginate @search
+= render '/unearth/filters/filter_form'
+- unless @search.total == 0
+  = render "/unearth/search/results", search: @search
+= will_paginate @search
+/= db_paginate @search, entry_name: "result", skip_page_info: true
+

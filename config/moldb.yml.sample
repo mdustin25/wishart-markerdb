@@ -1,0 +1,15 @@
+# Configuration options for accessing the MolDB server
+development:
+  server: http://moldb.wishartlab.com
+  username: molecules
+  password: sjApx14!
+
+test:
+  server: http://structures.wishartlab.com
+  username: molecules
+  password: test
+
+production:
+  server: http://moldb.wishartlab.com
+  username: molecules
+  password: sjApx14!

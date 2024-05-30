@@ -1,0 +1,455 @@
+#construction {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #E7EC7E;
+    padding: 10px;
+}
+
+body {
+  min-width: 800px;
+}
+
+.tooltip-inner {
+  word-wrap: break-word;
+}
+
+/*************************\
+ * Home page
+\*************************/
+#intro #intro-text {
+  display: inline-block;
+  float: right;
+  width: 70%;
+  margin-left: 10px;
+}
+
+#intro {
+  ul {
+    list-style: none;
+    float: left;
+    width: 20%;
+  }
+
+  li {
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
+  }
+}
+
+div.section {
+  clear:both;
+  overflow:hidden;
+  padding-left: 25px;
+
+  h3 {
+    margin: 15px 0;
+    font-size: 20px;
+    text-align: center;
+    width: 80%
+  }
+}
+
+#cite {
+     -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    padding: 10px;
+}
+
+div.category_row {
+  float:left;
+  width:125%;
+}
+
+a.category {
+  display: inline-block;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 32%;
+  float: left;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  padding-right:0.5%;
+  padding-left:0.5%;
+}
+a.category:visited, a.category, a.category:hover, a.category:active {
+  color:#333;
+}
+a.category:hover { 
+  background-color:#E0EAFF;
+  border: none;
+}
+a.category div {
+  float:left;
+  padding-left: 10px;
+  width: 75%;
+
+  h3, p {float:left}
+}
+.category img {float: left;}
+.category h3  {margin: 0;}
+
+.rule {
+  display: inline-block;
+  background-color: #CCC;
+  height: 2px;
+  position: absolute;
+  width: 776px;
+  margin-top: -24px;
+  right: 30px;
+}
+
+/* centered container for layout */
+#container {
+   margin-left:auto;
+   margin-right:auto;
+   position:relative;
+   width: 998px;
+}
+
+/* header with logo and search form */
+#header {
+    padding-bottom: 40px;
+    padding-top:10px;
+}
+
+#logo {
+  background-image: image-url("logo.png");
+  height: 35px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 260px;
+  margin-bottom:0;
+}
+
+#logo:hover {
+  background-color:white;
+  border: none;
+}
+
+#search {
+  display: inline-block;
+  float: right;
+}
+
+#menu {
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 1px;
+    height: 115px;
+    /*border: 1px solid #cccccc;*/
+    background: #515151;
+}
+#menu table { width: 100%; }
+#menu td {
+  font-weight: bold;
+  text-align: center;
+}
+
+#menu td a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding-top: 65px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-width: 36px;
+  margin-bottom:0;
+}
+
+#menu td a:hover {
+  color:#fff;
+  text-decoration:none;
+  border: none;
+  background-color:#8e8e8e;
+}
+
+#menu a.conditions {
+  background-image: image-url("Thermometer_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;
+}
+#menu a.diagnostic {
+  background-image: image-url("diagnostic_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;}
+#menu a.prognostic {
+  background-image: image-url("prognostic_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;}
+#menu a.predictive {
+  background-image: image-url("predictive_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;}
+#menu a.exposure {
+  background-image: image-url("exposure_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;}
+#menu a.monitoring {
+  background-image: image-url("monitoring_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;}
+#menu a.chemical {
+  background-image: image-url("chemical_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;}
+#menu a.genetic {
+  background-image: image-url("dna_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;}
+#menu a.protein {
+  background-image: image-url("protein_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;}
+#menu a.cell {
+  background-image: image-url("cell_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;}
+#menu a.histology {
+  background-image: image-url("histology_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;}
+#menu a.karyotype {
+  background-image: image-url("karyotype_small.png");
+  background-position: 45% 30%;
+  background-size: 50px;}
+
+/*------------------------------------*\
+ *  NAV
+\*------------------------------------*/
+
+#nav{
+  float:right;
+  list-style:none;
+  font-weight:bold;
+  margin-top:-5px;      
+}
+
+#nav li{
+  float:left;
+  margin-right:10px;
+  position:relative;
+  display:block;
+}
+
+#nav li a{
+  display:block;
+  padding:5px;
+  color:#fff;
+  background:#333;
+  text-decoration:none;
+  text-shadow:1px 1px 1px rgba(0,0,0,0.75); /* Text shadow to lift it a little */
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  border-radius:2px;
+}
+
+/*#nav li a:hover {
+/*  color:#fff;
+/*  text-decoration:underline;
+/*}
+/*
+/* /*--- DROPDOWN ---*/
+/*#nav ul {
+/*  list-style:none;
+/*  position:absolute;
+/*  left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+/*  opacity:0; /* Set initial state to transparent */
+/*  -webkit-transition:0.25s linear opacity; /* Make the dropdown fade-in in Webkit */
+/*}
+/*#nav ul li{
+/*  padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+/*
+/*  float:none;
+/*}
+/*
+/*#nav ul a{
+/*  white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+/*  display:block;
+/*}
+/*#nav li:hover ul { /* Display the dropdown on hover */
+/*  left:0; /* Bring back on-screen when needed */
+/*  opacity:1; /* Fade to opaque */
+/*}
+/*
+/*#nav li:hover a{ /* Set styles for top level when dropdown is hovered */
+/*
+/*  
+/*  background:#C2D1F0; /* Solid colour fall-back */
+/*  background:rgba(144,172,230,0.75); /* It'll look nice semi-transparent */
+/*  text-decoration:underline;
+/*}
+/*
+/*#nav li:hover ul a{ /* Override some top level styles when dropdown is hovered */
+/*  text-decoration:none;
+/*  -webkit-transition:-webkit-transform 0.075s linear;
+/*}
+/*
+/*#nav li:hover ul li a:hover { /* Set styles for dropdown when items are hovered */
+/*  background:#333; /* Solid colour fall-back */
+/*  background:rgba(51,51,51,0.75); /* It'll look nice semi-transparent */
+/*  text-decoration: underline;
+/*  -moz-transform: scale(1.05);
+/*  -webkit-transform: scale(1.05);
+/*}
+/*
+/*div.drp-header {
+/*background-color: #CCCCCC;
+/*font-weight: bold;
+/*padding: 10px 10px 5px;
+/*border-bottom:1px solid #AAAAAA;
+/*}
+/*div.drp-content {
+/*border-bottom: 1px solid #AAAAAA;
+/*}
+/*
+/*tr.pr td.type { background-color: #fadcb3; }
+/*tr.gn td.type { background-color: #e1c7e1; }
+/*tr.sm td.type { background-color: #C2D1f0; }
+/*tr.pr td.type, tr.gn td.type, tr.sm td.type {
+/*  border-color: #AAAAAA #AAAAAA #AAAAAA -moz-use-text-color;
+/*  border-style: solid solid solid none;
+/*  border-width: 1px 1px 1px
+/*}
+*/
+
+
+#chem-structure img {
+width: 237px;
+}
+
+#bm-title, #bmid {
+  color: #666666;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 1em;
+  padding: 10px;
+}
+#bm-title { padding-left:10px }
+
+#menu, #bmid, #main-contents .box {
+  -moz-border-radius: 10px 10px 10px 10px;
+  /*-moz-box-shadow: 10px 10px 10px #DDDDDD;*/
+  border-radius: 10px 10px 10px 10px;
+  /*box-shadow: 10px 10px 10px #DDDDDD;*/
+  margin: 10px 0;
+  width: 100%
+}
+#bmid {
+  border: 1px solid #cccccc;
+  margin-bottom:0;
+  font-family: verdana, arial;
+}
+
+/* for each type of biomarker there is a
+ * different color
+ */
+#main-contents.sm #bmid {
+  background-color: #f5f5f5;
+  margin-top: 0px;
+}
+
+#bmid {
+   text-align: center;
+}
+
+/* page layout */
+
+.clear { clear: both; }
+
+div.left-col {
+    float: left;
+    padding-left:0;
+    padding-top: 0;
+    width: 76%;
+}
+#All_Conditions {
+  width: 95%
+}
+div.right-col {
+    float: right;
+    padding-right:0;
+    width: 23%;
+}
+
+div.left-col-karyo {
+    float: left;
+    padding-left:0px;
+    padding-top: 0;
+    width: 55%;
+}
+
+#All_Conditions {
+  width: 95%
+}
+div.right-col-karyo {
+    float: right;
+    padding-right:30px;
+    width: 42%;
+    padding-top: 10px;
+}
+
+div.wide-col, #main-contents {
+    margin-left:auto;
+    margin-right:auto;
+    float: right;
+    width: 100%;
+}
+
+
+
+/* Search bar */
+
+#search-form {
+  margin-top:0.5em;
+  margin-left:auto;
+  margin-right:auto;
+  width:30%;
+  
+  .search-form-each-page {
+
+    border: 1px solid #000;
+    display:inline-block;
+
+    #search-each-page {
+      // display: inline-block;
+      // text-aligh:center;
+      // float: right;
+      // height: 2em;
+      // font-size:16px;
+      background-color:transparent;
+      border:0;
+    }
+
+    #text-search-each-page {
+      background-color:transparent;
+      border:0;
+    }
+  }
+}
+
+
+/* general styles */
+
+p.caption {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 0px;
+}
+
+.bold {
+   font-weight: bold;
+}
+
+body, p, ol, ul, td {
+
+  font: x-small sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+  text-align: left;
+  margin-top:0;
+}

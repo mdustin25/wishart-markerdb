@@ -1,0 +1,13 @@
+/.structure
+  /= moldb_thumbnail(hit.hmdb_id)
+/.biofluids
+  /== hit.biofluids.map { |g| content_tag(:span, g, class: 'badge') }.join(" ")
+.hit-name = link_to hit.name, main_app.gene_path(hit.id)
+/ main_app.path_to(id: hit.hmdb_id)
+/.iupac = hit.iupac
+.unearth-search-highlights
+  - if hit.highlights.present?
+    - hit.highlights.each do |field, highlights|
+      ' Matched #{field}:
+      ' &hellip; #{highlights.join(' ... ').html_safe} &hellip;
+      br

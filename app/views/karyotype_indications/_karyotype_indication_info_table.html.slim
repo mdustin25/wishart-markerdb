@@ -1,0 +1,49 @@
+
+- temp_list     = karyotype_indication.gene_list.split(";")
+- karyotypes = Karyotype.where(:id => karyotype_indication.karyotype_id)
+
+table.info-table
+	tr style=("width: 100%") 
+		th style=("padding: 5px;width: 10%")  Karyotype:
+		td style=("padding: 5px;width: 20%;text-align:left") 
+			- karyotypes.each do |n|
+				= n.karyotype
+				br
+
+	tr style=("width: 100%") 
+		th style=("padding: 5px;width: 10%")  Associated Gene(s):
+		td style=("padding: 5px; width 30%; text-align: left") 
+			- temp_list.uniq.each_with_index do |gene, index|
+				- temp = Gene.find_by(:gene_symbol => gene)
+				- if temp.blank?
+					= gene
+					br
+				- elsif temp.omim_id.blank?
+					= gene
+					br
+				- else
+					= link_to gene, "https://omim.org/entry/#{temp.omim_id.to_s}"
+					br
+
+	tr style=("width: 100%") 
+		th style=("padding: 5px;width: 10%")  Age:
+		td style=("padding: 5px;width: 10%;text-align:left")
+			= karyotype_indication.age
+
+	tr style=("width: 100%") 
+		th style=("padding: 5px;width: 10%")  Sex:
+		td style=("padding: 5px;width 10%;text-align: left") 
+			= karyotype_indication.sex
+
+	tr style=("width: 100%") 
+		th style=("padding: 5px;width: 10%")  Description:
+		td style=("padding: 5px;width 10%;text-align: left") 
+			- karyotypes.each do |n|
+				= n.description
+				br
+
+	tr style=("width: 100%") 
+		th style=("padding: 5px; width: 10%")  Reference:
+		td style=("padding: 5px; width: 20%") 
+			= karyotype_indication.citation
+

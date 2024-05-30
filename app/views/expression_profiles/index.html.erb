@@ -1,0 +1,12 @@
+<%= wide_column do %>
+
+  <%= box_table "Microarray Expression Profiles", 
+    %w[SeriesID Title Platform Pubmed], 
+    @profiles do |profile| %>
+      <td><%= link_to profile.series_id, profile %></td>
+      <td><%= profile.title %></td>
+      <td><%= profile.platform_name %></td>
+      <td><%= profile.citation_pubmed_id %></td>
+  <% end %>
+
+<% end %>

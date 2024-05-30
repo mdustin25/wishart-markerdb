@@ -1,0 +1,11 @@
+<%= left_column do %>
+  <%= paginate @lab_tests %>
+  <%= box_table "Laboratory Tests", 
+    ["Name","Description","Uses"],
+    @lab_tests do |t|%>
+      <td><%= link_to t.name, t %></td>
+      <td><%= t.description   %></td>
+      <td><%= t.uses.count %></td>
+  <% end %>
+<% end %>
+

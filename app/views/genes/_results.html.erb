@@ -1,0 +1,53 @@
+<%= will_paginate genes %><br>
+  <%= page_entries_info genes %>
+  <%= sorted_box_table "Genetic Biomarkers", ["MarkerDB ID","Gene Name","Chromosome Number","Position"],
+    ["MarkerDB ID","Gene Name","Chromosome Number","Position","Marker Type","Conditions"],
+    genes do |gene| %>
+      <% cache gene, expires_in: 7.days do %>
+      	<td style="text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%= link_to gene.marker_mdbid.mdbid, gene %></td>
+        <td style="text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%= link_to gene.name.capitalize(), gene %></td>
+        <% unless gene.position.blank?%>
+          <td style="text-align: center; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%= gene.get_chr() %></td>
+          <td style="text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%= gene.position %></td>
+        <%else%>
+          <td style="text-align: left;">NA</td>
+          <td style="text-align: left;">NA</td>
+        <%end%>
+        <% res = gene.get_mutation_stats()%>
+        <td style="text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;">
+          <ul>
+            <% res.keys.each do |k|%>
+              <% value = res[k] %>
+              <%unless value == 0 %>
+                <% if k.to_s == "snp_ctr" %>
+                  <li><%= "# SNP: #{value}"%></li>
+                <% elsif k.to_s == "dup_ctr"%>
+                  <li><%= "# Duplication mutations: #{value}"%></li>
+                <% elsif k.to_s == "invs_ctr"%>
+                  <li><%= "# Inversion mutations: #{value}"%></li>
+                <% elsif k.to_s == "indel"%>
+                  <li><%= "# Indel mutations: #{value}"%></li>
+                <% else%>
+                  <li><%= "# Other mutations: #{value}"%></li>
+                <% end%>
+              <%end%>
+            <%end%>
+          </ul>
+        </td>
+        <% cond_stat = gene.get_associated_conditions %>
+        <td style="text-align: left;border-left:1px solid #ababab; border-right:1px solid #ababab;">
+          <%unless cond_stat.length >4 %>
+            <ul>
+              <% cond_stat.each do |each_cond_stat|%>
+                <% conds = Condition.where("id = ?",each_cond_stat).first%>
+                <li style="list-style-type: disc; list-style-position: outside; margin: 1.2em"><%= link_to(conds.name,conds)%></li>
+              <%end%>
+            </ul>
+          <%else%>
+            Multiple conditions <a href = "/genes/<%=gene.marker_mdbid.mdbid%>/#Sequence_Variations"><%="(#{cond_stat.length})"%></a>
+          <%end%>
+        </td>
+      <% end %>
+  <% end %>
+
+  <%= paginate genes %>

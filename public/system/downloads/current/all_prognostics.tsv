@@ -1,0 +1,10 @@
+biomarker_type	id	name	hmdb_id	conditions	indication_types	concentration	age	sex	biofluid	citation
+Chemical	1284	20-Hydroxyeicosatetraenoic acid	HMDB0005998	Kidney Transplantation	Prognostic	<0 pg/mL	""	""	Serum	Dolegowska, B., Blogowski, W. & Domanski, L. Is it possible to predict the early post-transplant allograft function using 20-HETE measurements? A preliminary report. Transpl Int 22, 546-553 (2009).
+biomarker_type	id	name	gene_name	uniprot_id	conditions	indication_types	concentration	age	sex	biofluid	protein_sequence	citation
+Protein	2	Angiotensin-converting enzyme	ACE	P12821	Pulmonary Sarcoidosis	Prognostic	49.50+-41.04 U/L	Adult: >=18 yrs old	Both	Serum	Pubmed_ID: 25623898
+Protein	13	Serum amyloid A-1 protein	SAA1	P0DJI8	Pulmonary Sarcoidosis	Prognostic	>9.3 ug/mL	Adult: >=18 yrs old	Both	Serum	Miyoshi, S., Hamada, H., Kadowaki, T., Hamaguchi, N., Ito, R., Irifune, K. & Higaki, J. Comparative evaluation of serum markers in pulmonary sarcoidosis. Chest 137, 1391-1397 (2010).
+Protein	14	Interleukin-2 receptor subunit alpha	IL2RA	P01589	Pulmonary Sarcoidosis	Prognostic	>1195 U/mL	Adult: >=18 yrs old	Both	Serum	Miyoshi, S., Hamada, H., Kadowaki, T., Hamaguchi, N., Ito, R., Irifune, K. & Higaki, J. Comparative evaluation of serum markers in pulmonary sarcoidosis. Chest 137, 1391-1397 (2010).
+Protein	16	Lysozyme C	LYZ	P61626	Pulmonary Sarcoidosis	Prognostic	>11.25 ug/mL	Adult: >=18 yrs old	Both	Serum	Miyoshi, S., Hamada, H., Kadowaki, T., Hamaguchi, N., Ito, R., Irifune, K. & Higaki, J. Comparative evaluation of serum markers in pulmonary sarcoidosis. Chest 137, 1391-1397 (2010).
+Protein	47	Proinsulin C-peptide		P01308	Diabetes Mellitus Type 2	Prognostic	>3.75 ng/mL	Adult: >=18 yrs old	Both	Serum	Ramos-Levi, A. M., Matia, P., Cabrerizo, L., Barabash, A., Torrejon, M. J., Sanchez-Pernaute, A., Torres, A. J. & Rubio, M. A. C-peptide levels predict type 2 diabetes remission after bariatric surgery. Nutr Hosp 28, 1599-1603 (2013).
+biomarker_type	id	karyotype	description	conditions	indication_types
+biomarker_type	id	variation	position	external_link	gene_symbol	entrez_gene_id	conditions	indication_types

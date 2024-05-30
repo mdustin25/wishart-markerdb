@@ -1,0 +1,11 @@
+<% content_for :content do %>
+  <div id="bm-container" class="sm" >
+    <div id="left-col">
+      <%= yield :left_col %>
+    </div>
+    <div id="right-col">
+      <%= yield :right_col %>
+    </div>
+  </div>
+<% end %>
+<%= render :file => 'layouts/application' %>

@@ -1,0 +1,20 @@
+<col width="35%">
+<col width="35%">
+<col width="35%">
+
+<!-- this is page is used by conditions e.g. /conditions/5710 -->
+<tr style="width: 100%">
+  <td class="right" style = "width: 100%;">
+    <%= render partial: "sequence_variants/info_table", locals: { sequence_variant: sequence_variant_measurement.sequence_variant }, cached: true %>
+  </td>
+
+  <td class="left roc-image" style="padding:1px;">
+    <% sequence_variant_measurement.sequence_variant.sequence_variant_measurements.each do |variant| %>
+      <% if !variant.quality.nil? %>
+        <a data-toggle="modal" data-target="#roc-image-modal-<%=variant.quality.id%>"><%= image_tag variant.quality.image.url(:original), :style => "background-color: white; width: 20em; height:auto;"%></a>
+        <%= render partial: "sequence_variants/roc_modal", locals: { roc_stat_obj: variant.quality }, cached: true %>
+      <% end %>
+    <% end %>
+  </td>
+
+</tr>

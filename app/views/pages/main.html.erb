@@ -1,0 +1,34 @@
+<%= wide_column do %>
+
+  <%= box "", :id => "intro" do %>
+
+    <%= image_tag "body.jpg", :style => "position: relative; width:32%; margin-left:-25px;" %>
+
+    <div id="intro-text" style="width:68%">
+      <p>
+
+        <strong>MarkerDB</strong> is a freely available electronic database that attempts to consolidate information on all known clinical and a selected set of pre-clinical biomarkers into a single resource. The database includes five major types of biomarkers (condition-specific, protein, chemical, karyotypic and genetic) and four biomarker categories (diagnostic, predictive, prognostic and exposure). MarkerDB provides information such as: biomarker names and synonyms, associated conditions or pathologies, detailed disease descriptions, detailed biomarker descriptions, biomarker specificity, sensitivity and ROC curves, standard reference values (for protein and chemical markers), variants (for SNP or genetic markers), sequence information (for genetic and protein markers), molecular structures (for protein and chemical markers), tissue or biofluid sources (for protein and chemical markers), chromosomal location and structure (for genetic and karyotype markers), clinical approval status and relevant literature references. Users can browse the data by conditions, condition categories, biomarker types, biomarker categories or search by sequence similarity through the advanced search function. Currently, the database contains 142 protein biomarkers, 1,089 chemical biomarkers, 154 karyotype biomarkers, and 26,374 genetic markers. These are categorized into 25,560 diagnostic biomarkers, 102 prognostic biomarkers, 265 exposure biomarkers and 6,746 predictive biomarkers. Collectively, these markers can be used to detect, monitor or predict 670 specific human conditions which are grouped into 27 broad condition categories.
+      </p>
+      <p style="padding-top:15px">
+        <div id="cite">
+          Please Cite: Wishart DS, Bartok B, Oler E, Liang KYH, Budinski Z, Berjanskii M, Guo A, Cao X, Wilson M. <i>MarkerDB: an online database of molecular biomarkers.</i> Nucleic Acids Res. 2021 Jan 8;49(D1):D1259-D1267. <a href="https://pubmed.ncbi.nlm.nih.gov/33245771/">33245771</a>
+        </div>
+      </p>
+    </div>
+  <div style="padding-top: 15px;" class="category_row" >
+    <%= section "General Conditions" do %>
+      <ul style="margin-right: auto;margin-left: auto; padding-top: 25px; column-count: 4; width: 80%;" class="category_col" >
+        <% @categories.each do |cat|  %>
+          <% unless cat.name == "Others" %>
+          <li style="list-style-type:disc; width: auto; padding-right: 10px;"><%= link_to cat.name, category_path( cat.name) %></li>      
+          <% end %>
+        <% end %>
+        <li style="list-style-type:disc; width: auto; padding-right: 10px;"><%= link_to "Others", category_path("Others") %></li>     
+      </ul>
+    <% end %>
+  </div>
+<% end %>
+  <%= box "" do %>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0 margin-left:40%" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+  <% end %>
+<% end %>

@@ -1,0 +1,2 @@
+/ = render partial: "unearth/search/#{hit.type.downcase.pluralize}/hit_link", locals: {hit: hit}
+/ = link_to hit.name, main_app.gene_path(hit.id), class: 'btn-card'

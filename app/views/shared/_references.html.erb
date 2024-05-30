@@ -1,0 +1,6 @@
+<%= box_table "References", ["PubmedID",""], 
+  references do |ref|%>
+  <td><%= ref.pubmed_id || "N/A"%></td>
+  <td><%= ref.citation %></td>
+<% end %>
+

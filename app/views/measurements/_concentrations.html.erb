@@ -1,0 +1,5 @@
+<%= measurement_box "Levels", %w{description position variation}, concentrations do |v| %>
+  <td><%= v.measurement.description %></td>
+  <td><%= v.measurement.position    %></td>
+  <td><%= v.measurement.variation   %></td>
+<% end %>

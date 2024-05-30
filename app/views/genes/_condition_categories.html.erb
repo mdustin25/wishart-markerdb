@@ -1,0 +1,7 @@
+<%= box "Condition Categories" do %>
+  <ul>
+    <% categories.each do |cat| %>
+    	<li style="list-style-position: inside;list-style-type: disc;"><%= link_to cat.name, category_path(cat.name) %></li>
+    <% end %>
+  </ul>
+<% end %>

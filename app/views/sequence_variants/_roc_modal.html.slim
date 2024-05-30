@@ -1,0 +1,23 @@
+div class="modal fade image-modal" id="roc-image-modal-#{roc_stat_obj.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+  div class="modal-dialog"
+    div class="modal-content"
+      div class="modal-header"
+        button type="button" class="close" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true"
+            | &times;
+        h4 class="modal-title" id="myModalLabel"
+          | ROC Curve:
+          div class="modal-body"
+            = image_tag roc_stat_obj.image.url()
+            dl class="dl-horizontal"
+              - unless roc_stat_obj.roc_auc.nil?
+                dt AUC
+                dd = roc_stat_obj.roc_auc
+              - unless roc_stat_obj.specificity.nil?
+                dt Specificity
+                dd = roc_stat_obj.specificity
+                dt Sensitivity
+                dd = roc_stat_obj.sensitivity
+              - unless roc_stat_obj.roc_conc_threshold.nil?
+                dt ROC Concentration Threshold
+                dd = roc_stat_obj.roc_conc_threshold

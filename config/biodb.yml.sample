@@ -1,0 +1,14 @@
+development:
+  site: http://biodb.wishartlab.com
+  username: wishart
+  password: test
+
+test:
+  site: http://biodb.wishartlab.com
+  username: wishart
+  password: test
+
+production:
+  site: http://biodb.wishartlab.com
+  username: wishart
+  password: test

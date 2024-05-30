@@ -1,0 +1,30 @@
+<% title = "Marker Panels including #{biomarker.name}"%>
+<div id="Panel_marker" class="list box">
+  <h1><%=title%></h1>
+  <div class="content">
+    <% panel_marker_ids = biomarker.panel_marker_id.split(",").map { |e| e.strip()  }%>
+    <% panel_marker_ids.each do |each_panel_id|%>
+      <% l = Concentration.where("solute_id = ?",each_panel_id).first%>
+      <% cache l, expires_in: 7.days do %>
+        <table class="<%= cycle('odd', 'even')%>">
+          <tr>
+            <td class="right" style = "width: 550px;">
+              <%= render partial: "concentrations/panel_info_table", locals: {concentration: l}, cached: true %>
+            </td>
+
+            <td class="left roc-image"  style="padding:1px;">
+              <% unless l.quality.blank?%>
+                <a data-toggle="modal" data-target="#roc-image-modal-<%=l.id%>"><%=image_tag l.quality.image.url(:original), :style => "background-color: white; width: 30rem; height:auto;"%></a>
+                <% unless l.quality.nil?%>
+
+                  <%= render partial: "concentrations/roc_modal", locals: {concentration: l}, cached: true %>
+
+                <%end%>
+              <%end%>
+            </td>
+          </tr>
+        </table>
+      <% end %>
+    <%end%>
+  </div>
+</div>

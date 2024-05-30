@@ -1,0 +1,29 @@
+- %w{Exposure}.each do |category|
+  -unless biomarker.abnormal_levels.by_category(category).blank?
+      = box_table "Measured Levels - Exposure",
+    ["Exposure","Source","Biofluid","Level","Age","Sex","P-Value"], 
+    
+          biomarker.abnormal_levels.by_category(category) do |l|
+      
+        th
+
+          - if l.indication == 'indicates'
+             = link_to(l.condition.name, l.condition)  
+          - else
+            | #{l.indication} #{link_to(l.condition.name, l.condition)}
+          - if l.condition 
+        td = "N/A"
+        td = l.biofluid
+        td = l.level
+        - if l.age_range.nil?
+          td = "N/A"
+        - else
+          td = l.age_range
+        - if l.sex.nil?
+          td = "N/A"
+        - else
+          td = l.sex
+        - if l.pvalue.nil? || l.pvalue==0.0
+          td = "N/A"
+        - else
+          td = l.pvalue

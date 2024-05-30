@@ -1,0 +1,58 @@
+
+- condition     = Condition.find_by(:id => karyotype_indication.condition_id)
+- if !condition.nil?
+/	- ConditionCategoryCondition.find_by(:condition_id => condition)
+	- if !condition.super_condition_id.nil?
+		- super_con = Condition.find_by(:id => condition.super_condition_id)
+- temp_list     = karyotype_indication.gene_list.split(";")
+
+table.info-table
+	tr style=("width: 100%") 
+		th style=("padding: 5px;width: 10%")  Specific Condition:
+		td style=("padding: 5px;width: 20%;text-align:left") 
+			- if condition.nil?
+				= nah(value=nil, message="No Additional Data")
+			- else
+				= link_to condition.name, condition
+	tr
+	  td &nbsp;
+	  td &nbsp;
+
+	tr style=("width: 100%") 
+		th style=("padding: 5px;width: 10%")  General Condition:
+		td style=("padding: 5px;width: 20%;text-align:left") 
+			- cat = karyotype_indication.condition.categories.pluck(:name)
+        	- cat.each do |cat_link|
+          		= link_to(cat_link, category_path(cat_link)) 
+          		br
+
+	tr style=("width: 100%") 
+		th style=("padding: 5px;width: 10%")  Associated Gene(s):
+		td style=("padding: 5px; width 30%; text-align: left") 
+			- temp_list.uniq.each_with_index do |gene, index|
+				- temp = Gene.find_by(:gene_symbol => gene)
+				- if temp.blank?
+					= gene
+					br
+				- elsif temp.omim_id.blank?
+					= gene
+					br
+				- else
+					= link_to gene, "https://omim.org/entry/#{temp.omim_id.to_s}"
+					br
+
+	tr style=("width: 100%") 
+		th style=("padding: 5px;width: 10%")  Age:
+		td style=("padding: 5px;width: 10%;text-align:left")
+			= karyotype_indication.age
+
+	tr style=("width: 100%") 
+		th style=("padding: 5px;width: 10%")  Sex:
+		td style=("padding: 5px;width 10%;text-align: left") 
+			= karyotype_indication.sex
+
+	tr style=("width: 100%") 
+		th style=("padding: 5px; width: 10%")  Reference:
+		td style=("padding: 5px; width: 20%") 
+			= karyotype_indication.citation
+

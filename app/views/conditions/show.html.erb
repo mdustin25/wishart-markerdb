@@ -1,0 +1,95 @@
+<%= column_wrapper do %>
+  <h1><%= title @condition.name %></h1>
+<% end %>
+
+<%= column_wrapper do %>
+
+
+  <%= left_column do %>
+    <%= box_description @condition do %>
+      <%= info_table do %>
+        <% if @chemical.respond_to? :aliases%>
+          <%= info_row("Alternate names", @chemical.names * "; ") %>
+        <%end%>
+        <%= info_row "Source",simple_format(@condition.info_source)%>
+      <%end%>
+    <%end%>
+    <% if @condition.super_condition? %>
+      <% unless @condition.sub_conditions.blank? %>
+        <%= box_table "Types of #{@condition.name}", [], 
+        @condition.sub_conditions do |subcondition| %>
+          <% if subcondition.exported%>
+            <td><%=link_to subcondition.name, subcondition %></td>
+          <%end%>
+        <% end %>
+      <% end %>
+    <% end %>
+
+    
+    <% unless @chemical_measurements[:concentrations].blank? %>
+      <div id="jumper-chemical-biomarker">
+        <%= box_list "Chemical Biomarkers", @chemical_measurements[:concentrations] %>
+      </div>
+    <% end %>
+    <% unless @panel_chemicals.blank?%>
+      <%= render partial: "conditions/panel_chemicals", locals: {panel_markers: @panel_chemicals}, cached: true %>
+    <% end %>
+    
+    <% unless @protein_measurements[:concentrations].blank? %>
+      <div id="jumper-protein-biomarker">
+        <%= box_list "Protein Biomarkers",@protein_measurements[:concentrations] %>
+      </div>
+    <% end %>
+    
+    <% unless @sequence_variants.blank? %>
+      <div id="jumper-genetics-biomarker">
+        <%= box_list "Sequence Variants", @sequence_variants %>
+        <%= will_paginate @sequence_variants %>
+      </div>
+    <% end %>
+
+    <% unless @karyotype_indications.blank? %>
+      <div id="jumper-karyotype-biomarker">
+        <%= render partial: "karyotypes/karyotype_indication", locals: {karyotype_indication: @karyotype_indications}, cached: true %>
+      </div>
+    <% end %>
+
+  <% end %>
+
+  <%= right_column do %>
+    <% unless @condition.categories.empty? %>
+      <%= render 'condition_categories', :categories => @condition.categories.order(:name), cached: true %>
+    <% end %>
+
+    <% if @condition.sub_condition? %>
+      <%= box "Other types of #{@condition.super_condition.name}" do %>
+        <ul>
+          <% @condition.other_sub_conditions.each do |subcondition| %>
+            <li><%= link_to subcondition.name, subcondition %></li>
+          <% end %>
+        </ul>
+      <% end %>
+    <% end %>
+    <%= render :partial => 'shared/linked_object', :object => @condition, cached: true %>
+
+    <%= box "Jumper" do %>
+      <ul>
+        <% unless @chemical_measurements[:concentrations].blank? %>
+          <li><%= link_to "Chemical Biomarkers", "#jumper-chemical-biomarker" %></li>
+        <% end %>
+        <% unless @protein_measurements[:concentrations].blank? %>
+          <li><%= link_to "Protein Biomarkers", "#jumper-protein-biomarker" %></li>
+        <% end %>
+        <% unless @sequence_variants.blank? %>
+          <li><%= link_to "Genetics Biomarkers", "#jumper-genetics-biomarker" %></li>
+        <% end %>
+        <% unless @karyotype_indications.blank? %>
+          <li><%= link_to "Karyotype Biomarkers", "#jumper-karyotype-biomarker" %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+  <% end %>
+
+  
+<% end %>

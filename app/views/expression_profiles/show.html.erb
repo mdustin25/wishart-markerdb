@@ -1,0 +1,92 @@
+<%= column_wrapper do %>
+  <%= left_column do %>
+    <%= title @profile.title %>
+  <% end %>
+  <%= right_column do %>
+    <%= bmid @profile %>
+  <% end %>
+<% end %>
+
+
+<%= left_column do %>
+  <%= box_description @profile do %>
+    <% if @chemical.respond_to? :aliases%>
+      <%= info_row("Alternate names", @chemical.names * "; ") %>
+    <%end%>
+    <h3>Overall Design</h3>
+    <p><%= @profile.overall_design %></p>
+  <% end %>
+<% end %>
+
+<%= right_column do %>
+
+  <%= box "Molecular Information" do %>
+    <%= info_table :class => "wide-header" do %>
+      <%= info_row "Condition", link_to(@profile.condition.name, @profile.condition) %>
+      <% [ :release_date, :reference, :platform_id, :platform_name, 
+      :probe_id_type, :sample_source].each do |item| %>
+        <%= info_row item.to_s.titlecase, @profile.send(item) %>
+      <% end %>
+    <% end %>
+  <% end %>
+
+<% end %>
+
+
+<%= wide_column do %>
+  <%= box "Summary of Marker Profiles" do %>
+    <%= image_tag @profile.roc_file, :class => 'expr-roc' %>
+
+    <% @profile.profile_summary.data_points.each_slice(30) do |slice| %>
+
+      <% cache slice, expires_in: 7.days do %>
+        <table id="expression-summary">
+          <tbody>
+              <% slice.each do |d| %>
+                <tr>
+                  <td><%= d.gene_symbol %></td>
+                  <td class="thin"><%= d.probe_id %></td>
+                  <% [5,10,15,25,50,100].each do |set|%>
+                    <td class="exp-set <%= d.in_set[set] ? "color#{set}" : "" %>"></td> 
+                  <% end %>
+                </tr>
+              <% end %>
+          </tbody>
+        <% end %>
+      </table>
+    <% end %>
+  <% end %>
+
+  <%= box "Marker Profiles" do %>
+    
+    <% @profile_sets.each do |profile_set| %>
+      <% cache profile_set, expires_in: 7.days do %>
+        <div class="marker-set" />
+        <h3><%= profile_set.count %>-Marker Profile</h3>
+        <%= image_tag profile_set.roc_file, :class => 'expr-roc' %>
+          <table id="expression-summary">
+            <thead><tr>
+              <th>Gene Symbol</th>
+              <th>Probe ID</th>
+              <th>Rank Freq.</th>
+              <th>Importance</th>
+              <th colspan="2" >Change</th>
+            </tr></thead>
+            <tbody>
+              <% profile_set.gene_expressions.each do |d| %>
+                <tr>
+                  <td><%= d.gene_symbol %></td>
+                  <td class="thin"><%= d.probe_id %></td>
+                  <td><%= d.rank_freq %></td>
+                  <td><%= "%.2E" % d.importance.to_f %></td>
+                  <td class="exp-set <%= "color#{d.control_level}" %>"></td> 
+                  <td class="exp-set <%= "color#{d.disease_level}" %>"></td> 
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>

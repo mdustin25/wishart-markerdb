@@ -1,0 +1,10 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  marker_class: MyString
+  mdbid: MyString
+
+two:
+  marker_class: MyString
+  mdbid: MyString

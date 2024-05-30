@@ -1,0 +1,48 @@
+<%= will_paginate conditions %><br/>
+<%= page_entries_info conditions %>
+<%= sorted_box_table "All Conditions", ["Condition Names"], ["Condition Names","Biomarkers","General Condition"], conditions do |condition| %>
+
+  <td style="text-align: left; height: 200%; border-left:1px solid #ababab; border-right:1px solid #ababab;">
+    <a  href="/conditions/<%=condition.id%>" style="word-wrap: break-word;"><%="#{condition.name}"%></a>
+  </td>
+  <td style="text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;height: 100%;">
+    <% all_markers = condition.get_relevant_biomarker()%>
+    <%unless all_markers.length > 6%>
+      <%all_markers.each do |each_marker|%>
+        <ul>
+          <li style="font-size: 1.2em; list-style-position: inside; list-style-type: disc;">
+            <% if each_marker.class.to_s == "Chemical" %>
+              <a  href="/chemicals/<%=each_marker.id%>" style="word-wrap: break-word;"><%="#{each_marker.marker_mdbid.mdbid}: #{each_marker.name}"%></a>
+              <br/>
+              <%="(#{each_marker.class}, #{each_marker.bmcat_name})"%>
+            <% elsif each_marker.class.to_s == "Protein" %>
+              <a  href="/proteins/<%=each_marker.id%>" style="word-wrap: break-word;"><%="#{each_marker.marker_mdbid.mdbid}: #{each_marker.name}"%></a>
+              <br/>
+              <%="(#{each_marker.class}, #{each_marker.bmcat_name})"%>
+            <% elsif each_marker.class.to_s == "Karyotype" %>
+              <a  href="/karyotypes/<%=each_marker.id%>" style="word-wrap: break-word;"><%="#{each_marker.marker_mdbid.mdbid}: #{each_marker.name}"%></a>
+              <br/>
+              <%="(#{each_marker.class}, #{each_marker.bmcat_name})"%>
+            <% elsif each_marker.class.to_s == "SequenceVariant" %>
+              <a  href="/sequence_variants/<%=each_marker.id%>" style="word-wrap: break-word;"><%="#{each_marker.marker_mdbid.mdbid}: #{each_marker.variation}"%></a>
+              <br/>
+              <%="(Sequence Variant, #{each_marker.bmcat_name})"%>
+            <% end %>
+          </li>
+        </ul>
+      <%end%>
+    <%else%>
+      Multiple markers <a href="/conditions/<%=condition.id%>/#Concentrations"><%="(#{all_markers.length})"%></a>
+    <%end%>
+  </td>
+
+  <td>
+    <ul>
+      <%condition.categories.each do |category|%>
+        <li style="font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em"><%= link_to(category.name,category_path(category.name))%></li>
+      <%end%>
+    </ul>
+  </td>
+  
+<% end %>
+<%= will_paginate conditions %>

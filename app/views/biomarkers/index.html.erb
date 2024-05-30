@@ -1,0 +1,10 @@
+<%= wide_column do %>
+  <%= will_paginate @biomarkers %>
+  
+  <%= box_table "Biomarkers", %w{Type Name Description},  @biomarkers do |marker| %>
+  	<% cache marker, expires_in: 7.days %>
+			<%= render marker %> 
+		<% end %>
+	<% end %>
+
+<% end %>

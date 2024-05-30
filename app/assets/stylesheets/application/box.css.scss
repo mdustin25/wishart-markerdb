@@ -1,0 +1,189 @@
+/*************************\
+ * Box styles  
+\*************************/
+div.box.collapse{
+  display:     block;
+  visibility:  visible;
+  overflow:    hidden;
+  min-height:  240px; // whatever you want here
+  height:      0; // if you want it to start collapsed, you need this, else remove this
+
+  &.in{
+    height: auto;
+  }
+}
+div.box{
+  overflow:hidden;
+  border: 1px solid #ababab;
+}
+
+.right-col div.box img {
+  width: 100%;
+}
+
+div.box .content h3 {
+  margin: 0 0 5px;
+}
+
+/* list box */
+div.box.list .content {
+  padding: 0 0 10px;
+  table {
+    padding:10px;
+  }
+  
+  td.left {
+    width: 100px;
+
+  }
+  
+  td.left, td.right {
+    vertical-align: top;
+    text-align: left;
+
+  }
+
+  td.left img {
+    height: 100%;
+  }
+
+  table.info-table {
+    td, th {
+      padding: 0;
+    }
+
+    tr {
+      margin-bottom: 2px;
+    }
+
+  }
+
+  table.info-table {
+      width: 100%;
+  }
+  table.info-table td:nth-of-type(1) {
+      width: 20%
+  }
+  table.info-table td:nth-of-type(2) {
+      width: 20%
+  }
+  table.info-table td:nth-of-type(3) {
+      width: 20%
+  }
+}
+
+/* table box */
+div.box table.info-table.wide-header th {min-width: 100px; }
+
+div.box table tr.odd, div.box.list table.odd {
+    background-color: #eee;
+}
+
+div.box table td.thumb-image img {
+  height: 100px;
+}
+
+div.box table thead {
+    background-color: #ababab;
+    border-bottom: 2px solid #ababab;
+    text-align: left;
+    white-space: nowrap;
+}
+div.box table th, div.box table td {
+    text-align: left;
+    padding:10px;
+    
+}
+div.box table th {
+    font-size: 1.30em;
+}
+
+div.box table td {
+    font-size: 1.20em;
+}
+
+div.box table {
+    border-collapse: collapse;
+    width:100%;
+}
+
+/* info table style */
+div.box table.info-table tbody {
+  vertical-align: top;
+  text-align: left;
+  font-size: 12px;
+  line-height: 20px;
+
+  
+}
+div.box table.info-table td, div.box table.info-table th { 
+  padding: 0;
+  padding-bottom: 10px;
+
+
+  
+}
+div.box table.info-table td {
+  padding-left: 10px;
+
+}
+div.box table.info-table th {min-width: 50px; }
+
+div.box table td.roc-image {
+  a, a:hover {
+    border-bottom: 0;
+    display: block;
+    cursor: -moz-zoom-in; 
+    cursor: -webkit-zoom-in; 
+    cursor: zoom-in;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* general box style */
+div.box h1 {
+    color: #000000;
+    text-align: center;
+    background-color: #ababab;
+    font-size: 1.45em;
+    font-weight: bold;
+    line-height: 1em;
+    padding: 10px;
+    margin:0;
+    min-height: 1em;
+}
+div.box ul {
+    list-style: none outside none;
+    padding-left: 0;  
+}
+div.box .content {
+    -moz-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+    /*border: 1px solid #cccccc;*/
+    padding: 10px;
+    /*float: right;*/
+    /*width: 100%;*/
+
+/*    background: rgb(255,255,255); /* Old browsers */
+/*    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 90%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+/*    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(90%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+/*    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+/*    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+/*    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(229,229,229,1) 100%); /* IE10+ */
+/*    background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 90%,rgba(229,229,229,1) 100%); /* W3C */
+/*    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6 */    
+}
+
+div.box .content.no-padding {
+    padding: 0;
+    padding-bottom:10px
+}
+
+
+table.info-table {
+  td {
+    width: 100%;
+  }
+}

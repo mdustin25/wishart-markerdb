@@ -1,0 +1,18 @@
+<%= column_wrapper do %>
+  <%= left_column do %> 
+    <%= render_filter_bars %> 
+    <div id="search_form_class">
+      <%= render 'search_form'%>
+    </div>
+  <%end%>
+  <%= right_column do %>
+    <%= render 'condition_categories', :categories => @categories, cached: true %>
+  <% end %>
+<%end%>
+<%= column_wrapper do %>
+  <%= left_column do %>
+   <div id="results_class">
+      <%= render 'results', proteins: @proteins, cached: true %>
+    </div>
+  <% end %>
+<% end %>

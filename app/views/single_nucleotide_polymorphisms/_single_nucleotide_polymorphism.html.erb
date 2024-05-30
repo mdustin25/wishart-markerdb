@@ -1,0 +1,60 @@
+<tr>
+  <td class="left" style="bgcolor:white;">
+    <% tagName = "gwas-rocs/" + single_nucleotide_polymorphism.study_id + ".png" %>
+    <% unless single_nucleotide_polymorphism.study_id.blank? %>
+      <%= image_tag tagName %>
+    <% end %>
+
+  </td>
+  <td>
+    <%= info_table do %>
+      <tr>
+        <th style="padding:5px">SNP ID: </th>
+        <td style="padding:5px"><%=single_nucleotide_polymorphism.snp_id %> <%= link_to "[dbSNP]" , "https://www.ncbi.nlm.nih.gov/snp/#{single_nucleotide_polymorphism.snp_id}"  %></td>
+        <th style="padding:5px">Position: </th>
+        <td style="padding:5px"><%= single_nucleotide_polymorphism.position %></td>
+	<th style="padding: 5px">Associated Gene: </th>
+	<td style="padding: 5px"><%= single_nucleotide_polymorphism.gene_symbol %> <%= link_to "[Internal]", single_nucleotide_polymorphism.gene%></td>
+      </tr>
+      <tr>
+        <th style="padding:5px">Condition(s): </th>
+	<td style="padding:5px"><%= single_nucleotide_polymorphism.condition_name %> <%= link_to "[Internal]", single_nucleotide_polymorphism.condition %></td>
+	
+	<th style="padding:5px">Heritability: </th>
+	<td style="padding:5px">
+	  <% if single_nucleotide_polymorphism.heritability.blank? || single_nucleotide_polymorphism.heritability == 0.0 %>
+	    <%= "N/A" %>
+	  <% else %>
+	    <%= single_nucleotide_polymorphism.heritability %>
+	  <% end %>
+	</td>
+	<th style="padding:5px"> PubMed ID: </th>
+	<td style="padding:5px">
+	  <% if single_nucleotide_polymorphism.pubmed_id.blank? %>
+	    <%= "N/A" %>
+	  <% else %>
+	    <%= link_to single_nucleotide_polymorphism.pubmed_id, "https://pubmed.ncbi.nlm.nih.gov/#{single_nucleotide_polymorphism.pubmed_id}/" %>
+	  <% end %>
+      </tr>
+      <tr>
+	<th style="padding: 5px">AUROC: </th>
+	<td style="padding: 5px">
+	  <% if single_nucleotide_polymorphism.auroc.blank? %>
+	    <%= "N/A" %>
+	  <% else %>
+	    <%= single_nucleotide_polymorphism.auroc %>
+	  <% end %>
+	</td>
+	<th style="padding: 5px">Status: </th>
+	<td style="padding: 5px"> <%= single_nucleotide_polymorphism.status %> </td>
+      </tr>
+    <% end %>
+  </td>
+</tr>
+
+<% unless single_nucleotide_polymorphism.logistic_equation.blank? %>
+<tr>
+  <th> Logistic Regression Equation: </th>
+  <td><%= single_nucleotide_polymorphism.logistic_equation %></td>
+</tr>
+<% end %>

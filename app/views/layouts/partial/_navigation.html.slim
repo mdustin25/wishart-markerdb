@@ -1,0 +1,16 @@
+nav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle type="button" data-toggle="collapse" data-target="#main-nav"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      = link_to MarkerDB, 
+          main_app.root_path, 
+          class: 'navbar-brand',
+          'data-no-turbolink' => true
+    .collapse.navbar-collapse id="main-nav"
+      ul.nav.navbar-nav
+        = render 'layouts/partial/navigation_links'
+      p = search_form

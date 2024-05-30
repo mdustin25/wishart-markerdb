@@ -1,0 +1,94 @@
+
+
+<%= column_wrapper do %>
+  <%= left_column do %>
+    <h1><%= title(@chemical.name) %></h1>
+  <% end %>
+<% end %>
+
+<%= left_column do %>
+  <%= box_description @chemical do %>
+    <%= info_table do %>
+      <% if @chemical.respond_to? :aliases%>
+        <tr>
+          <th style="text-align:left; font-size:1em; width:15%">
+            Alternate names
+          </th>        
+          <td style="text-align:left; font-size:1em;">
+            <% @chemical.names.each do |al_names| %> 
+              <%= al_names %><br>
+            <% end %>
+          </td>
+        </tr>
+      <%end%>
+      <%= info_row "IUPAC Name", @chemical.iupac %>
+      <%= info_row "Traditional IUPAC Name", @chemical.traditional_iupac %>
+      <%= info_row "SMILES", @chemical.smiles %>
+      <%= info_row "INCHI", @chemical.inchi %>
+      <%= info_row "INCHI key", @chemical.inchikey %>
+      <%= info_row "Source",simple_format(@chemical.info_source)%>
+      
+    <% end %>
+  <% end %>
+  
+  <%= render partial: "concentrations/abnormal_concentrations", locals: {biomarker: @chemical}, cached: true %>
+  <% if @chemical.panel_single == "panel"%>
+    <%= render partial: "concentrations/panel_concentrations", locals: {biomarker: @chemical}, cached: true %>
+  <%end%>
+
+<% end %>
+
+<%= right_column do %>
+
+  <%= box @chemical.marker_mdbid.mdbid do %>
+    <%= info_table do %>
+      <th style="text-align:left; font-size:1em; width:50%">
+      <% if @chemical.created_at.nil? %>
+        <%= info_row "Creation Date:", "2020-08-01" %> 
+        <%= info_row "Update Date:", "2020-08-15" %>
+      <% else %>
+        <%= info_row "Creation Date:", @chemical.created_at.to_date %>
+        <%= info_row "Update Date:", @chemical.updated_at.to_date %>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <%= box "Structure" do %>
+    <% unless @chemical.hmdb.nil?%>
+      <%= image_tag moldb_url( @chemical, :image_full ) %>
+      <%= link_to "MOL", moldb_url( @chemical, :mol ) %>
+      <%= link_to "SDF", moldb_url( @chemical, :sdf ) %>
+    <%else%>
+      <%="Image is not available"%>
+    <%end%>
+  <% end %>
+
+  <%= box "Molecular Information" do %>
+    <%= info_table do %>
+      <%= info_row "Formula", print_formula(@chemical.formula), title_width= 75%>
+      <%unless @chemical_logp == ""%>
+        <%= info_row "LogP", @chemical_logp, title_width= 75 %>
+      <%end%>
+      <% unless @chemical_pka == ""%>
+        <%= info_row "pKa", @chemical_pka, title_width= 75 %>
+      <%end%>
+      <%unless @chemical_avg_mass == ""%>
+        <%= info_row "Avg. Molecular Weight", @chemical_avg_mass, title_width= 75 %>
+      <%end%>
+      <%unless @chemical_mono_mass == ""%>
+        <%= info_row "Monoisotopic Molecular Weight", @chemical_mono_mass, title_width= 75 %>
+      <%end%>
+      <%unless @formatted_converted_solubility == ""%>
+        <%= info_row "Predicted Water Solubility", @formatted_converted_solubility, title_width= 75 %>
+      <%end%>
+    <% end %>
+  <% end %>
+  
+  <%= render :partial => 'shared/linked_object', :object => @chemical, cached: true %>
+
+  <% unless @chemical.lab_tests.blank? %>   
+    <%= box_table "Related Tests", [], @chemical.lab_tests do |test|%>
+      <td><%= link_to test.name, test %></td>
+    <% end %>
+  <% end %>
+<% end %>

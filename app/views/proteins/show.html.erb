@@ -1,0 +1,104 @@
+<%= column_wrapper do %>
+  <%= left_column do %>
+    <h1><%= title @protein.name %></h1>
+  <% end %>
+<% end %>
+
+<%= column_wrapper do %>
+
+  <%= left_column do %>
+    <%= box_description @protein do %>
+      <%= info_table do %>
+        <% if @protein.respond_to? :aliases and @protein.names.length>1%>
+          <tr>
+            <th style="text-align:left; font-size:1em; width:15%">
+              Alternate names
+            </th>        
+            <td style="text-align:left; font-size:1em;">
+              <% @protein.names.each do |al_names| %> 
+                <%= al_names %><br>
+              <% end %>
+            </td>
+          </tr>
+        <%end%>
+        <%= info_row "Source",simple_format(@protein.info_source)%>
+      <%end%>
+    <% end %>
+    <% if @prot_sequences %>
+      <%= box "Protein Sequence" do %>      
+        <% if @protein.uniprot_id %>
+          <%= info_row "Uniprot ID: ", link_to(@protein.uniprot_id,"https://www.uniprot.org/uniprot/#{@protein.uniprot_id}") %>
+        <% else %>
+          <%= info_row "Uniprot ID: ", "NA" %>
+        <% end %>
+        <span style="padding-left: 25px;"> <%= info_row "Number of residues: ", @prot_sequences.length %>
+        
+        <span style="padding-left: 25px;"> <%= link_to "Download FASTA", protein_download_fasta_path(@protein.id) %></span>
+
+        <h4 style="word-break:break-all; font-size: 115%; font-family: Courier, monospace; max-width: 101ch"><%=">" + @header%>
+          <br>
+          <%= prettify_sequence(@prot_sequences) %>
+        </h4>
+      <% end %>
+    <% end %>
+    <%= render partial: "concentrations/abnormal_concentrations", locals: {biomarker: @protein}, cached: true %>
+  <% end %>
+  
+
+  <%= right_column do %>
+    <%= box @protein.marker_mdbid.mdbid do %>
+      <%= info_table do %>
+        <th style="text-align:left; font-size:1em; width:50%">
+        <%= info_row "Creation Date:", "2020-08-01" %> 
+        <%= info_row "Update Date:", "2020-08-15" %>
+      <% end %>
+    <% end %>
+
+    <%= box "Structure Image" do %>
+      <a data-toggle="modal" data-target="#structure-image-modal" >
+        <%= image_tag @protein.structure_image.url() %>
+      </a>
+      <% if @protein.structure_image_pdb_id %>
+        Structure Image Source: <%= bio_link_out :pdb, @protein.structure_image_pdb_id %>
+      <% end %>
+    <% end %>
+
+    <%= box "Related PDB Structures" do %>
+      <% @protein.pdb_ids[0..10].each do |pdb_id| %>
+        <%= bio_link_out :pdb, pdb_id %>
+      <% end %>
+    <% end %>
+    <% unless @external_links %>
+    <%= box_table "External links", [],
+      @external_links do |link| %>
+      <td><%= link_to link.name, link.path %></td>
+    <% end %>
+    <% end %>
+    
+    <% unless @protein.lab_tests %>
+    <%= box_table "Related Tests", [], 
+      @protein.lab_tests do |test|%>
+        <td><%= link_to test.name, test %></td>
+    <% end %>
+    <% end %>	  
+
+  <% end %>
+
+<% end %>
+
+<!-- Modal -->
+<div class="modal fade image-modal" id="structure-image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Protein Structure: <%= @protein.name %></h4>
+      </div>
+      <div class="modal-body">
+          <%= image_tag @protein.structure_image.url() %>
+      </div>
+    </div>
+  </div>
+</div>
+
+

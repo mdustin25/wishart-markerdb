@@ -1,0 +1,37 @@
+<%= measurement_box "Levels", %w{description position variation}, concentrations do |v| %>
+
+<tr>
+  <td class="left">
+    <%= image_tag "sample_seqvar.png" %>
+  </td>
+  <td class="right">
+    <%= info_table do %>
+      <tr>
+        <th>Variation:</th>
+        <td><%= sequence_variant.variation %></td>
+        <th>Position:</th>
+        <td><%= sequence_variant.position %></td>
+      </tr>
+      <tr>
+        <th>Outcome<%= "s" if sequence_variant.measurements.count > 1 %>:</th>
+
+        <td colspan=3>
+          <% sequence_variant.measurements.each do |measurement| %>
+            <p class="list">
+              <%="#{measurement.indication} of " %>
+              <%= link_to measurement.condition.name, measurement.condition %>
+            </p>
+          <% end %>
+        </td>
+      </tr>
+      <tr>
+        <th>Reference Sequence:</th>
+        <td><%= sequence_variant.reference_sequence %></td>        
+        <th>Associated Gene:</th>
+        <td><%= link_to sequence_variant.gene_symbol, sequence_variant.gene %></td>
+        <%# TODO add snp id and more info here %>
+      </tr>
+    <% end %>
+  </td>
+</tr>
+<% end %>

@@ -1,0 +1,5 @@
+<%= render partial: "shared/loader"%>
+<div class="content_load">
+	<h1><%= title "Exposure Biomarkers".titleize %></h1>
+	<%= render partial: "biomarker_categories/biomarker_cat_exposure", locals: {sorted_page_num: @result, cond_categories: @cond_categories, all_markers: @all_markers, category: @category }, cached: true %>
+</div>

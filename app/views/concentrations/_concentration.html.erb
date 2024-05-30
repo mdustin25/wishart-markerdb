@@ -1,0 +1,25 @@
+<tr>
+  <td class="right" style = "width: 550px;">
+    <h3>
+      <%= link_to "#{concentration.solute.name} (#{concentration.solute.marker_mdbid.mdbid})", concentration.solute %>
+    </h3>
+    
+    <%= render partial: "concentrations/info_table", locals: { concentration: concentration }, cached: true %>
+
+  </td>
+  <td class="left roc-image" style="padding:1px;">
+    <% unless concentration.quality.blank?%>
+      <a data-toggle="modal" data-target="#roc-image-modal-<%=concentration.id%>"><%=image_tag concentration.quality.image.url(:original), :style => "background-color: white; width: 20em; height:auto;"%></a>
+      <% unless concentration.quality.nil?%>
+        <%=render partial: "concentrations/roc_modal", locals: {concentration: concentration}, cached: true %>
+      <%end%>
+    <%end%>
+  </td>
+  <% unless concentration.special_constraints.blank?%>
+    <tr>
+      <td>
+        <strong>Notes/Limits: </strong><p><%=concentration.special_constraints%></p>
+      </td>
+    </tr>
+  <%end%>
+</tr>

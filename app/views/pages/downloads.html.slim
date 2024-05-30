@@ -1,0 +1,81 @@
+.page-header: h1 = title("Downloads")
+
+= render "download_terms"
+
+h2 MarkerDB Data
+table.table-standard
+  thead
+    tr
+      th Data Set
+      th.release-col Released On
+      th.download-col TSV
+      th.size-col Size
+      th.download-col XML
+      th.size-col Size
+  tbody
+    tr
+      td <strong>Protein</strong> markers with associated conditions and concentration
+      td = @all_proteins_date
+      td = link_to "TSV", :action => :download_all_proteins, :params => {format: "tsv"}
+      td = @all_proteins_tsv
+      td = link_to "XML", :action => :download_all_proteins, :params => {format: "xml"}
+      td = @all_proteins_xml
+
+    tr
+      td <strong>Chemical</strong> markers with associated conditions and concentration
+      td = @all_chemicals_date
+      td = link_to "TSV", :action => :download_all_chemicals, :params => {format: "tsv"}
+      td = @all_chemicals_tsv
+      td = link_to "XML", :action => :download_all_chemicals, :params => {format: "xml"}
+      td = @all_chemicals_xml
+    tr
+      td <strong>Genetic</strong> markers with associated conditions
+      td = @all_sequence_variants_date
+      td = link_to "TSV", :action => :download_all_sequence_variants, :params => {format: "tsv"}
+      td = @all_sequence_variants_tsv
+      td = link_to "XML", :action => :download_all_sequence_variants, :params => {format: "xml"}
+      td = @all_sequence_variants_xml
+    tr
+      td <strong>Karyotype</strong> markers with associated conditions
+      td = @all_karyotypes_date
+      td = link_to "TSV", :action => :download_all_karyotypes, :params => {format: "tsv"}
+      td = @all_karyotypes_tsv
+      td = link_to "XML", :action => :download_all_karyotypes, :params => {format: "xml"}
+      td = @all_karyotypes_xml
+
+    tr 
+      td <strong>Diagnostic Chemical</strong> markers
+      td = @all_diagnostic_chemicals_date
+      td = link_to "TSV", :action => :download_all_diagnostic_chemicals, :params => {format: "tsv"}
+      td = @all_diagnostic_chemicals_tsv
+      td = link_to "XML", :action => :download_all_diagnostic_chemicals, :params => {format: "xml"}
+      td = @all_diagnostic_chemicals_xml
+    tr 
+      td <strong>Diagnostic Protein</strong> markers
+      td = @all_diagnostic_proteins_date
+      td = link_to "TSV", :action => :download_all_diagnostic_proteins, :params => {format: "tsv"}
+      td = @all_diagnostic_proteins_tsv
+      td = link_to "XML", :action => :download_all_diagnostic_proteins, :params => {format: "xml"}
+      td = @all_diagnostic_proteins_xml
+    tr 
+      td <strong>Diagnostic Karyotype</strong> markers
+      td = @all_diagnostic_karyotypes_date
+      td = link_to "TSV", :action => :download_all_diagnostic_karyotypes, :params => {format: "tsv"}
+      td = @all_diagnostic_karyotypes_tsv
+      td = link_to "XML", :action => :download_all_diagnostic_karyotypes, :params => {format: "xml"}
+      td = @all_diagnostic_karyotypes_xml
+    tr 
+      td <strong>Predictive Genetic</strong> markers
+      td = @all_predictive_genetics_date
+      td = link_to "TSV", :action => :download_all_predictive_genetics, :params => {format: "tsv"}
+      td = @all_predictive_genetics_tsv
+      td = link_to "XML", :action => :download_all_predictive_genetics, :params => {format: "xml"}
+      td = @all_predictive_genetics_xml
+    tr 
+      td <strong>Exposure Chemical</strong> markers
+      td = @all_exposure_chemicals_date
+      td = link_to "TSV", :action => :download_all_exposure_chemicals, :params => {format: "tsv"}
+      td = @all_exposure_chemicals_tsv
+      td = link_to "XML", :action => :download_all_exposure_chemicals, :params => {format: "xml"}
+      td = @all_exposure_chemicals_xml
+    

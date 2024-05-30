@@ -1,0 +1,159 @@
+<%= wide_column do %>
+  <%= box "MarkerDB" do %>
+    <div><p>MarkerDB is a freely available electronic database that attempts to consolidate information on all known clinical and a selected set of pre-clinical biomarkers into a single resource. The database includes five major types of biomarkers (condition-specific, protein, chemical, karyotypic and genetic) and four biomarker categories (diagnostic, predictive, prognostic and exposure). MarkerDB provides information such as: biomarker names and synonyms, associated conditions or pathologies, detailed disease descriptions, detailed biomarker descriptions, biomarker specificity, sensitivity and ROC curves, standard reference values (for protein and chemical markers), variants (for SNP or genetic markers), sequence information (for genetic and protein markers), molecular structures (for protein and chemical markers), tissue or biofluid sources (for protein and chemical markers), chromosomal location and structure (for genetic and karyotype markers), clinical approval status and relevant literature references. Users can browse the data by conditions, condition categories, biomarker types, biomarker categories or search by sequence similarity through the advanced search function.
+    </p></div>
+  <% end %>
+
+  <%= box "Jumper" do %>
+    <ul>
+      Users can browse the data by conditions, condition categories, biomarker types, biomarker categories or search by sequence similarity through the advanced search function.
+
+      If you with to go to a specific section of the manual, please click the following hyperlinks given below, or just scroll down to the section of interest: <br><br>
+      <li><%= link_to "Jump to MarkerDB Manual", "#manual" %></li>
+      <li><%= link_to "Jump to MarkerDB Glossary and Definitions", "#glossary" %></li>
+      <li><%= link_to "Jump to MarkerDB FAIR Compliance", "#compliance" %></li> 
+      <li><%= link_to "Jump to Citing MarkerDB", "#cite" %></li>
+      <li><%= link_to "Jump to Licensing Details", "#license" %></li>       
+    </ul>
+  <% end %>
+
+  
+  <%= box "MarkerDB Manual" do %>
+    <div id = "manual">
+      <strong> MarkerDB Top Bar </strong><br>
+      This top bar is present on every page of MarkerDB. It contains links to the Advanced Searches, more information about MarkerDB including the API, contact information and downloads. In addition to this, there is a basic search that will allow users to search for conditions, chemicals, genetic markers, proteins and karyotypes by name. It will then return a list of any relevant conditions or biomarkers. Below this top bar is a bar showing all of MarkerDB's biomarker types. Clicking on each of these will lead to the main page for that type of biomarker, allowing users to view biomarkers with these classifications.<br><br>
+      <%= image_tag "results.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+      <strong> MarkerDB Main Page </strong><br>
+      The main page contains the top bars present on every page, as well as a description of the site and citation information. It also contains a list of all 27 General Conditions used in the site. These can be clicked on to see all conditions in this category.<br><br>
+      <%= image_tag "home.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+
+      <strong>  Condition-Specific Biomarkers Main Page </strong><br>
+      This page contains a search bar directly below the biomarker bar that will allow users to search for specific conditions by name. It suggests conditions based on the characters typed into the search bar, and returns any conditions with matching names. Below the search bar is the page navigation and number of conditions being displayed. Below this is a table of conditions, showing their names, associated biomarkers and general conditions that this condition belongs to. The Condition Names column can be sorted by alphabetical or reverse-alphabetical order by clicking on the column name. Conditions, biomarkers and general conditions can be selected by clicking on their names in the table. To the right of this table is a table containing the general conditions. If one is selected, only conditions that belong to this category will be shown on the page. <br><br>
+      <%= image_tag "condition_specific.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+      <strong>  Condition Page </strong><br>
+      This page contains the information for a specific condition. On the left, there is a description of the condition. Below this are any biomarkers associated with the condition, separated into tables of biomarker type, either chemical, protein, genetic or karyotype. There can be multiple biomarkers in each category, and multiple categories per condition. The biomarker tables contain a link to that biomarker's page, the condition and specific conditions that specific biomarker measurement is associated with. Chemical and protein biomarkers contain both disease and normal concentration values with information about these samples, as well as any applicable ROC curves and stats. These biomarkers are also classified as Clinically Approved or Investigational, with notes about the biomarker incluced. For genetic biomarkers, the sequence variant name, location, sequence change and variant type are listed. Karyotype biomarkers have the name of the karyotype, as well as the idiogram, basic informaiton such as individual's age and sex, and a description and reference for the karyotype. To the right of the description and biomarker tables is a General Conditions box showing all general conditions that the condition is classified as. Clicking on these will bring you to the page showing all conditions in that catgory. If applicable, there will be a box containing links to other types of the disease, such as Diabetes 1 and 2. Below this are any external links to sites such as SNOMED CT, Disease Ontology and MedGen. Below this is a Jumper that will bring the user to specific biomarker type boxes.<br><br>
+      <%= image_tag "disease_1.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br>
+      <%= image_tag "disease_2.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+
+      <strong>  Chemical Biomarkers Main Page </strong><br>
+      This page contains a search bar directly below the biomarker bar that will allow users to search for specific chemical biomarkers by name. It suggests chemicals based on the characters typed into the search bar, and returns any chemical biomarkers with matching names. Below the search bar is the page navigation and number of chemical biomarkers being displayed. Below this is the table of chemical biomarkers, showing their MarkerDB ID (MDBID), chemical structures, names, type of marker (single or panel) and names of conditions they are associated with. The MarkerDB ID, Chemical Name and Marker Type columns can be sorted by alphabetical or reverse-alphabetical order by clicking on the column names. Conditions and biomarkers can be selected by clicking on their names or the MDBID in the table. If one is selected, it will bring you to the condition or specific biomarker page, where the user can find more information about it. To the right of this table is a table containing the general conditions. If one is selected, it will bring you to the page showing all conditions in this category. <br><br>
+      <%= image_tag "chemical_main.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+      <strong>  Chemical Page </strong><br>
+      This page contains the information for a chemical biomarker. On the left, there is a description of the chemical, including alternate names, as well as SMILES and INCHI information. Below this are concentration values, separated into tables of biomarker type, either diagnostic, prognostic, predictive or exposure. There can be multiple concentrations in each category, and multiple categories per condition. These category boxes show the condition and specific conditions associated with the particular concentration. It shows both disease and normal concentration values with age and sex information for the concentrations, as well as an applicable ROC curve and ROC stats. These are sensitivity, specificity, AUC and concentration threshold based on the ROC. Normal and disease concentrations also have a reference. Chemical concentration values are also classified as Clinically Approved or Investigational, with notes about the biomarker incluced. To the right of the description and biomarker tables is the MDB ID box, showing the ID, as well as concentration creation and update dates. Below this is the chemical structure and molecular information . Finally, there is a box containing any external links to sites such as HMDB, CHEBI and KEGG.<br><br>
+      <%= image_tag "chemical_specific.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+
+      <strong>  Genetic Biomarkers Main Page </strong><br>
+      This page contains a filter box where users can select the chromosome of interest, as well as the sequence species by clicking the box beside the entry of interest and applying the filter. Multiple selections can made at one time. There is also a search bar directly below the biomarker bar that will allow users to search for specific genetic biomarkers by name. It suggests gene names based on the characters typed into the search bar, and returns any genetic biomarkers with matching names. Below the search bar is the page navigation and number of genetic biomarkers being displayed. Below this is the table of genetic biomarkers, showing their MarkerDB ID (MDBID), type of marker (deletion, duplication, insertion, indel, inversion, microsatellite, single nucleotide mutation, single nucleotide variant or SNP panel), gene name, chromosome, position and names of conditions they are associated with. The MarkerDB ID, Marker Type, Chromosome and Position columns can be sorted by alphabetical/numerical or reverse order by clicking on the column names. Conditions and biomarkers can be selected by clicking on the MDBID or the name in the table. If one is selected, it will bring you to the condition or specific biomarker page, where the user can find more information about it. To the right of this table is a table containing the general conditions. If one is selected, it will bring you to the page showing all conditions in this category. <br><br>
+      <%= image_tag "gene_main.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+      <strong>  Gene Page </strong><br>
+      This page contains the information for a sequence variant biomarker. On the left, there is a description of the affected gene. Below this is the sequence variant information box.  It shows the variation name, type, position and associated gene. It also shows the target gene length, clinical significance (benign, likely benign or pathogenic), as well as status (Clinically Approved or Investigational). Sequence change, references and associated condtions are also shown. To the right of the description and biomarker tables is the MDB ID box, showing the ID, as well as concentration creation and update dates. Below this is the species information.<br><br>
+      <%= image_tag "gene_example.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+      <strong>  Gene Panels </strong><br>
+      Some genetic biomarkers are found in panels. If this is true, there will be a Found In box showing panels that the sequence variant is found in. This will also show heritability and AUROC values, and the logistic regression equation.
+      <br><br>
+      <%= image_tag "gene_panel.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+
+      <strong>  Protein Biomarkers Main Page </strong><br>
+      This page contains a search bar directly below the biomarker bar that will allow users to search for specific protein biomarkers by name. It suggests proteins based on the characters typed into the search bar, and returns any protein biomarkers with matching names. Below the search bar is the page navigation and number of protein biomarkers being displayed. Below this is the table of protein biomarkers, showing their MarkerDB ID (MDBID), protein structures, names, type of marker (single or panel) and names of conditions they are associated with. The MarkerDB ID, Protein Name and Marker Type columns can be sorted by alphabetical or reverse-alphabetical order by clicking on the column names. Conditions and biomarkers can be selected by clicking on their names or the MDBID in the table. If one is selected, it will bring you to the condition or specific biomarker page, where the user can find more information about it. To the right of this table is a table containing the general conditions. If one is selected, it will bring you to the page showing all conditions in this category. <br><br>
+      <%= image_tag "protein_main.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+      <strong>  Protein Page </strong><br>
+      This page contains the information for a protein biomarker. On the left, there is a description of the chemical, including alternate names. Below this is the protein sequence, including UniProt ID, the number of amino acid residues in the sequence, and a link to download the sequence in FASTA format. Below this are concentration values, separated into tables of biomarker type, either diagnostic, prognostic, predictive or exposure. There can be multiple concentrations in each category, and multiple categories per condition. These category boxes show the condition and specific conditions associated with the particular concentration. It shows both disease and normal concentration values with age and sex information for the concentrations, as well as an applicable ROC curve and ROC stats. These are sensitivity, specificity, AUC and concentration threshold based on the ROC. Normal and disease concentrations also have a reference. Chemical concentration values are also classified as Clinically Approved or Investigational, with notes about the biomarker incluced. To the right of the description and biomarker tables is the MDB ID box, showing the ID, as well as concentration creation and update dates. Below this is the protein structure with a link to the PDB entry for the image. Finally, there is a box containing any related PDB structures.<br><br>
+      <%= image_tag "protein_specific.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+
+      <strong>  Karyotype Biomarkers Main Page </strong><br>
+      This page contains a filter box where users can select the chromosome of interest by clicking on the box beside that chromosome and applying the filter. Multiple selections can made at one time. There is also a search bar directly below the biomarker bar that will allow users to search for specific karyotype by name. It suggests karyotypes based on the characters typed into the search bar, and returns any biomarkers with matching names. Below the search bar is the page navigation and number of karyotype biomarkers being displayed. Below this is the table of karyotype biomarkers, showing their MarkerDB ID (MDBID), idiogram, name, names of conditions they are associated with, and affected genes. The MarkerDB ID and Karyotype Name columns can be sorted by alphabetical or reverse-alphabetical order by clicking on the column names. Conditions and biomarkers can be selected by clicking on their names or the MDBID in the table. If one is selected, it will bring you to the condition or specific biomarker page, where the user can find more information about it. If the "Affected Genes" are selected, they will link to the OMIM page for the general. To the right of this table is a table containing the general conditions. If one is selected, it will bring you to the page showing all conditions in this category. <br><br>
+      <%= image_tag "karyotype_main.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+      <strong>  Karyotype Page </strong><br>
+      This page contains the information for a karyotype biomarker. On the left, there is a description table containing the description, as well as a full-sized idiogram of the chromosome(s) involved in this karyotype. Below this is the Indications box, which contains the specific and general conditions associated with the karyotype, as well as the associated genes and reference, including the age and sex information. To the right of the description and biomarker tables is the MDB ID box, showing the ID, as well as concentration creation and update dates. Below this is the idiogram once more, with a link to view the image in a page by itself. This link can also be used to save the idiogram.<br><br>
+      <%= image_tag "karyotype_page.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+
+      <strong>  Diagnostic Biomarkers Main Page </strong><br>
+      This page contains a filter box where users can the class of biomarker they are interested in by clicking on the box beside that class and applying the filter. Multiple selections can made at one time. Below this is the page navigation and number of diagnostic biomarkers being displayed. Below this is the table of biomarkers, showing their MarkerDB ID (MDBID), structure if applicable, name, and names of conditions they are associated with. The MarkerDB ID and Biomarker Name columns can be sorted by alphabetical or reverse-alphabetical order by clicking on the column names. Conditions and biomarkers can be selected by clicking on their names or the MDBID in the table. If one is selected, it will bring you to the condition or specific biomarker page, where the user can find more information about it. To the right of this table is a table containing the general conditions. If one is selected, it will bring you to the page showing all conditions in this category. <br><br>
+      <%= image_tag "diagnostic_main.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+
+      <strong>  Prognostic Biomarkers Main Page </strong><br>
+      This page contains a filter box where users can the class of biomarker they are interested in by clicking on the box beside that class and applying the filter. Multiple selections can made at one time. Below this is the page navigation and number of diagnostic biomarkers being displayed. Below this is the table of biomarkers, showing their MarkerDB ID (MDBID), structure if applicable, name, and names of conditions they are associated with. The MarkerDB ID and Biomarker Name columns can be sorted by alphabetical or reverse-alphabetical order by clicking on the column names. Conditions and biomarkers can be selected by clicking on their names or the MDBID in the table. If one is selected, it will bring you to the condition or specific biomarker page, where the user can find more information about it. To the right of this table is a table containing the general conditions. If one is selected, it will bring you to the page showing all conditions in this category. <br><br>
+      <%= image_tag "prognostic_main.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+
+      <strong>  Predictive Biomarkers Main Page </strong><br>
+      This page contains a filter box where users can the class of biomarker they are interested in by clicking on the box beside that class and applying the filter. Multiple selections can made at one time. Below this is the page navigation and number of diagnostic biomarkers being displayed. Below this is the table of biomarkers, showing their MarkerDB ID (MDBID), structure if applicable, name, and names of conditions they are associated with. The MarkerDB ID and Biomarker Name columns can be sorted by alphabetical or reverse-alphabetical order by clicking on the column names. Conditions and biomarkers can be selected by clicking on their names or the MDBID in the table. If one is selected, it will bring you to the condition or specific biomarker page, where the user can find more information about it. To the right of this table is a table containing the general conditions. If one is selected, it will bring you to the page showing all conditions in this category. <br><br>
+      <%= image_tag "predictive_main.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+
+      <strong>  Exposure Biomarkers Main Page </strong><br>
+      This page contains a filter box where users can the class of biomarker they are interested in by clicking on the box beside that class and applying the filter. Multiple selections can made at one time. Below this is the page navigation and number of diagnostic biomarkers being displayed. Below this is the table of biomarkers, showing their MarkerDB ID (MDBID), structure if applicable, name, and names of conditions they are associated with. The MarkerDB ID and Biomarker Name columns can be sorted by alphabetical or reverse-alphabetical order by clicking on the column names. Conditions and biomarkers can be selected by clicking on their names or the MDBID in the table. If one is selected, it will bring you to the condition or specific biomarker page, where the user can find more information about it. As all of these biomarkers are Exposure, the General Conditions table has been removed for this page. <br><br>
+      <%= image_tag "exposure_main.PNG", :style => "position: relative; width:80%; margin-left: 10%" %><br><br>
+    </div>
+  <% end %>
+
+  <%= box "Biomarker Glossary and Definitions" do %>
+    <div id = "glossary"><p><strong>Condition-specific Biomarkers: </strong>A specific disease or condition that has one or more chemical, protein, genetic or karyotype biomarkers associated with its diagnosis, prognosis, prediction, or exposure to a particular substance.<br>
+    <strong>General Conditions: </strong>A category that condition and diseases in the database can be put into, typically based on the body system that they affect. Every condition in the database has at least one general condition, with many of them having two or more general conditions.<br>
+    <strong>Chemical Biomarkers: </strong>Chemials that can be tested for that are associated with the diagnosis or prognosis of one or more diseases or conditions, as well as chemicals that individuals can be exposed to by food consumption or other means.<br>
+    <strong>Genetic Biomarkers: </strong>Gene variants, including SNPs (single nucleotide polymorphisms) or mutations, that can be tested for and are associated with the diagnosis or prediction of one or more diseases or conditions.<br>
+    <strong>Protein Biomarkers: </strong>Proteins that can be tested for, that are associated with the diagnosis, prognosis or prediction of one or more diseases or conditions.<br>
+    <strong>Karyotype Biomarkers: </strong>Chromosome abnormalities, including the duplication, inversion or deletion of genetic material from one chromosome, or translocation or insertion of genetic material between two chromosomes, as well as duplication or deletion of entire chromosomes. These chromosome abnormalities are associated with the diagnosis of genetic diseases. The karyogram is the image of these abnormalities, showing exactly which portion of the chromosome(s) involved are affected, while idiograms are diagrams showing this information in a more easily readable format. The karyotype refers to the total chromosome number and appearance of an individual.<br>
+    <strong>Diagnostic Biomarkers: </strong>A biomarker that can be used to determine which disease or condition an individual has, and to differentiate between diseases or conditions that may physically appear similar.<br>
+    <strong>Prognostic Biomarkers: </strong>A biomarker that can be used to predict how a known disease or condition may progress.<br>    
+    <strong>Predictive Biomarkers: </strong>A biomarker that can be used to predict the chances of an individual developing a certain condition or disease before they show symptoms of it.<br>  
+    <strong>Exposure Biomarkers: </strong>A biomarker, typically a chemical, that can be found in response to an individual's consumption of food or other contact with these chemicals or their precursors.<br>      
+    <strong>Clinically Approved Biomarkers: </strong>A biomarker that is used in a clinical setting to diagnose, predict or determine the prognosis of one or more diseases or conditions.<br>
+    <strong>Investigational Biomarkers: </strong>A biomarker that has been predicted to be able to diagnose, predict or determine the prognosis of one or more conditions or diseases. This biomarker may have been discovered in a paper, but is not currently approved for use in a clinical setting.<br>
+    </p></div>
+  <% end %>
+  
+  <%= box "FAIR Compliance " do %>
+    <div = "compliance">
+      MarkerDB is FAIR. Specifically, it is:
+      <br>
+      <br>FINDABLE:
+      <br><strong>F1. (meta)data are assigned a globally unique and eternally persistent identifier.</strong>
+      <br>All biomarker data in MarkerDB is assigned an 8 digit globally unique MDB identifier. This identifier is searchable within the database and associated with all biomarker data in the online database. Furthermore, the identifier is associated with all data downloadable from the database.
+      <br><strong>F2. data are described with rich metadata.</strong>
+      <br>All biomarker data in MarkerDB are described with rich metadata. Every chemical, protein, gene and karyotype maker, along with every disease associated with each biomarker is described in detail. Additionally, citable scientific references are provided for each entry, structures (when available) are provided, sequences (when available) are provided and details about the performance, utility and reliability of the biomarker are provided.
+      <br><strong>F3. (meta)data are registered or indexed in a searchable resource.</strong>
+      <br>All the data and metadata in MarkerDB is indexed, viewable and registered through the MarkerDB online database at www.markerdb.ca
+      <br><strong>F4. metadata specify the data identifier.</strong>
+      <br>All metadata entries in MarkerDB are directly linked to the MarkerDB (MDB) identifier and the associated biomarker(s).
+      <br>
+      <br>ACCESSIBLE:
+      <br><strong>A1  (meta)data are retrievable by their identifier using a standardized communications protocol.</strong>
+      <br>All data and metadata are retrievable from their MDB identifier through the MarkerDB website. Similarly, all data in MarkerDB may be downloaded in JSON and/or XML format via MarkerDB’s download section through a standard internet communications protocol
+      <br><strong>A1.1 the protocol is open, free, and universally implementable.</strong>
+      <br>The MarkerDB website is open and free and its data download operation is compatible with all modern web browsers. MarkerDB’s downloadable data is in a format that is universally readable.
+      <br><strong>A1.2 the protocol allows for an authentication and authorization procedure, where necessary.</strong>
+      <br>No authentication or authorization is required for MarkerDB’s data.
+      <br><strong>A2 metadata are accessible, even when the data are no longer available.</strong>
+      <br>All of MarkerDB’s metadata are linked or linkable to more permanent data sources (PubMed, GenBank, UniProt, PDB). The availability of freely downloadable data (and metadata) for MarkerDB ensures that its metadata will exist and be accessible for an extended period of time.
+      <br>
+      <br>INTEROPERABLE:
+      <br><strong>I1. (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</strong>
+      <br>All textual data and metadata in MarkerDB are written in English, all sequence data is in FASTA format, all images are stored in PNG format, all nomenclature for diseases, genes, proteins and metabolites follows standard ontologies or vocabularies used to describe these entities.
+      <br><strong>I2. (meta)data use vocabularies that follow FAIR principles.</strong>
+      <br>All data and metadata in MarkerDB uses ontologies and vocabularies that are open, findable, accessible, interoperable and re-usable.
+      <br><strong>I3. (meta)data include qualified references to other (meta)data.</strong>
+      <br>All data and metadata in MarkerDB is fully referenced with detailed descriptions of their provenance and sources.
+      <br>
+      <br>RE-USABLE:
+      <br><strong>R1. meta(data) have a plurality of accurate and relevant attributes.</strong>
+      <br>All data and metadata in MarkerDB have been carefully curated and vetted by multiple skilled curators and all data in MarkerDB have attributes that are relevant, up-to-date and accurate.
+      <br><strong>R1.1. (meta)data are released with a clear and accessible data usage license.</strong>
+      <br>All data and metadata in MarkerDB are released under the Creative Commons (CC) 4.0 License Suite according to the Attribution (BY) and Non-commercial (NC) licensing conditions.
+      <br><strong>R1.2. (meta)data are associated with their provenance.</strong>
+      <br>All data and metadata in MarkerDB have detailed descriptions of their provenance and sources
+      <br><strong>R1.3. (meta)data meet domain-relevant community standards.</strong>
+      <br>MarkerDB has undergone extensive peer review by members of the biomarker community and has met the standards for publication in Nucleic Acids Research’s database issue. All the data in MarkerDB has met the standards for publication in peer-reviewed scientific journals and international scientific conferences.
+    </div>
+  <% end %>
+  <%= box "Please Cite:  " do %>
+    <div id="cite" >
+      Please Cite: Wishart DS, Bartok B, Oler E, Liang KYH, Budinski Z, Berjanskii M, Guo AC, Cao X, Wilson M. (2021) MarkerDB: An Online Database of Molecular Biomarkers. Nucleic Acids Research (Database Issue) - Under Review
+    </div>
+  <% end %>
+  <%= box "Licensing Details" do %>
+    <div id = "license"
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0 margin-left:40%" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+    <br>This means that our data can be used in derivative works as long as proper attribution is given to the source of the data, but these derivative works may not be used for commercial purposes. </div>
+  <% end %>
+<% end %>
+
+

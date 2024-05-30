@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MarkerDB</title>
+    <%= stylesheet_link_tag "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= analytics_init if Rails.env.production? %>
+    <%= csrf_meta_tag %>
+  </head>
+  <body><div class="container-fluid body-content">
+    
+    <div id="header">
+        
+      <%=render 'layouts/partial/navigation'%>
+      <%= render_tmic_banner %>
+
+      
+    </div>
+
+    <div id="menu">
+      <table><tr>
+        <td>
+	      <%= menu_item "Condition-specific Biomarkers", main_app.conditions_path %></td>
+        <%= menu_item "Chemical Biomarkers", main_app.chemicals_path %>
+        <%= menu_item "Genetic Biomarkers", main_app.sequence_variants_path %>
+        <%= menu_item "Protein Biomarkers", main_app.proteins_path %>
+        <%= menu_item "Karyotype Biomarkers", main_app.karyotypes_path %>
+        <%= menu_item "Diagnostic Biomarkers", main_app.categories_diag_diagnostic_path %>
+        <%= menu_item "Prognostic Biomarkers", biomarker_category_path(:prognostic) %>
+        <%= menu_item "Predictive Biomarkers", main_app.categories_diag_predictive_path %>
+        <%= menu_item "Exposure Biomarkers", biomarker_category_path(:exposure) %>
+    </tr></table>
+    </div>
+
+    <%= render :partial => 'shared/flash_notices' %>
+
+    <div id="main-contents" class="sm">    
+      <%= wishart_banner(banner: :survey_with_prize, link_options: {url: "https://forms.gle/wqfUTfpkvAACmrdd9"}, image_options: {style: "width: 100%; max-height: 10rem; padding-bottom: 15px"}) %>      
+      <%= content_for?(:content) ? yield(:content) : yield %>
+    </div>
+
+  </div></body>
+</html>

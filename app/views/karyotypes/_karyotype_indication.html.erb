@@ -1,0 +1,24 @@
+<div id="Karyotypes" class="list box">
+  <h1><%="Karyotypes"%></h1>
+  <div class="content">
+    <% karyotype_indication.each do |l|%>
+      <table class="<%= cycle('odd', 'even')%>">
+        <tr>
+          <td class="left" >
+            <% cache l, expires_in: 7.days do %>
+              <%= render partial: "karyotype_indications/karyotype_indication_info_table", locals: { karyotype_indication: l }, cached: true %>
+            <% end %>
+            
+          </td>
+
+          <td class="right" style="width:150px">
+            <% Karyotype.where("id = ?", l.karyotype_id).each do |m |%>
+              <%= image_tag m.diagram.url, :style => "height: auto; width: 20rem"%>
+            <% end %>
+          </td>    
+        </tr>
+      </table>
+    <%end%>
+  </div>
+</div>
+

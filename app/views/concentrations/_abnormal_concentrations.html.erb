@@ -1,0 +1,62 @@
+<% %w{Predictive Diagnostic Prognostic Exposure}.each do |category|%>
+  <% unless biomarker.abnormal_levels.by_category(category).blank?%>
+  <% title = "Abnormal Levels - #{category}"%>
+  <% title = title.sub(/[\s]/,"_")%>
+  <div id="Abnormal_Levels" class="list box">
+    <h1><%="Abnormal Levels - #{category}"%></h1>
+    <div class="content">
+      <% biomarker.abnormal_levels.by_category(category).each do |l|%>
+        <% cache l, expires_in: 7.days do %>
+          <table class="<%= cycle('odd', 'even')%>">
+            <tr>
+
+              <td class="right" style = "width: 550px;">
+                <%= render partial: "concentrations/info_table", locals: {concentration: l}, cached: true %>
+              </td>
+
+              <td class="left roc-image"  style="padding:1px;">
+                <% unless l.quality.blank?%>
+                  <a data-toggle="modal" data-target="#roc-image-modal-<%=l.id%>"><%=image_tag l.quality.image.url(:original), :style => "background-color: white; width: 30rem; height:auto;"%></a>
+                  <% unless l.quality.nil?%>
+
+                    <%= render partial: "concentrations/roc_modal", locals: {concentration: l}, cached: true %>
+
+                  <%end%>
+                <%end%>
+              </td>
+
+              <tr>
+                <td>
+                  <% if l.reference_conc_id.blank?%>
+                    <% unless l.special_constraints.blank?%>
+                      <strong>Notes/Limits</strong>
+                      <% unless l.special_constraints.blank?%>
+                        <p><%=l.special_constraints%></p>
+                      <%end%>
+                    <%end%>
+                  <%else%>
+                    
+                    <% unless l.special_constraints.blank? %>
+                      <strong>Notes/Limits</strong>
+                      <% unless l.special_constraints.blank?%>
+                        <p><%=l.special_constraints%></p>
+                      <%end%>
+                      <% ref_conc = l.get_related_norm_conc %>
+                      <% unless ref_conc.nil? %>
+                        <% unless ref_conc.special_constraints.blank?%>
+                          <p><%=ref_conc.special_constraints%></p>
+                        <%end%>
+                      <% end %>
+                    <%end%>
+                  <%end%>
+                </td>
+              </tr>
+
+            </tr>
+          </table>
+        <% end %>
+      <%end%>
+    </div>
+  </div>
+  <%end%>
+<%end%>

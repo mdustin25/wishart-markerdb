@@ -1,0 +1,46 @@
+<%= will_paginate chemicals %><br>
+<%= page_entries_info chemicals %>
+<%= sorted_box_table "Chemical Biomarkers", ["MarkerDB ID", "Chemical Name","Marker Type"],["MarkerDB ID","Chemical Structure", "Chemical Name","Marker Type","Condition Name"], 
+  chemicals do |chemical| %>
+    
+    <% cache chemical, expires_in: 7.days do %>
+
+      <td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%= link_to chemical.marker_mdbid.mdbid, chemical %></td>
+      <% unless chemical.hmdb.nil?%>
+        <td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%= image_tag("http://moldb.wishartlab.com/molecules/#{chemical.hmdb}/thumb.png",:style => "max-height: 100%; height: auto; margin: -10px 0px -10px 0px; overflow: hidden;") %></td>
+      <%else%>
+        <td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%="Image is not available"%></td>
+      <%end%>
+      <td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%= link_to chemical.name, chemical %></td>
+      <% if chemical.panel_single == "panel"%>
+        <td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%="panel, single"%></td>
+      <% else %>
+        <td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;"><%=chemical.panel_single%></td>
+      <% end %>
+      <td style="vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;">
+
+        <% associated_cond_id = chemical.get_associated_condition_ids()%>
+        <% unless associated_cond_id.length > 4%>
+          <% associated_cond_id.each do |each_cond_id| %>
+            <% cond = Condition.where("id = ?",each_cond_id).first %>
+            <% conc_obj = Concentration.where("solute_type =\"Chemical\" and exported = true and solute_id = ? and condition_id = ?",chemical.id, cond.id).first%>
+            <ul>
+              <% if conc_obj.nil? %>
+                <li style="font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em"><%= link_to(cond.name,cond)%></li>
+              <% elsif conc_obj.status.nil?%>
+                <li style="font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em"><%= link_to(cond.name,cond)%></li>
+              <%else%>
+                <li style="font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em"><%= link_to("#{cond.name} (#{conc_obj.status})",cond)%></li>
+              <%end%>
+            </ul>
+          <% end %>
+        <% else %>
+          Multiple conditions <a href = "/chemicals/<%=chemical.marker_mdbid.mdbid%>/#Abnormal_Levels"><%="(#{associated_cond_id.length})"%></a>
+        <% end %>
+      </td>
+
+    <% end %>
+    
+<% end %>
+
+<%= will_paginate chemicals %><br>

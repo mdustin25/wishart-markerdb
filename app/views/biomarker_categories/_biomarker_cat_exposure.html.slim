@@ -1,0 +1,134 @@
+= column_wrapper do
+  = left_column do
+    = render_filter_bars :exclude_groups => ['biomarker-type-filter']
+    = will_paginate sorted_page_num
+    br/
+    - if params[:filter] == "false" or params[:filter].blank?
+      = page_entries_info sorted_page_num, options={:model => 'Biomarker'}
+    - else
+      = page_entries_info sorted_page_num
+    .box
+      .table-responsive
+        table.table.table-striped.table-condensed.table-hover.metabolites style=("table-layout: fixed;") 
+          thead
+            tr
+              th style=("text-align: left;") = table_sort_link("MarkerDB ID","mdbid")
+              th style=("text-align: left;")   Biomarker Structure 
+              th style=("text-align: left;") = table_sort_link("Biomarker Name","biomarker_name")
+              th style=("text-align: left;")  Condition Name
+                
+          tbody
+            - all_markers.each do |marker_key, marker_value|
+              - cache marker_value, expires_in: 7.days do
+                /- marker_value      = sorted_markers[marker_key]
+                - biomarker_id      = marker_key["biomarker_id"]
+                - each_marker_class = marker_key["biomarker_type"]
+                - mdbid             = marker_value[0]["mdbid"]
+                - biomarker_name    = marker_value[0]["biomarker_name"]
+
+                - if each_marker_class == "Chemical"
+                  - chem = Chemical.find_by(:id => biomarker_id)
+                  - unless chem.nil? or chem.exported == false
+                    tr
+                      td style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") 
+                        = link_to(mdbid, main_app.chemical_path(id: biomarker_id))
+
+                      td style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") 
+                        = image_tag(moldb_url(chem, :image_full),:width => "100%")
+
+                      td.right style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") width="70%" 
+                        | Chemical: #{link_to biomarker_name, main_app.chemical_path(id: biomarker_id), style: "word-wrap: break-word;" }
+
+                      td style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") 
+                        ul
+                          / sorted_markers is same as sorted_page_num, but sorted_markers contain all of them,
+                          - marker_value.each do |value|
+                            li style=("font-size: 1.2em; list-style-position: inside; list-style-type: disc;") 
+                              = link_to value["condition_name"], condition_path(value["condition_id"])
+                        
+
+                - elsif each_marker_class == "Protein"
+                  - protein = Protein.find_by(:id => biomarker_id)
+                  - unless protein.nil? or protein.exported == false
+                    tr
+                      td style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;")
+                        = link_to(mdbid, main_app.protein_path(id: biomarker_id))
+
+                      td style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") 
+                        = image_tag(protein.structure_image.url(),:width => "100%")
+
+                      td.right style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") width="70%" 
+                        | Protein: #{link_to biomarker_name, main_app.protein_path(id: biomarker_id), style: "word-wrap: break-word;" }
+
+                      td style=("padding-left: 20px; vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") 
+                        ul
+                          - marker_value.each do |value|
+                            li style=("font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em") 
+                              = link_to value["condition_name"], condition_path(value["condition_id"])
+                        
+
+                - elsif each_marker_class == "Karyotype"
+                  / - karyotype_conds = sorted_markers[each_marker]
+                  - karyo = Karyotype.find_by(:id => biomarker_id)
+                  - unless karyo.nil? or karyo.exported == false
+                    tr
+                      td style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") 
+                        = link_to(mdbid, main_app.karyotype_path(id: biomarker_id))
+
+                      td.thumb-image style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") 
+                        = image_tag karyo.diagram.url, :style => "20rem"
+
+                      td.right style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") width="70%" 
+                        | Karyotype: #{link_to biomarker_name, main_app.karyotype_path(biomarker_id), style: "word-wrap: break-word;"}
+
+                      td style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") 
+                        ul
+                          - marker_value.each do |value|
+                            li style=("font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em") 
+                              = link_to value["condition_name"], condition_path(value["condition_id"])
+                        
+
+                - elsif each_marker_class == "SequenceVariant"
+                  - seqvar = SequenceVariant.find_by(:id => biomarker_id)
+                  tr
+                    td style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") 
+                      = link_to(mdbid, main_app.sequence_variant_path(id: biomarker_id))
+
+                    td style=("vertical-align: middle") NA
+
+                    td.right style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;") width="70%" 
+                      = link_to link_to(seqvar.gene_symbol, main_app.sequence_variant_path(id: biomarker_id), style: "word-wrap: break-word;") 
+                      br /
+                      = link_to link_to(biomarker_name, main_app.sequence_variant_path(id: biomarker_id), style: "word-wrap: break-word;") 
+                    td style=("vertical-align: middle; text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab;")
+                      ul
+                        - marker_value.each do |value|
+                          li style=("font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em") 
+                            = link_to value["condition_name"], condition_path(value["condition_id"])
+                        
+                            
+    = will_paginate sorted_page_num
+
+  = right_column do
+    = render 'condition_categories', :categories => cond_categories, cached: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

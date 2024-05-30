@@ -1,0 +1,16 @@
+li.dropdown
+  a href="#" class="dropdown-toggle" data-toggle="dropdown" Advanced Search <b class="caret"></b>
+  ul.dropdown-menu
+    li= link_to "Advanced Text Search", unearth.advanced_path(index: 'conditions')
+    li= link_to 'Sequence Search', main_app.seq_search_path
+    li= link_to 'Structure Search', moldbi.search_structure_path(resource: :chemicals)
+li.dropdown
+  a href="#" class="dropdown-toggle" data-toggle="dropdown" About MarkerDB <b class="caret"></b>
+  ul.dropdown-menu
+	li= link_to 'About MarkerDB', main_app.about_path
+    li= link_to "FAIR Compliance", main_app.compliance_path
+    li= link_to 'User Manual', main_app.manual_path
+    li= link_to 'MarkerDB API', main_app.markerdb_api_path
+   
+li= link_to 'Contact Us', main_app.contact_path
+li= link_to 'Downloads', main_app.downloads_path

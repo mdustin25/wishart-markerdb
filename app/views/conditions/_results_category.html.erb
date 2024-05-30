@@ -1,0 +1,14 @@
+<%= will_paginate conditions %><br/>
+<%= page_entries_info @sorted_page_num, options={:model => 'condition'} %>
+<%= sorted_box_table "#{@category.name}", ["Condition Names"], ["Condition Names","Condition Categories"], conditions do |condition| %>
+	<% cache condition, expires_in: 7.days do %>
+		<td style="text-align: left; border-left:1px solid #ababab; border-right:1px solid #ababab";><%=link_to condition.name, condition %></td>
+		<td>
+			<ul>
+				<%condition.categories.each do |category|%>
+					<li style="font-size: 1.2em; list-style-position: inside; list-style-type: disc;"><%= link_to(category.name,category_path(category.name))%></li>
+				<%end%>
+			</ul>
+		</td>
+	<% end %>
+<% end %>

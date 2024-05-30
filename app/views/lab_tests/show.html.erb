@@ -1,0 +1,52 @@
+<%= left_column do %>
+  <%= title "Test: #{@lab_test.name}" %>
+
+  <%#= box_description @lab_test %>
+  <%= box "Descripton" do %>
+    <%= @lab_test.description %>
+    <%= info_table do %>
+      <tr>
+        <th>Alternate names</th><td><%= @lab_test.names.join("; ") %></td>
+      </tr>
+      <% unless @lab_test.co_assays.empty? %>
+        <tr>
+          <th>Common Co-assay</th><td><%= "s" if @lab_test.co_assays.count > 1 %>: 
+            <%= co_assay_links @lab_test %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <%= box_table "Uses", ["","Description","Biomarkers"],
+    @lab_test.uses do |test_use| %>
+      <td>icons</td>
+      <td><%= test_use.description %></td>
+      <td>show biomarkers</td>
+  <% end %>
+
+  <%= paginate @fda_kits, :param_name => :kit_page %>
+  <%= box_table "FDA approved kits", 
+    ["Document Number","Company","Device Name","Date Approved"],
+    @fda_kits do |fda_kit| %>
+      <td><%= fda_kit.doc_number %></td>
+      <td><%= fda_kit.company %></td>
+      <td><%= fda_kit.name%> <%= link_to_fda_page(fda_kit) %></td>
+      <td><%= fda_kit.approved_date.strftime("%b %d, %Y") %></td>
+  <% end %>
+
+<% end %>
+
+<%= right_column do %>
+
+  <%= box_table "Tested Fluids", [], 
+    @lab_test.biofluids do |biofluid| %>
+      <td></td>
+      <td><%= biofluid.name %></td>
+  <% end %>
+
+  <%= box_table "External links", [], 
+    @lab_test.links do |link| %>
+      <td><%= link_to link.name, link.link %></td>
+  <% end %>
+
+<% end %>

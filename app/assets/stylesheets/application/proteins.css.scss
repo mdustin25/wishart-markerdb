@@ -1,0 +1,22 @@
+table tr > td.protein-structure {
+  img {
+    width:  20rem;
+    height: auto;
+  }
+  pre {
+      overflow-y: visible;
+  }
+}
+
+pre {
+    overflow-y: visible;
+}
+
+
+#sequence-table {
+	font-size: 10px;
+	font-family: Courier;
+	td {
+		padding: 1px;
+	}
+}

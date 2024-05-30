@@ -1,0 +1,15 @@
+<%= column_wrapper do %>
+	<%= left_column do %>
+		<%= render_filter_bars %>
+		<%=@search_param%>
+		<div id="search_form_class">
+			<%= render 'search_form'%>
+		</div>
+		<div id="results_class">
+	    <%= render 'results', sequence_variants: @sequence_variants, cached: true %>
+	  </div>
+	<%end%>
+  <%= right_column do %>
+    <%= render 'condition_categories', :categories => @categories, cached: true %>
+  <% end %>
+<%end%>

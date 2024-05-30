@@ -1,0 +1,60 @@
+<%= will_paginate karyotypes %><br>
+<%= page_entries_info karyotypes %>
+
+<%= sorted_box_table "Karyotype Biomarkers", ["MarkerDB ID", "Karyotype Name"],["MarkerDB ID","Idiogram","Karyotype Name", "Condition Name", "Affected Genes"],  
+  karyotypes do |karyotype| %>
+
+  <% cache karyotype, expires_in: 7.days do %>
+    <td style="border-left:1px solid #ababab; border-right:1px solid #ababab; vertical-align: middle"><%= link_to karyotype.marker_mdbid.mdbid,karyotype%></td>
+    <td class="thumb-image" style="text-align: left; background-color: white; width: 15rem;height:auto;border-left:1px solid #ababab; border-right:1px solid #ababab; vertical-align: middle"><%= image_tag karyotype.diagram.url, :style => "height: auto; width: 15rem" %></td>
+    
+    <td style="border-left:1px solid #ababab; border-right:1px solid #ababab; vertical-align: middle"><%= link_to karyotype.karyotype, karyotype %></td>
+    <td style="border-left:1px solid #ababab; border-right:1px solid #ababab; vertical-align: middle">
+      <% if karyotype.karyotype_indications.map(&:condition).uniq.count > 4 %>
+        <strong>Multiple conditions </strong>(<%= karyotype.karyotype_indications(&:condition).uniq.count %>)
+      <% else %>
+        <ul>
+          <% karyotype.karyotype_indications.each do |condition_indication| %>
+            <% condition = Condition.where("id = ?",condition_indication.condition_id).first%>
+            <% unless condition.nil?%>
+              <li style = "font-size: 1.2em; list-style-position: outside; list-style-type: disc; margin-left: 1.2em; vertical-align: middle;"><%= link_to condition.name, condition %></li>
+            <%end%>
+          <% end %>
+        </ul>
+      <% end %>  
+    </td>
+    <td style="vertical-align: middle;">
+      <% kary_id = karyotype.id %>
+      <% k_ind = KaryotypeIndication.where(karyotype_id: kary_id) %>
+      
+      <% gene_list = [] %>
+      <% unless k_ind.blank? %>
+        <% k_ind.each do |gene| %>
+          <% temp = gene.gene_list %>
+          <% unless temp.blank? %>
+            <% temp_list = temp.split(";") %>
+            <% gene_list.concat temp_list %>
+          <% end %>
+        <% end %>
+      <% end %>   
+      <% gene_list.uniq.each_with_index do |g, index| %>
+        <% gene = Gene.where(gene_symbol: g).first %>
+        <% if gene.blank? %>
+          <%= g  %>
+        <% else %>
+          <% omim = gene.omim_id  %>
+          <% if omim.blank? %>
+            <%= g %>
+          <% else %>
+            <% url = "https://www.omim.org/entry/" + omim.to_s %>	 
+            <%= link_to g, url %> 	 
+          <% end %>
+        <% end %>
+        <% unless index == (gene_list.uniq).size - 1 %>
+          <%= ", " %>
+        <% end %>
+      <% end %>
+    </td>
+  <% end %>
+<% end %>
+<%= will_paginate karyotypes %>

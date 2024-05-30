@@ -1,0 +1,318 @@
+.unearth-search-results {
+  &.unearth-full_site-search-results {
+    .unearth-search-hit {
+      .result-link {
+        width: 15%;
+
+      }
+      .result-info {
+        width: 80%;
+        .hit-name { 
+          font-weight: bold; 
+          font-size: 16px;
+        }
+        .iupac {
+          color: #6B6B6B;
+        }
+        .groups {
+          @extend .pull-right;
+          .badge { 
+            font-size: 10px;
+          }
+        }
+        .structure {
+          @extend .pull-right;
+          margin-left: 1em;
+          img { @extend .thumbnail; }
+        }
+      }
+    }
+
+    &.unearth-target-search-results {
+      .groups {
+        @extend .pull-right;
+        .badge { 
+          font-size: 10px;
+        }
+      }
+    }
+
+    &.unearth-pathway-search-results {
+      .pathway-thumb { 
+        float: right;
+        padding-left: 1em;
+        padding-bottom: 1em;
+      }
+    }
+
+    
+  }
+  &.unearth-conditions-search-results {
+    .unearth-search-hit {
+      .result-link {
+        width: 15%;
+
+      }
+      .result-info {
+        width: 80%;
+        .hit-name { 
+          font-weight: bold; 
+          font-size: 16px;
+        }
+        .iupac {
+          color: #6B6B6B;
+        }
+        .groups {
+          @extend .pull-right;
+          .badge { 
+            font-size: 10px;
+          }
+        }
+        .structure {
+          @extend .pull-right;
+          margin-left: 1em;
+          img { @extend .thumbnail; }
+        }
+      }
+    }
+
+    &.unearth-target-search-results {
+      .groups {
+        @extend .pull-right;
+        .badge { 
+          font-size: 10px;
+        }
+      }
+    }
+
+    &.unearth-pathway-search-results {
+      .pathway-thumb { 
+        float: right;
+        padding-left: 1em;
+        padding-bottom: 1em;
+      }
+    }
+
+  }
+
+
+  &.unearth-genetic_markers-search-results {
+    .unearth-search-hit {
+      .result-link {
+        width: 15%;
+        
+      }
+      .result-info {
+        width: 80%;
+        .hit-name { 
+          font-weight: bold; 
+          font-size: 16px;
+        }
+        .iupac {
+          color: #6B6B6B;
+        }
+        .groups {
+          @extend .pull-right;
+          .badge { 
+            font-size: 10px;
+          }
+        }
+        .structure {
+          @extend .pull-right;
+          margin-left: 1em;
+          img { @extend .thumbnail; }
+        }
+      }
+    }
+
+    &.unearth-target-search-results {
+      .groups {
+        @extend .pull-right;
+        .badge { 
+          font-size: 10px;
+        }
+      }
+    }
+
+    &.unearth-pathway-search-results {
+      .pathway-thumb { 
+        float: right;
+        padding-left: 1em;
+        padding-bottom: 1em;
+      }
+    }
+
+  }
+  
+  &.unearth-chemicals-search-results {
+    .unearth-search-hit {
+      .result-link {
+        width: 15%;
+        
+      }
+      .result-info {
+        width: 80%;
+        .hit-name { 
+          font-weight: bold; 
+          font-size: 16px;
+        }
+        .iupac {
+          color: #6B6B6B;
+        }
+        .groups {
+          @extend .pull-right;
+          .badge { 
+            font-size: 10px;
+          }
+        }
+        .structure {
+          @extend .pull-right;
+          margin-left: 1em;
+          img { @extend .thumbnail; }
+        }
+      }
+    }
+
+    &.unearth-target-search-results {
+      .groups {
+        @extend .pull-right;
+        .badge { 
+          font-size: 10px;
+        }
+      }
+    }
+
+    &.unearth-pathway-search-results {
+      .pathway-thumb { 
+        float: right;
+        padding-left: 1em;
+        padding-bottom: 1em;
+      }
+    }
+  }
+
+
+  &.unearth-karyotypes-search-results {
+    .unearth-search-hit {
+      .result-link {
+        width: 15%;
+        
+        .cas-number {
+          font-size: 13px;
+          margin-top: .8em;
+          color: #6B6B6B;
+          text-align: center;
+        }
+      }
+      .result-info {
+        width: 80%;
+        .hit-name { 
+          font-weight: bold; 
+          font-size: 16px;
+        }
+        .iupac {
+          color: #6B6B6B;
+        }
+        .groups {
+          @extend .pull-right;
+          .badge { 
+            font-size: 10px;
+          }
+        }
+        .structure {
+          @extend .pull-right;
+          margin-left: 1em;
+          img { @extend .thumbnail; }
+        }
+      }
+    }
+
+    &.unearth-target-search-results {
+      .groups {
+        @extend .pull-right;
+        .badge { 
+          font-size: 10px;
+        }
+      }
+    }
+
+    &.unearth-pathway-search-results {
+      .pathway-thumb { 
+        float: right;
+        padding-left: 1em;
+        padding-bottom: 1em;
+      }
+    }
+  }
+
+  &.unearth-proteins-search-results {
+    .unearth-search-hit {
+      .result-link {
+        width: 15%;
+        
+        .cas-number {
+          font-size: 13px;
+          margin-top: .8em;
+          color: #6B6B6B;
+          text-align: center;
+        }
+      }
+      .result-info {
+        width: 80%;
+        .hit-name { 
+          font-weight: bold; 
+          font-size: 16px;
+        }
+        .iupac {
+          color: #6B6B6B;
+        }
+        .groups {
+          @extend .pull-right;
+          .badge { 
+            font-size: 10px;
+          }
+        }
+        .structure {
+          @extend .pull-right;
+          margin-left: 1em;
+          img { @extend .thumbnail; }
+        }
+      }
+    }
+
+    &.unearth-target-search-results {
+      .groups {
+        @extend .pull-right;
+        .badge { 
+          font-size: 10px;
+        }
+      }
+    }
+
+    &.unearth-pathway-search-results {
+      .pathway-thumb { 
+        float: right;
+        padding-left: 1em;
+        padding-bottom: 1em;
+      }
+    }
+  }
+}
+
+// Hit info for SeqSearch results:
+.seq-search-hit-info {
+  clear: both;
+  ul {
+    list-style-type: none;
+    li {
+      margin-left: 0.5em;
+    }
+  }
+}
+
+.seq-search-title {
+  .organism {
+    font-style: italic;
+    color: grey;
+  }
+}

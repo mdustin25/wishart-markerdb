@@ -1,0 +1,40 @@
+#moldbi-search-results
+  table.table.table-striped: tbody
+    - @compounds = @compounds.select{ |comp| comp.exported? and !comp.mdbid.nil? }
+    - @compounds.each do |compound|
+      - css_class = params[:database_id].to_s == compound.moldb_id ? 'success' : nil
+      tr class=css_class
+        / td
+        /   strong
+        /     = compound.inspect
+        td.search-link
+          strong
+            = link_to compound.mdbid, main_app.url_for(compound), class: 'btn btn-default btn-sm card'
+
+          - if @search_type.to_s.to_sym == Moldbi::Search::StructureController::SIMILARITY_TYPE
+            - score = compound.moldb_search_score.to_f.round(3)
+            br
+            .search-score.label class=(score == 1.0 ? 'label-success' : 'label-default')
+              | Score: #{score}
+        td.search-structure
+          = moldb_vector_thumbnail(compound)
+
+        td.search-hit-info
+          strong = compound.name
+
+        td.search-structure-info
+          b Formula:
+          br
+          = html_formula( compound.moldb_formula )
+          br
+          br
+          b Monoisotopic mass:
+          br
+          | #{'%.4f' % compound.moldb_mono_mass}
+          br
+          br
+          b Molecular weight:
+          br
+          | #{'%.4f' % compound.moldb_average_mass}
+
+    

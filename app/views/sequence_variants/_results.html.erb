@@ -1,0 +1,38 @@
+<%= will_paginate sequence_variants %><br>
+<%= page_entries_info sequence_variants %>
+
+<%= sorted_box_table "Genetic Biomarkers", ["MarkerDB ID", "Marker Type", "Chromosome", "Position"],
+    ["MarkerDB ID", "Marker Type","Gene Name","Chromosome", "Position","Conditions"],
+    sequence_variants do |v| %>
+    
+    <% cache v, expires_in: 7.days do %>
+      <% if v.gene.name().blank? %>
+        <% next %>
+      <% end %>
+      <td><%= link_to v.marker_mdbid.mdbid, v %></td>
+      <td><%= v.marker_type %></td>
+
+      <td><%= v.gene.name() %></td>
+      <td><%= v.chromosome %></td>
+      <td><%= v.position %></td>
+
+      <% cond_stat = v.sequence_variant_measurements %>
+      <td>
+        <% unless cond_stat.length > 4 %>
+        <ul>
+          <% conds_id = Array.new%>
+          <% cond_stat.each do |cond| %>
+            <% unless conds_id.include?(cond.condition_id)%>
+              <% conds_id << cond.condition_id%>
+              <% conds = Condition.where("id = ?", cond.condition_id).first %>
+              <li style="list-style-type: disc;"><%= link_to conds.name, conds  %></li>
+            <%end%>
+          <% end %>
+        </ul>
+        <% end %>
+      </td>
+    <% end %>
+
+<% end %>
+
+<%= will_paginate sequence_variants %>

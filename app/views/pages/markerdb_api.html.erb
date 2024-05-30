@@ -1,0 +1,1267 @@
+<%= box "API Documentation" do %>
+
+    <div>
+        MarkerDB's Application Programming Interface (API) has been developed and made available to allow users to programmatically retrieve data from MarkerDB.  This API supports a number of "Get" functions for 
+        <ul style="margin-top: 5px;">
+          <li>1) Conditions </li>
+          <li>2) Chemicals </li>
+          <li>3) Gene Biomarkers </li> 
+          <li>4) Protein Biomarkers </li>
+          <li>5) Karyotype Biomarkers </li>
+        </ul>
+        Examples are given for each instance as shown below:
+
+
+    </div>
+    <div >
+      <div>
+        <h2> Conditions</h2>
+        <div>
+          <p>Example:</p>
+          <label>GET request (<code>Content-type: application/json</code>):</label>
+          <br>
+          <input class="url" type="text" data-baseurl="true" value="http://markerdb.ca/api/v1/conditionapi/conditionrequest?api_key=537ff5a9c7b427cd676e9cb288aeff4b&query=b&page=1" size="120" />
+          <br>
+          <label>Response:</label>
+          <div class="output_div">
+            <textarea rows="30" cols="100">
+                {
+                  "conditions": [
+                      {
+                          "id": 2,
+                          "name": "11 Beta Hydroxylase Deficiency",
+                          "description": "11Beta-hydroxylase (CYP11B1) deficiency involves defective production of cortisol, with accumulation of mineralocorticoid precursors, resulting in hypernatremia, hypokalemia, and hypertension and increased production of adrenal androgens, leading to virilization. Diagnosis is by measurement of cortisol, its precursors, and adrenal androgens and sometimes by measuring 11-deoxycortisol after ACTH administration. Treatment is with a corticosteroid. [Merck Manual] https://www.merckmanuals.com/en-ca/professional/pediatrics/endocrine-disorders-in-children/congenital-adrenal-hyperplasia-caused-by-11beta-hydroxylase-deficiency. It is estimated that CAH due to 11-beta-hydroxylase deficiency occurs in 1 in 100,000 to 200,000 newborns. [Genetics Home Reference] https://ghr.nlm.nih.gov/condition/congenital-adrenal-hyperplasia-due-to-11-beta-hydroxylase-deficiency#statistics",
+                          "created_at": "2011-03-29T21:50:18.000Z",
+                          "updated_at": "2020-08-15T10:13:10.000Z",
+                          "delta": false,
+                          "review_date": null,
+                          "super_condition_id": null,
+                          "omim_records": [],
+                          "exported": true
+                      },
+                      ...
+                  ],
+                  "page": 1,
+                  "total_page": 185
+              }
+            </textarea>
+          </div>
+
+          <label>Parameters:</label>
+          <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Operator</th><th>Usage</th><th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>api_key</td>
+                        <td>
+                          Required
+                        </td>
+                        <td>
+                          Ask for api_key
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>query</td>
+                        <td>
+                          Required
+                        </td>
+                        <td>
+                          the condition term that you want to search for
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>
+                          Optional
+                        </td>
+                        <td>
+                          Get specific condition by id. If id given, query will be ignored.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>page</td>
+                        <td>
+                          Required
+                        </td>
+                        <td>
+                          Search based on pages
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+
+
+        </div>
+        
+      </div>
+
+      <div>
+        <h2> Chemical Biomarkers</h2>
+        <div>
+          <p>Example:</p>
+          <label>GET request (<code>Content-type: application/json</code>):</label>
+          <br>
+          <input class="url" type="text" data-baseurl="true" value="http://markerdb.ca/api/v1/chemicalapi/chemicalrequest?api_key=537ff5a9c7b427cd676e9cb288aeff4b&markerdb_id=MDB00000001" size="120" />
+          <br>
+          <label>Response:</label>
+          <div class="output_div">
+            <textarea rows="30" cols="100">
+              {
+                  "compound": {
+                      "id": 1,
+                      "name": "1-Methylhistidine",
+                      "description": "1-Methylhistidine (1-MHis) is an amino acid derived mainly from anserine obtained from dietary flesh sources, especially poultry. The enzyme, carnosinase, splits anserine into beta-alanine and 1-MHis. High levels of 1-MHis tend to inhibit the enzyme carnosinase and increase anserine levels. Conversely, genetic variants with deficient carnosinase activity in plasma show increased 1-MHis excretions when they consume a high meat diet. Reduced serum carnosinase activity is also found in patients with Parkinson's disease and multiple sclerosis and patients following a cerebrovascular accident. Vitamin E deficiency can lead to high levels of 1-methylhistidine in the urine (1-methylhistidinuria) from increased oxidative effects in skeletal muscle.",
+                      "created_at": null,
+                      "updated_at": "2020-08-13T01:39:31.000Z",
+                      "source": null,
+                      "molecule_type": null,
+                      "hmdb": "HMDB0000001",
+                      "review_date": null,
+                      "moldb_smiles": "CN1C=NC(C[C@H](N)C(O)=O)=C1",
+                      "moldb_formula": "C7H11N3O2",
+                      "moldb_inchi": "1S/C7H11N3O2/c1-10-3-5(9-4-10)2-6(8)7(11)12/h3-4,6H,2,8H2,1H3,(H,11,12)/t6-/m0/s1",
+                      "moldb_inchikey": "BRMWTNUJHUMWMS-LURJTMIESA-N",
+                      "moldb_iupac": "(2S)-2-amino-3-(1-methyl-1H-imidazol-4-yl)propanoic acid",
+                      "moldb_logp": "-3.0704187479965057",
+                      "moldb_pka": null,
+                      "moldb_average_mass": "169.1811",
+                      "moldb_mono_mass": "169.085126611",
+                      "moldb_alogps_solubility": "6.93e+00 g/l",
+                      "moldb_alogps_logp": "-2.95",
+                      "moldb_alogps_logs": "-1.39",
+                      "moldb_acceptor_count": "4",
+                      "moldb_donor_count": "2",
+                      "moldb_rotatable_bond_count": "3",
+                      "moldb_polar_surface_area": "81.14000000000001",
+                      "moldb_refractivity": "42.39000000000001",
+                      "moldb_polarizability": "17.11092825688521",
+                      "moldb_traditional_iupac": "1 methylhistidine",
+                      "moldb_formal_charge": "0",
+                      "moldb_physiological_charge": "0",
+                      "moldb_pka_strongest_basic": "9.2503166513801",
+                      "moldb_pka_strongest_acidic": "1.9645875066516765",
+                      "moldb_bioavailability": "1",
+                      "moldb_number_of_rings": "1",
+                      "moldb_rule_of_five": "1",
+                      "moldb_ghose_filter": "0",
+                      "moldb_veber_rule": "0",
+                      "moldb_mddr_like_rule": "0",
+                      "exported": true,
+                      "mdbid": "MDB00000001",
+                      "panel_single": "single"
+                  },
+                  "abnormal_concentration": [
+                      {
+                          "id": 43296,
+                          "age_range": "Adult",
+                          "level": "83.1 (61.4-104.8) uM",
+                          "location_name": null,
+                          "special_constraints": null,
+                          "sex": "Both",
+                          "biofluid": "Blood",
+                          "comment": null,
+                          "range": "61.4-104.8",
+                          "high": null,
+                          "low": null,
+                          "mean": 83.1,
+                          "units": "uM",
+                          "pvalue": 2.20004e-43,
+                          "created_at": "2020-08-05T23:17:46.000Z",
+                          "updated_at": "2020-08-22T01:39:06.000Z",
+                          "solute_type": "Chemical",
+                          "solute_id": 1,
+                          "condition_id": 203,
+                          "indication_type_id": 1,
+                          "biomarker_category_id": 2,
+                          "indication_modifier": null,
+                          "quality_id": 4184,
+                          "quality_type": "RocStats",
+                          "status": "Clinical",
+                          "exported": true,
+                          "reference_conc_id": "43294"
+                      },
+                      {
+                          "id": 43293,
+                          "age_range": "Adult",
+                          "level": "50.0 (44.2-55.8) uM",
+                          "location_name": null,
+                          "special_constraints": null,
+                          "sex": "Female",
+                          "biofluid": "Blood",
+                          "comment": null,
+                          "range": "44.2-55.8",
+                          "high": null,
+                          "low": null,
+                          "mean": 50.0,
+                          "units": "uM",
+                          "pvalue": 3.7e-38,
+                          "created_at": "2020-08-05T23:17:46.000Z",
+                          "updated_at": "2020-08-22T01:43:19.000Z",
+                          "solute_type": "Chemical",
+                          "solute_id": 1,
+                          "condition_id": 34,
+                          "indication_type_id": 1,
+                          "biomarker_category_id": 2,
+                          "indication_modifier": null,
+                          "quality_id": 4182,
+                          "quality_type": "RocStats",
+                          "status": "Clinical",
+                          "exported": true,
+                          "reference_conc_id": "43294"
+                      },
+                      {
+                          "id": 43295,
+                          "age_range": "Adult: >=18 yrs old",
+                          "level": "50.7 uM",
+                          "location_name": null,
+                          "special_constraints": null,
+                          "sex": "Female",
+                          "biofluid": "Blood",
+                          "comment": null,
+                          "range": null,
+                          "high": null,
+                          "low": null,
+                          "mean": null,
+                          "units": "uM",
+                          "pvalue": 0.0,
+                          "created_at": "2020-08-05T23:17:46.000Z",
+                          "updated_at": "2020-08-13T07:13:23.000Z",
+                          "solute_type": "Chemical",
+                          "solute_id": 1,
+                          "condition_id": 5988,
+                          "indication_type_id": 1,
+                          "biomarker_category_id": 2,
+                          "indication_modifier": null,
+                          "quality_id": 4183,
+                          "quality_type": "RocStats",
+                          "status": null,
+                          "exported": true,
+                          "reference_conc_id": "43294"
+                      },
+                      {
+                          "id": 41586,
+                          "age_range": "Adult",
+                          "level": "10.9 (0.80-21.0) umol/mmol creatinine",
+                          "location_name": null,
+                          "special_constraints": null,
+                          "sex": "Both",
+                          "biofluid": "Urine",
+                          "comment": null,
+                          "range": "0.80-21.0",
+                          "high": null,
+                          "low": null,
+                          "mean": 10.9,
+                          "units": "umol/mmol creatinine",
+                          "pvalue": 7.7e-07,
+                          "created_at": "2020-08-05T23:12:25.000Z",
+                          "updated_at": "2020-08-22T01:40:04.000Z",
+                          "solute_type": "Chemical",
+                          "solute_id": 1,
+                          "condition_id": 251,
+                          "indication_type_id": 1,
+                          "biomarker_category_id": 2,
+                          "indication_modifier": null,
+                          "quality_id": 3279,
+                          "quality_type": "RocStats",
+                          "status": "Clinical",
+                          "exported": true,
+                          "reference_conc_id": "41587"
+                      },
+                      {
+                          "id": 41588,
+                          "age_range": "Adult",
+                          "level": "15.7 (11.7-19.7) umol/mmol creatinine",
+                          "location_name": null,
+                          "special_constraints": null,
+                          "sex": "Both",
+                          "biofluid": "Urine",
+                          "comment": null,
+                          "range": "11.7-19.7",
+                          "high": null,
+                          "low": null,
+                          "mean": 15.7,
+                          "units": "umol/mmol creatinine",
+                          "pvalue": 1.5e-22,
+                          "created_at": "2020-08-05T23:12:26.000Z",
+                          "updated_at": "2020-08-22T01:42:13.000Z",
+                          "solute_type": "Chemical",
+                          "solute_id": 1,
+                          "condition_id": 33,
+                          "indication_type_id": 1,
+                          "biomarker_category_id": 2,
+                          "indication_modifier": null,
+                          "quality_id": 3280,
+                          "quality_type": "RocStats",
+                          "status": "Clinical",
+                          "exported": true,
+                          "reference_conc_id": "41587"
+                      }
+                  ],
+                  "normal_concentration": [
+                      {
+                          "id": 43294,
+                          "age_range": "Adult",
+                          "level": "12.7 (9.8-15.6) uM",
+                          "location_name": null,
+                          "special_constraints": null,
+                          "sex": "Both",
+                          "biofluid": "Blood",
+                          "comment": null,
+                          "range": "9.8-15.6",
+                          "high": null,
+                          "low": null,
+                          "mean": 12.7,
+                          "units": "uM",
+                          "pvalue": 0.0,
+                          "created_at": "2020-08-05T23:17:46.000Z",
+                          "updated_at": "2020-08-22T01:39:06.000Z",
+                          "solute_type": "Chemical",
+                          "solute_id": 1,
+                          "condition_id": 1,
+                          "indication_type_id": 1,
+                          "biomarker_category_id": 2,
+                          "indication_modifier": null,
+                          "quality_id": null,
+                          "quality_type": null,
+                          "status": null,
+                          "exported": true,
+                          "reference_conc_id": null
+                      },
+                      {
+                          "id": 41587,
+                          "age_range": "Adult",
+                          "level": "85.8 (17.7-153.8) umol/mmol creatinine",
+                          "location_name": null,
+                          "special_constraints": null,
+                          "sex": "Both",
+                          "biofluid": "Urine",
+                          "comment": null,
+                          "range": "17.7-153.8",
+                          "high": null,
+                          "low": null,
+                          "mean": 85.8,
+                          "units": "umol/mmol creatinine",
+                          "pvalue": 0.0,
+                          "created_at": "2020-08-05T23:12:25.000Z",
+                          "updated_at": "2020-08-22T01:40:05.000Z",
+                          "solute_type": "Chemical",
+                          "solute_id": 1,
+                          "condition_id": 1,
+                          "indication_type_id": 1,
+                          "biomarker_category_id": 2,
+                          "indication_modifier": null,
+                          "quality_id": null,
+                          "quality_type": null,
+                          "status": null,
+                          "exported": true,
+                          "reference_conc_id": null
+                      }
+                  ]
+              }
+            </textarea>
+          </div>
+
+          <label>Parameters:</label>
+          <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Operator</th><th>Usage</th><th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>api_key</td>
+                        <td>
+                          Required
+                        </td>
+                        <td>
+                          Ask for api_key
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>
+                          Required
+                        </td>
+                        <td>
+                          the chemical name that you want to search for
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>markerdb_id</td>
+                        <td>
+                          Optional
+                        </td>
+                        <td>
+                          Get specific condition by id. If id given, name will be ignored.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>page</td>
+                        <td>
+                          Required (for name search)
+                        </td>
+                        <td>
+                          Search based on pages
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+
+
+        </div>
+
+        <div>
+          <h2> Gene Biomarkers </h2>
+          <div>
+            <p>Example:</p>
+            <label>GET request (<code>Content-type: application/json</code>):</label>
+            <br>
+            <input class="url" type="text" data-baseurl="true" value="http://markerdb.ca/api/v1/geneapi/generequest?api_key=537ff5a9c7b427cd676e9cb288aeff4b&markerdb_id=MDB00031188" size="120" />
+            <br>
+            <label>Response:</label>
+            <div class="output_div">
+              <textarea rows="30" cols="100">
+                  {
+                      "gene": {
+                          "id": 15257,
+                          "description": null,
+                          "position": "7q31.2",
+                          "variation": "Ala1067Thr ( rs121909020)",
+                          "gene_symbol": "CFTR",
+                          "coding": null,
+                          "created_at": "2020-08-05T07:11:16.000Z",
+                          "updated_at": "2020-08-14T19:16:59.000Z",
+                          "gene_id": 1548,
+                          "indication_type_id": 2,
+                          "biomarker_category_id": 1,
+                          "indication_modifier": null,
+                          "comment": null,
+                          "external_type": "[ClinVar]",
+                          "mdbid_id": null,
+                          "marker_type": "Single Nucleotide Mutation",
+                          "reference": null,
+                          "exported": 1,
+                          "chromosome": 7,
+                          "external_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/7159",
+                          "image_url": null,
+                          "image_id": null,
+                          "parent_id": null,
+                          "variation_sequence": "G>A",
+                          "source": "Human",
+                          "organism": "Homo sapiens"
+                      }
+                  }
+              </textarea>
+            </div>
+
+            <label>Parameters:</label>
+            <div>
+              <table class="table table-bordered">
+                  <thead>
+                      <tr>
+                          <th>Operator</th><th>Usage</th><th>Description</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>api_key</td>
+                          <td>
+                            Required
+                          </td>
+                          <td>
+                            Ask for api_key
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>name</td>
+                          <td>
+                            Optional
+                          </td>
+                          <td>
+                            The gene name that you want to search for
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>markerdb_id</td>
+                          <td>
+                            Optional
+                          </td>
+                          <td>
+                            Get specific gene biomarker by markerdb_id. If markerdb_id given, name will be ignored.
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>page</td>
+                          <td>
+                            Required (for name search)
+                          </td>
+                          <td>
+                            Search based on pages
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div>
+          <h2> Protein Biomarkers </h2>
+          <div>
+            <p>Example:</p>
+            <label>GET request (<code>Content-type: application/json</code>):</label>
+            <br>
+            <input class="url" type="text" data-baseurl="true" value="http://markerdb.ca/api/v1/proteinapi/proteinrequest?api_key=537ff5a9c7b427cd676e9cb288aeff4b&markerdb_id=MDB00000873" size="120" />
+            <br>
+            <label>Response:</label>
+            <div class="output_div">
+              <textarea rows="30" cols="100">
+                  {
+                      "protein": {
+                          "id": 1,
+                          "name": "Glycated hemoglobin",
+                          "description": "Glycated hemoglobin (HbA1c, hemoglobin A1c, A1c, or less commonly HbA1c) is a form of hemoglobin A or HbA that is chemically linked to a sugar moiety. Hemoglobin A (HbA), also known as adult hemoglobin, hemoglobin A1 or α2β2, is the most common form of human hemoglobin, accounting for over 97% of the total red blood cell hemoglobin. Hemoglobin is an oxygen-binding protein, found in erythrocytes, which transports oxygen from the lungs to the tissues. Hemoglobin is a tetrameric protein consisting of two alpha subunits paired with two beta subunits. The hemoglobin alpha subunit has a chain length of 142 residues and a molecular weight of 15,258 daltons. The hemoglobin beta subunit has a chain length of 147 residues and has a molecular weight of 15,867 daltons. Each hemoglobin subunit binds one molecule of heme. There are four iron atoms in each heme molecule, which means the hemoglobin tetramer can bind four atoms of oxygen. Glycated hemoglobin causes an increase of highly reactive free radicals inside blood cells. Radicals alter blood cell membrane properties. This leads to blood cell aggregation and increased blood viscosity, which results in impaired blood flow. Persistent elevations in blood sugar (and, therefore, HbA1c) increase the risk of long-term vascular complications of diabetes, such as coronary disease, heart attack, stroke, heart failure, kidney failure, blindness, erectile dysfunction, neuropathy (loss of sensation, especially in the feet), gangrene, and gastroparesis (slowed emptying of the stomach).",
+                          "gene_name": "HBA1",
+                          "gene_position": null,
+                          "pdb_file": null,
+                          "sdf_file": null,
+                          "mol_file": null,
+                          "created_at": "2015-04-06T18:15:00.000Z",
+                          "updated_at": "2020-08-13T07:07:22.000Z",
+                          "source": null,
+                          "protein_type": null,
+                          "review_date": null,
+                          "uniprot_id": "P69905",
+                          "general_function": "Involved in oxygen transport from the lung to the various peripheral tissues. [Uniprot]",
+                          "uniprot_name": "HBA_HUMAN",
+                          "genecard_id": "HBA1",
+                          "hgnc_id": "HGNC:4823",
+                          "structure_image_file_name": "open-uri20200812-18129-1d8cyby",
+                          "structure_image_content_type": "image/jpeg",
+                          "structure_image_file_size": 69717,
+                          "structure_image_updated_at": "2020-08-13T02:15:23.000Z",
+                          "structure_image_pdb_id": "1A3N",
+                          "exported": true,
+                          "mdbid": "MDB00004973",
+                          "panel_single": "single"
+                      },
+                      "sequence": {
+                          "id": 592,
+                          "sequenceable_id": 1,
+                          "sequenceable_type": "Protein",
+                          "header": "Hemoglobin_alpha_protein (Glycated)",
+                          "chain": "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR",
+                          "created_at": "2020-08-13T01:42:26.000Z",
+                          "updated_at": "2020-08-13T01:42:26.000Z",
+                          "uniprot_id": "P69905"
+                      },
+                      "abnormal_concentration": [
+                          {
+                              "id": 38798,
+                              "age_range": "Adult: >=18 yrs old",
+                              "level": ">6.5 %",
+                              "location_name": null,
+                              "special_constraints": null,
+                              "sex": "Both",
+                              "biofluid": "blood",
+                              "comment": null,
+                              "range": null,
+                              "high": null,
+                              "low": null,
+                              "mean": null,
+                              "units": "%",
+                              "pvalue": null,
+                              "created_at": "2020-07-16T23:04:33.000Z",
+                              "updated_at": "2020-08-14T16:20:27.000Z",
+                              "solute_type": "Protein",
+                              "solute_id": 1,
+                              "condition_id": 115,
+                              "indication_type_id": 1,
+                              "biomarker_category_id": 2,
+                              "indication_modifier": null,
+                              "quality_id": null,
+                              "quality_type": null,
+                              "status": "Clinical",
+                              "exported": true,
+                              "reference_conc_id": "38799"
+                          },
+                          {
+                              "id": 15056,
+                              "age_range": "Adolescent:13-18 yrs old",
+                              "level": ">6.5 %",
+                              "location_name": null,
+                              "special_constraints": "The specific age range is for 12-18 yrs old",
+                              "sex": "Both",
+                              "biofluid": "Serum",
+                              "comment": null,
+                              "range": null,
+                              "high": null,
+                              "low": null,
+                              "mean": 6.0,
+                              "units": "%",
+                              "pvalue": null,
+                              "created_at": "2015-04-12T21:39:13.000Z",
+                              "updated_at": "2020-08-14T16:20:27.000Z",
+                              "solute_type": "Protein",
+                              "solute_id": 1,
+                              "condition_id": 115,
+                              "indication_type_id": 1,
+                              "biomarker_category_id": 2,
+                              "indication_modifier": null,
+                              "quality_id": 139,
+                              "quality_type": "RocStats",
+                              "status": "Clinical",
+                              "exported": true,
+                              "reference_conc_id": "38947"
+                          },
+                          {
+                              "id": 15055,
+                              "age_range": "Adult: >=18 yrs old",
+                              "level": ">6.5 %",
+                              "location_name": null,
+                              "special_constraints": "The specific age range is for 19-79 yrs old",
+                              "sex": "Both",
+                              "biofluid": "Serum",
+                              "comment": null,
+                              "range": null,
+                              "high": null,
+                              "low": null,
+                              "mean": 6.0,
+                              "units": "%",
+                              "pvalue": null,
+                              "created_at": "2015-04-12T21:39:13.000Z",
+                              "updated_at": "2020-08-14T16:20:27.000Z",
+                              "solute_type": "Protein",
+                              "solute_id": 1,
+                              "condition_id": 115,
+                              "indication_type_id": 1,
+                              "biomarker_category_id": 2,
+                              "indication_modifier": null,
+                              "quality_id": 138,
+                              "quality_type": "RocStats",
+                              "status": "Clinical",
+                              "exported": true,
+                              "reference_conc_id": "38948"
+                          }
+                      ],
+                      "normal_concentration": [
+                          {
+                              "id": 38799,
+                              "age_range": "Adult: >=18 yrs old",
+                              "level": "<5.7 %",
+                              "location_name": null,
+                              "special_constraints": null,
+                              "sex": "Both",
+                              "biofluid": "blood",
+                              "comment": null,
+                              "range": null,
+                              "high": null,
+                              "low": null,
+                              "mean": null,
+                              "units": "%",
+                              "pvalue": null,
+                              "created_at": "2020-07-16T23:04:35.000Z",
+                              "updated_at": "2020-07-23T16:52:08.000Z",
+                              "solute_type": "Protein",
+                              "solute_id": 1,
+                              "condition_id": 1,
+                              "indication_type_id": 1,
+                              "biomarker_category_id": 2,
+                              "indication_modifier": null,
+                              "quality_id": null,
+                              "quality_type": null,
+                              "status": null,
+                              "exported": true,
+                              "reference_conc_id": null
+                          },
+                          {
+                              "id": 38947,
+                              "age_range": "Adolescent:13-18 yrs old",
+                              "level": "<6.5 %",
+                              "location_name": null,
+                              "special_constraints": null,
+                              "sex": "Both",
+                              "biofluid": "Serum",
+                              "comment": null,
+                              "range": null,
+                              "high": null,
+                              "low": null,
+                              "mean": null,
+                              "units": "%",
+                              "pvalue": null,
+                              "created_at": "2020-07-23T16:53:04.000Z",
+                              "updated_at": "2020-08-13T01:31:42.000Z",
+                              "solute_type": "Protein",
+                              "solute_id": 1,
+                              "condition_id": 1,
+                              "indication_type_id": 1,
+                              "biomarker_category_id": 2,
+                              "indication_modifier": null,
+                              "quality_id": null,
+                              "quality_type": null,
+                              "status": null,
+                              "exported": true,
+                              "reference_conc_id": null
+                          },
+                          {
+                              "id": 38948,
+                              "age_range": "Adult: >=18 yrs old",
+                              "level": "<6.5 %",
+                              "location_name": null,
+                              "special_constraints": null,
+                              "sex": "Both",
+                              "biofluid": "Serum",
+                              "comment": null,
+                              "range": null,
+                              "high": null,
+                              "low": null,
+                              "mean": null,
+                              "units": "%",
+                              "pvalue": null,
+                              "created_at": "2020-07-23T16:53:04.000Z",
+                              "updated_at": "2020-08-13T01:31:42.000Z",
+                              "solute_type": "Protein",
+                              "solute_id": 1,
+                              "condition_id": 1,
+                              "indication_type_id": 1,
+                              "biomarker_category_id": 2,
+                              "indication_modifier": null,
+                              "quality_id": null,
+                              "quality_type": null,
+                              "status": null,
+                              "exported": true,
+                              "reference_conc_id": null
+                          }
+                      ]
+                  }
+              </textarea>
+            </div>
+
+            <label>Parameters:</label>
+            <div>
+              <table class="table table-bordered">
+                  <thead>
+                      <tr>
+                          <th>Operator</th><th>Usage</th><th>Description</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>api_key</td>
+                          <td>
+                            Required
+                          </td>
+                          <td>
+                            Ask for api_key
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>name</td>
+                          <td>
+                            Optional
+                          </td>
+                          <td>
+                            The protein name that you want to search for
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>markerdb_id</td>
+                          <td>
+                            Optional
+                          </td>
+                          <td>
+                            Get specific protein biomarker by markerdb_id. If markerdb_id given, name will be ignored.
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>page</td>
+                          <td>
+                            Required (for name search)
+                          </td>
+                          <td>
+                            Search based on pages
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div>
+          <h2> Karyotype Biomarkers </h2>
+          <div>
+            <p>Example:</p>
+            <label>GET request (<code>Content-type: application/json</code>):</label>
+            <br>
+            <input class="url" type="text" data-baseurl="true" value="http://markerdb.ca/api/v1/karyotypeapi/karyotyperequest?api_key=537ff5a9c7b427cd676e9cb288aeff4b&markerdb_id=MDB00005072" size="120" />
+            <br>
+            <label>Response:</label>
+            <div class="output_div">
+              <textarea rows="30" cols="100">
+                  {
+                      "gene": {
+                          "id": 15257,
+                          "description": null,
+                          "position": "7q31.2",
+                          "variation": "Ala1067Thr ( rs121909020)",
+                          "gene_symbol": "CFTR",
+                          "coding": null,
+                          "created_at": "2020-08-05T07:11:16.000Z",
+                          "updated_at": "2020-08-14T19:16:59.000Z",
+                          "gene_id": 1548,
+                          "indication_type_id": 2,
+                          "biomarker_category_id": 1,
+                          "indication_modifier": null,
+                          "comment": null,
+                          "external_type": "[ClinVar]",
+                          "mdbid_id": null,
+                          "marker_type": "Single Nucleotide Mutation",
+                          "reference": null,
+                          "exported": 1,
+                          "chromosome": 7,
+                          "external_url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/7159",
+                          "image_url": null,
+                          "image_id": null,
+                          "parent_id": null,
+                          "variation_sequence": "G>A",
+                          "source": "Human",
+                          "organism": "Homo sapiens"
+                      }
+                  }
+              </textarea>
+            </div>
+
+            <label>Parameters:</label>
+            <div>
+              <table class="table table-bordered">
+                  <thead>
+                      <tr>
+                          <th>Operator</th><th>Usage</th><th>Description</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>api_key</td>
+                          <td>
+                            Required
+                          </td>
+                          <td>
+                            Ask for api_key
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>markerdb_id</td>
+                          <td>
+                            Optional
+                          </td>
+                          <td>
+                            Get specific karyotype biomarker by markerdb_id. If markerdb_id given, name will be ignored.
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div>
+          <h2> Karyotype Biomarkers </h2>
+          <div>
+            <p>Example:</p>
+            <label>GET request (<code>Content-type: application/json</code>):</label>
+            <br>
+            <input class="url" type="text" data-baseurl="true" value="http://markerdb.ca/api/v1/generalapi/generalrequest?api_key=537ff5a9c7b427cd676e9cb288aeff4b&category=Diagnostic&biomarker_type=Chemical&page=1" size="120" />
+            <br>
+            <label>Response:</label>
+            <div class="output_div">
+              <textarea rows="30" cols="100">
+                  {
+                      "biomarkers": {
+                          "{\"biomarker_id\"=>2, \"biomarker_type\"=>\"Chemical\"}": [
+                              {
+                                  "biomarker_name": "1,3-Diaminopropane",
+                                  "mdbid": "MDB00000002",
+                                  "condition_id": 1,
+                                  "condition_name": "Normal"
+                              },
+                              {
+                                  "biomarker_name": "1,3-Diaminopropane",
+                                  "mdbid": "MDB00000002",
+                                  "condition_id": 207,
+                                  "condition_name": "Leukemia"
+                              }
+                          ],
+                          "{\"biomarker_id\"=>1, \"biomarker_type\"=>\"Chemical\"}": [
+                              {
+                                  "biomarker_name": "1-Methylhistidine",
+                                  "mdbid": "MDB00000001",
+                                  "condition_id": 1,
+                                  "condition_name": "Normal"
+                              },
+                              {
+                                  "biomarker_name": "1-Methylhistidine",
+                                  "mdbid": "MDB00000001",
+                                  "condition_id": 33,
+                                  "condition_name": "Alzheimer's Disease"
+                              },
+                              {
+                                  "biomarker_name": "1-Methylhistidine",
+                                  "mdbid": "MDB00000001",
+                                  "condition_id": 34,
+                                  "condition_name": "Pregnancy"
+                              },
+                              {
+                                  "biomarker_name": "1-Methylhistidine",
+                                  "mdbid": "MDB00000001",
+                                  "condition_id": 83,
+                                  "condition_name": "Chronic Kidney Disease"
+                              },
+                              {
+                                  "biomarker_name": "1-Methylhistidine",
+                                  "mdbid": "MDB00000001",
+                                  "condition_id": 203,
+                                  "condition_name": "Kidney Disease"
+                              },
+                              {
+                                  "biomarker_name": "1-Methylhistidine",
+                                  "mdbid": "MDB00000001",
+                                  "condition_id": 251,
+                                  "condition_name": "Obesity"
+                              },
+                              {
+                                  "biomarker_name": "1-Methylhistidine",
+                                  "mdbid": "MDB00000001",
+                                  "condition_id": 5988,
+                                  "condition_name": "Preeclampsia/Eclampsia"
+                              }
+                          ],
+                          "{\"biomarker_id\"=>1281, \"biomarker_type\"=>\"Chemical\"}": [
+                              {
+                                  "biomarker_name": "Tetrahydrodeoxycortisol",
+                                  "mdbid": "MDB00000477",
+                                  "condition_id": 2,
+                                  "condition_name": "11 Beta Hydroxylase Deficiency"
+                              }
+                          ],
+                          "{\"biomarker_id\"=>37, \"biomarker_type\"=>\"Chemical\"}": [
+                              {
+                                  "biomarker_name": "Androstenedione",
+                                  "mdbid": "MDB00000026",
+                                  "condition_id": 2,
+                                  "condition_name": "11 Beta Hydroxylase Deficiency"
+                              },
+                              {
+                                  "biomarker_name": "Androstenedione",
+                                  "mdbid": "MDB00000026",
+                                  "condition_id": 4,
+                                  "condition_name": "Congenital Adrenal Hyperplasia"
+                              },
+                              {
+                                  "biomarker_name": "Androstenedione",
+                                  "mdbid": "MDB00000026",
+                                  "condition_id": 269,
+                                  "condition_name": "Polycystic Ovary Syndrome"
+                              },
+                              {
+                                  "biomarker_name": "Androstenedione",
+                                  "mdbid": "MDB00000026",
+                                  "condition_id": 295,
+                                  "condition_name": "Rheumatoid Arthritis"
+                              },
+                              {
+                                  "biomarker_name": "Androstenedione",
+                                  "mdbid": "MDB00000026",
+                                  "condition_id": 1085,
+                                  "condition_name": "Lipoid Congenital Adrenal Hyperplasia"
+                              },
+                              {
+                                  "biomarker_name": "Androstenedione",
+                                  "mdbid": "MDB00000026",
+                                  "condition_id": 4299,
+                                  "condition_name": "Congenital Adrenal Insufficiency with 46,XY Sex Reversal"
+                              }
+                          ],
+                          "{\"biomarker_id\"=>752, \"biomarker_type\"=>\"Chemical\"}": [
+                              {
+                                  "biomarker_name": "Fructosamine",
+                                  "mdbid": "MDB00000368",
+                                  "condition_id": 2,
+                                  "condition_name": "11 Beta Hydroxylase Deficiency"
+                              },
+                              {
+                                  "biomarker_name": "Fructosamine",
+                                  "mdbid": "MDB00000368",
+                                  "condition_id": 83,
+                                  "condition_name": "Chronic Kidney Disease"
+                              },
+                              {
+                                  "biomarker_name": "Fructosamine",
+                                  "mdbid": "MDB00000368",
+                                  "condition_id": 85,
+                                  "condition_name": "Cirrhosis"
+                              },
+                              {
+                                  "biomarker_name": "Fructosamine",
+                                  "mdbid": "MDB00000368",
+                                  "condition_id": 115,
+                                  "condition_name": "Diabetes Mellitus Type 2"
+                              }
+                          ],
+                          "{\"biomarker_id\"=>514, \"biomarker_type\"=>\"Chemical\"}": [
+                              {
+                                  "biomarker_name": "DHEA sulfate",
+                                  "mdbid": "MDB00000294",
+                                  "condition_id": 2,
+                                  "condition_name": "11 Beta Hydroxylase Deficiency"
+                              },
+                              {
+                                  "biomarker_name": "DHEA sulfate",
+                                  "mdbid": "MDB00000294",
+                                  "condition_id": 33,
+                                  "condition_name": "Alzheimer's Disease"
+                              },
+                              {
+                                  "biomarker_name": "DHEA sulfate",
+                                  "mdbid": "MDB00000294",
+                                  "condition_id": 269,
+                                  "condition_name": "Polycystic Ovary Syndrome"
+                              },
+                              {
+                                  "biomarker_name": "DHEA sulfate",
+                                  "mdbid": "MDB00000294",
+                                  "condition_id": 2005,
+                                  "condition_name": "X-Linked Ichthyosis"
+                              }
+                          ],
+                          "{\"biomarker_id\"=>150, \"biomarker_type\"=>\"Chemical\"}": [
+                              {
+                                  "biomarker_name": "Testosterone",
+                                  "mdbid": "MDB00000113",
+                                  "condition_id": 2,
+                                  "condition_name": "11 Beta Hydroxylase Deficiency"
+                              },
+                              {
+                                  "biomarker_name": "Testosterone",
+                                  "mdbid": "MDB00000113",
+                                  "condition_id": 3,
+                                  "condition_name": "21 Hydroxylase Deficiency"
+                              },
+                              {
+                                  "biomarker_name": "Testosterone",
+                                  "mdbid": "MDB00000113",
+                                  "condition_id": 66,
+                                  "condition_name": "Cadmium Exposure"
+                              },
+                              {
+                                  "biomarker_name": "Testosterone",
+                                  "mdbid": "MDB00000113",
+                                  "condition_id": 2005,
+                                  "condition_name": "X-Linked Ichthyosis"
+                              },
+                              {
+                                  "biomarker_name": "Testosterone",
+                                  "mdbid": "MDB00000113",
+                                  "condition_id": 4185,
+                                  "condition_name": "Aromatase Deficiency"
+                              }
+                          ],
+                          "{\"biomarker_id\"=>9, \"biomarker_type\"=>\"Chemical\"}": [
+                              {
+                                  "biomarker_name": "Cortexolone",
+                                  "mdbid": "MDB00013414",
+                                  "condition_id": 2,
+                                  "condition_name": "11 Beta Hydroxylase Deficiency"
+                              }
+                          ],
+                          "{\"biomarker_id\"=>74, \"biomarker_type\"=>\"Chemical\"}": [
+                              {
+                                  "biomarker_name": "D-Glucose",
+                                  "mdbid": "MDB00000057",
+                                  "condition_id": 3,
+                                  "condition_name": "21 Hydroxylase Deficiency"
+                              },
+                              {
+                                  "biomarker_name": "D-Glucose",
+                                  "mdbid": "MDB00000057",
+                                  "condition_id": 11,
+                                  "condition_name": "Acute Myelogenous Leukemia"
+                              },
+                              {
+                                  "biomarker_name": "D-Glucose",
+                                  "mdbid": "MDB00000057",
+                                  "condition_id": 115,
+                                  "condition_name": "Diabetes Mellitus Type 2"
+                              },
+                              {
+                                  "biomarker_name": "D-Glucose",
+                                  "mdbid": "MDB00000057",
+                                  "condition_id": 290,
+                                  "condition_name": "Fanconi Syndrome"
+                              },
+                              {
+                                  "biomarker_name": "D-Glucose",
+                                  "mdbid": "MDB00000057",
+                                  "condition_id": 1297,
+                                  "condition_name": "Fructose 1,6 Bisphosphatase Deficiency"
+                              },
+                              {
+                                  "biomarker_name": "D-Glucose",
+                                  "mdbid": "MDB00000057",
+                                  "condition_id": 1506,
+                                  "condition_name": "Carnitine Palmitoyltransferase I Deficiency"
+                              },
+                              {
+                                  "biomarker_name": "D-Glucose",
+                                  "mdbid": "MDB00000057",
+                                  "condition_id": 1523,
+                                  "condition_name": "Familial Hyperinsulinemic Hypoglycemia"
+                              },
+                              {
+                                  "biomarker_name": "D-Glucose",
+                                  "mdbid": "MDB00000057",
+                                  "condition_id": 4281,
+                                  "condition_name": "3 Hydroxyacyl Co A Dehydrogenase Deficiency"
+                              },
+                              {
+                                  "biomarker_name": "D-Glucose",
+                                  "mdbid": "MDB00000057",
+                                  "condition_id": 4299,
+                                  "condition_name": "Congenital Adrenal Insufficiency with 46,XY Sex Reversal"
+                              },
+                              {
+                                  "biomarker_name": "D-Glucose",
+                                  "mdbid": "MDB00000057",
+                                  "condition_id": 5904,
+                                  "condition_name": "Lipodystrophy"
+                              }
+                          ],
+                          "{\"biomarker_id\"=>309, \"biomarker_type\"=>\"Chemical\"}": [
+                              {
+                                  "biomarker_name": "Potassium",
+                                  "mdbid": "MDB00000194",
+                                  "condition_id": 3,
+                                  "condition_name": "21 Hydroxylase Deficiency"
+                              },
+                              {
+                                  "biomarker_name": "Potassium",
+                                  "mdbid": "MDB00000194",
+                                  "condition_id": 930,
+                                  "condition_name": "Type I Autosonal Dominant Pseudyhopoaldosteronism"
+                              },
+                              {
+                                  "biomarker_name": "Potassium",
+                                  "mdbid": "MDB00000194",
+                                  "condition_id": 1085,
+                                  "condition_name": "Lipoid Congenital Adrenal Hyperplasia"
+                              },
+                              {
+                                  "biomarker_name": "Potassium",
+                                  "mdbid": "MDB00000194",
+                                  "condition_id": 2353,
+                                  "condition_name": "Type 4A Bartter Syndrome"
+                              },
+                              {
+                                  "biomarker_name": "Potassium",
+                                  "mdbid": "MDB00000194",
+                                  "condition_id": 4011,
+                                  "condition_name": "Type 4B Bartter Syndrome"
+                              },
+                              {
+                                  "biomarker_name": "Potassium",
+                                  "mdbid": "MDB00000194",
+                                  "condition_id": 4299,
+                                  "condition_name": "Congenital Adrenal Insufficiency with 46,XY Sex Reversal"
+                              }
+                          ]
+                      },
+                      "page": 1,
+                      "total_page": 1
+                  }
+              </textarea>
+            </div>
+
+            <label>Parameters:</label>
+            <div>
+              <table class="table table-bordered">
+                  <thead>
+                      <tr>
+                          <th>Operator</th><th>Usage</th><th>Description</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>api_key</td>
+                          <td>
+                            Required
+                          </td>
+                          <td>
+                            Ask for api_key
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <td>category</td>
+                          <td>
+                            Required
+                          </td>
+                          <td>
+                            Select one from: {Diagnostic, Prognostic, Predictive, Exposure}
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <td>biomarker_type</td>
+                          <td>
+                            Required
+                          </td>
+                          <td>
+                            Select one from: {Chemical, Protein, Genetic, Karyotype}
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <td>page</td>
+                          <td>
+                            Required
+                          </td>
+                          <td>
+                            Search based on pages
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+
+          </div>
+          
+        </div>
+
+
+      </div>
+      
+
+      <hr>
+      <div class="alert alert-warning">
+        <p> You can use <code>cc69fb7c1a4809bbae7c0701d5188c17</code> as api_key</p>
+      </div> 
+      <div class="alert alert-danger" role="alert">
+        <p> Any unauthorized access and abuse will be blocked permanently. </p>
+      </div>
+    </div>
+  <% end %>

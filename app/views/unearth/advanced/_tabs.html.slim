@@ -1,0 +1,14 @@
+ul.nav.nav-tabs.index-nav
+	li class=(@index_name == 'conditions' ? 'active' : '') 
+		= link_to 'Condition-specific Biomarker Advanced Search', unearth.advanced_path(index: 'conditions')
+	li class=(@index_name == 'chemicals' ? 'active' : '') 
+		= link_to 'Chemical Biomarker Advanced Search', unearth.advanced_path(index: 'chemicals')
+	li class=(@index_name == 'genetic_markers' ? 'active' : '') 
+		= link_to 'Genetic Biomarker Advanced Search', unearth.advanced_path(index: 'genetic_markers')
+	li class=(@index_name == 'sequence_variants' ? 'active' : '') 
+		= link_to 'Sequence Variant Biomarker Advanced Search', unearth.advanced_path(index: 'sequence_variants')
+	li class=(@index_name == 'karotypes' ? 'active' : '') 
+	 	= link_to 'Karyotype Biomarker Advanced Search', unearth.advanced_path(index: 'karyotypes')
+	li class=(@index_name == 'proteins' ? 'active' : '') 
+		= link_to 'Protein Biomarker Advanced Search', unearth.advanced_path(index: 'proteins')
+

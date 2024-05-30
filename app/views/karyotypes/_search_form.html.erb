@@ -1,0 +1,6 @@
+<%= form_tag(karyotypes_path, remote: true, method: 'get', role: 'form',id: 'search-form') do %>
+	<div class="search-form-each-page">
+	  <%= text_field_tag :search, params[:search], placeholder: "Search by Name", id: "text-search-each-page", "data-type" => "karyotypes" %>
+	  <%= submit_tag "Search", id: 'search-each-page'%>
+	</div>
+<% end %>

@@ -1,0 +1,5 @@
+<%= box "Tests" do %>
+  <% lab_test_owner.lab_tests.each do |test| %>
+    <%= link_to( test.name, test)  %>
+  <% end %>
+<% end %>

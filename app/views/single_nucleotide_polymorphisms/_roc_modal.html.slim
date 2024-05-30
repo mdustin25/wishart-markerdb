@@ -1,0 +1,23 @@
+div class="modal fade image-modal" id="roc-image-modal-#{single_nucleotide_polymorphism.study}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+  div class="modal-dialog"
+    div class="modal-content"
+      div class="modal-header"
+        button type="button" class="close" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true"
+            | &times;
+        h4 class="modal-title" id="myModalLabel"
+          | ROC Curve:
+          div class="modal-body"
+            - imageTag = "gwas-rocs/" + single_nucleotide_polymorphism.gwas_rocs_id + ".png"
+            = image_tag imageTag
+
+            dl class="dl-horizontal"
+              - unless single_nucleotide_polymorphism.auroc.nil?
+                dt AUC
+                dd = single_nucleotide_polymorphism.auroc
+              - unless single_nucleotide_polymorphism.logistic_equation.nil?
+                dt Logistic Regression Equation
+                dd = single_nucleotide_polymorphism.logisitic_equation.nil?
+      /div class="modal-footer"
+
+        /button type="button" class="btn btn-default" data-dismiss="modal">Close</button>%>

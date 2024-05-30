@@ -1,0 +1,407 @@
+/ 1) Specific Condition                                                            
+/ 2) General Condition(s):                                 
+/ 3) Biofluid                                                      
+/ 4) Disease Concentration                                
+/ 5) Normal Concentration                                
+/ 6) Age Range:                                                 
+/ 7) Sex:                                                             
+/ 8) References:
+/ 9) Sensitivity   
+/ 10) Specificity
+/ 11) ROC-AUC
+/ 12) ROC threshold
+/ 13) P-Value
+/ 14) Clinical Status
+/ 15) Notes/Limits:
+/ 16) ROC Curve
+- if concentration.biomarker_category_id == 4
+  table.info-table
+    tr
+      td
+        strong Specific Exposure:
+      td
+        - if concentration.indication == 'indicates'
+          = link_to(concentration.condition.name,concentration.condition)
+        - else
+          = link_to("#{concentration.indication} #{concentration.condition.name}",concentration.condition)
+    tr
+      td &nbsp;
+      td &nbsp;
+    tr
+      td
+        strong General Condition(s):
+      td
+        - if concentration.indication == 'indicates'
+          - cat = concentration.condition.categories.pluck(:name)
+          - cat.each do |cat_link|
+            = link_to(cat_link, category_path(cat_link)) 
+            br
+        - else
+          = nah(value=nil, message="No Additional Data")
+    tr
+      td
+        strong Biofluid: 
+      td
+        = concentration.biofluid
+
+    tr
+      td
+        | &nbsp;&nbsp;
+      td
+        | &nbsp;&nbsp;
+
+    tr
+      td
+        strong Exposure concentration:
+      td
+        = concentration.level
+
+    tr
+      td 
+        strong P-value:
+      td 
+        - if concentration.pvalue.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          = concentration.pvalue
+            
+    tr
+      td
+        strong Age:
+      td
+        = concentration.age_range
+
+    tr
+      td
+        strong Sex:
+      td
+        = concentration.sex
+
+    tr
+      td
+        strong Specificity/Sensitivity:
+      td
+        - if concentration.quality.nil?
+          = nah(value=nil, message="No Additional Data")
+        - elsif concentration.quality.specificity.blank? or concentration.quality.sensitivity.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          = "#{concentration.quality.specificity} / #{concentration.quality.sensitivity}"
+    tr
+      td
+        strong AUC:
+      td
+        - if concentration.quality.nil? # this is for protein biomarker
+          = nah(value=nil, message="No Additional Data")
+        - elsif concentration.quality.roc_auc.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          = concentration.quality.roc_auc
+    tr
+      td
+        strong ROC based concentration threshold:
+      td
+        - if concentration.quality.nil? # this is for protein biomarker
+          = nah(value=nil, message="No Additional Data")
+        - elsif concentration.quality.roc_conc_threshold.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          = concentration.quality.roc_conc_threshold
+
+
+    - ref_ids = Citation.where("citation_owner_type = ? and citation_owner_id = ?", concentration.class,concentration.id).pluck(:reference_id)
+    tr
+      td
+        strong References:
+      td
+        - if ref_ids.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          - ref_ids.each do |ref_id|
+            - ref_obj = Reference.where("id = ?",ref_id).first
+            - if !ref_obj.pubmed_id.nil?
+              = info_table_link_reference_pmid(ref_obj.pubmed_id)
+              br
+            - elsif !ref_obj.url.nil?
+              = info_table_link_reference_url(ref_obj)
+              br
+            - else
+              span data-placement="top" data-toggle="tooltip" title="#{ref_obj.citation.to_s}" = ref_obj.citation
+              br
+    tr
+      td
+        | &nbsp;&nbsp;
+      td
+        | &nbsp;&nbsp;
+
+    - if concentration.reference_conc_id.blank?
+      next
+    - else
+      - ref_conc = concentration.get_related_norm_conc
+
+      tr
+        td
+          strong Normal concentration:
+        td
+          - unless ref_conc.nil?
+            = ref_conc.level
+          - else
+            = nah(value=nil, message="No Additional Data")
+      tr
+        td
+          strong Age:
+        td
+          - unless ref_conc.nil?
+            = ref_conc.age_range
+          - else
+            = nah(value=nil, message="No Additional Data")
+      tr
+        td
+          strong Sex:
+        td
+          - unless ref_conc.nil?
+            = ref_conc.sex
+          - else
+            = nah(value=nil, message="No Additional Data")
+
+      - if ref_conc.nil?
+        - ref_ids = nil
+      - else    
+        - ref_ids = Citation.where("citation_owner_type = ? and citation_owner_id = ?",concentration.class,ref_conc.id).pluck(:reference_id)
+
+      tr
+        td
+          strong References:
+        td
+          - if ref_ids.blank?
+            = nah(value=nil, message="No Additional Data")
+          - else
+            - ref_ids.each do |ref_id|
+              - ref_obj = Reference.where("id = ?",ref_id).first
+              - if !ref_obj.pubmed_id.nil?
+                = info_table_link_reference_pmid(ref_obj.pubmed_id)
+                br
+              - elsif !ref_obj.url.nil?
+                = info_table_link_reference_url(ref_obj)
+                br
+              - else
+                span data-placement="top" data-toggle="tooltip" title="#{ref_obj.citation.to_s}" = ref_obj.citation.truncate(20)
+                br
+    tr
+      td
+        strong Clinical Status:
+      td
+        - if concentration.status.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          = concentration.status
+
+    tr
+      td
+        strong Notes/Limits:
+      td
+        - if concentration.special_constraints.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          = concentration.special_constraints
+  
+- else
+  table.info-table
+    tr
+      td
+        strong Specific Condition:
+      td
+        - if concentration.indication == 'indicates'
+          = link_to(concentration.condition.name,concentration.condition)
+        - else
+          = link_to("#{concentration.indication} #{concentration.condition.name}",concentration.condition)
+    tr
+      td &nbsp;
+      td &nbsp;
+    tr
+      td
+        strong General Condition(s):
+      td
+        - if concentration.indication == 'indicates'
+          - cat = concentration.condition.categories.pluck(:name)
+          - cat.each do |cat_link|
+            = link_to(cat_link, category_path(cat_link)) 
+            br
+        - else
+          = nah(value=nil, message="No Additional Data")
+    tr
+      td
+        strong Biofluid: 
+      td
+        = concentration.biofluid
+
+    tr
+      td
+        | &nbsp;&nbsp;
+      td
+        | &nbsp;&nbsp;
+
+    tr
+      td
+        strong Disease concentration:
+      td
+        = concentration.level
+
+    tr
+      td 
+        strong P-value:
+      td 
+        - if concentration.pvalue.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          = concentration.pvalue
+            
+    tr
+      td
+        strong Age:
+      td
+        = concentration.age_range
+
+    tr
+      td
+        strong Sex:
+      td
+        = concentration.sex
+
+    tr
+      td
+        strong Specificity/Sensitivity:
+      td
+        - if concentration.quality.nil?
+          = nah(value=nil, message="No Additional Data")
+        - elsif concentration.quality.specificity.blank? or concentration.quality.sensitivity.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          = "#{concentration.quality.specificity} / #{concentration.quality.sensitivity}"
+    tr
+      td
+        strong AUC:
+      td
+        - if concentration.quality.nil? # this is for protein biomarker
+          = nah(value=nil, message="No Additional Data")
+        - elsif concentration.quality.roc_auc.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          = concentration.quality.roc_auc
+    tr
+      td
+        strong ROC based concentration threshold:
+      td
+        - if concentration.quality.nil? # this is for protein biomarker
+          = nah(value=nil, message="No Additional Data")
+        - elsif concentration.quality.roc_conc_threshold.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          = concentration.quality.roc_conc_threshold
+
+
+    - ref_ids = Citation.where("citation_owner_type = ? and citation_owner_id = ?", concentration.class,concentration.id).pluck(:reference_id)
+    tr
+      td
+        strong References:
+      td
+        - if ref_ids.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          - ref_ids.each do |ref_id|
+            - ref_obj = Reference.where("id = ?",ref_id).first
+            - if !ref_obj.pubmed_id.nil?
+              = info_table_link_reference_pmid(ref_obj.pubmed_id)
+              br
+            - elsif !ref_obj.url.nil?
+              = info_table_link_reference_url(ref_obj)
+              br
+            - else
+              span data-placement="top" data-toggle="tooltip" title="#{ref_obj.citation.to_s}" = ref_obj.citation.truncate(20)
+              br
+    tr
+      td
+        | &nbsp;&nbsp;
+      td
+        | &nbsp;&nbsp;
+
+    - if concentration.reference_conc_id.blank?
+      next
+    - else
+      - ref_conc = concentration.get_related_norm_conc
+
+      tr
+        td
+          strong Normal concentration:
+        td
+          - unless ref_conc.nil?
+            = ref_conc.level
+          - else
+            = nah(value=nil, message="No Additional Data")
+      tr
+        td
+          strong Age:
+        td
+          - unless ref_conc.nil?
+            = ref_conc.age_range
+          - else
+            = nah(value=nil, message="No Additional Data")
+      tr
+        td
+          strong Sex:
+        td
+          - unless ref_conc.nil?
+            = ref_conc.sex
+          - else
+            = nah(value=nil, message="No Additional Data")
+
+      - if ref_conc.nil?
+        - ref_ids = nil
+      - else    
+        - ref_ids = Citation.where("citation_owner_type = ? and citation_owner_id = ?",concentration.class,ref_conc.id).pluck(:reference_id)
+
+      tr
+        td
+          strong References:
+        td
+          - if ref_ids.blank?
+            = nah(value=nil, message="No Additional Data")
+          - else
+            - ref_ids.each do |ref_id|
+              - ref_obj = Reference.where("id = ?",ref_id).first
+              - if !ref_obj.pubmed_id.nil?
+                = info_table_link_reference_pmid(ref_obj.pubmed_id)
+                br
+              - elsif !ref_obj.url.nil?
+                = info_table_link_reference_url(ref_obj)
+                br
+              - else
+                span data-placement="top" data-toggle="tooltip" title="#{ref_obj.citation.to_s}" = ref_obj.citation.truncate(20)
+                br
+    tr
+      td
+        strong Clinical Status:
+      td
+        - if concentration.status.blank?
+          = nah(value=nil, message="No Additional Data")
+        - else
+          = concentration.status
+
+    tr
+      td
+        strong Notes/Limits:
+      td
+        = nah(value=nil, message="No Additional Data")
+
+
+
+
+
+
+
+
+
+
+
+
+

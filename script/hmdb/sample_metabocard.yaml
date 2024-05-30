@@ -1,0 +1,664 @@
+---
+bigg_id:
+- Not Available
+biocyc_id:
+- CPD-1823
+biofluid_location:
+- Blood; Cerebrospinal Fluid; Saliva; Urine
+cellular_location:
+- Cytoplasm
+chemical_formula:
+- C7H11N3O2
+description:
+- One-methylhistidine (1-MHis) is derived mainly from the anserine of dietary flesh
+  sources, especially poultry. The enzyme, carnosinase, splits anserine into b-alanine
+  and 1-MHis. High levels of 1-MHis tend to inhibit the enzyme carnosinase and increase
+  anserine levels. Conversely, genetic variants with deficient carnosinase activity
+  in plasma show increased 1-MHis excretions when they consume a high meat diet. Reduced
+  serum carnosinase activity is also found in patients with Parkinson's disease and
+  multiple sclerosis and patients following a cerebrovascular accident. Vitamin E
+  deficiency can lead to 1-methylhistidinuria from increased oxidative effects in
+  skeletal muscle.
+general_references:
+- ! '10362454|Colombani PC, Kovacs E, Frey-Rindova P, Frey W, Langhans W, Arnold M,
+  Wenk C: Metabolic effects of a protein-supplemented carbohydrate drink in marathon
+  runners. Int J Sport Nutr. 1999 Jun;9(2):181-201.'
+- ! '7762816|Nicholson JK, Foxall PJ, Spraul M, Farrant RD, Lindon JC: 750 MHz 1H
+  and 1H-13C NMR spectroscopy of human blood plasma.  Anal Chem. 1995 Mar 1;67(5):793-811.'
+- ! '11052553|Myint T, Fraser GE, Lindsted KD, Knutsen SF, Hubbard RW, Bennett HW:
+  Urinary 1-methylhistidine is a marker of meat consumption in Black and in White
+  California Seventh-day Adventists. Am J Epidemiol. 2000 Oct 15;152(8):752-5.'
+- ! '2593832|Giesecke K, Magnusson I, Ahlberg M, Hagenfeldt L, Wahren J: Protein and
+  amino acid metabolism during early starvation as reflected by excretion of urea
+  and methylhistidines. Metabolism. 1989 Dec;38(12):1196-200.'
+- ! '1819935|Vranic L, Granic P, Rajic Z: Basic amino acid in the pathogenesis of
+  caries.  Acta Stomatol Croat. 1991;25(2):71-6.'
+- ! '2912013|Sjolin J, Stjernstrom H, Henneberg S, Hambraeus L, Friman G: Evaluation
+  of urinary 3-methylhistidine excretion in infection by measurements of 1-methylhistidine
+  and the creatinine ratios. Am J Clin Nutr. 1989 Jan;49(1):62-70.'
+- ! '14156296|Cocks DH, Dennis PO, Nelson TH: Isolation of 3-methyl histidine from
+  whalemeat extract and the preparation of some derivatives. Nature. 1964 Apr 11:202:184-5'
+- ! '7061274|Dohm GL, Williams RT, Kasperek GJ, van Rij AM: Increased excretion of
+  urea and N tau -methylhistidine by rats and humans after a bout of exercise. J Appl
+  Physiol. 1982 Jan;52(1):27-33.'
+- ! '9478024|Garlick PJ, McNurlan MA, Bark T, Lang CH, Gelato MC: Hormonal regulation
+  of protein metabolism in relation to nutrition and disease. J Nutr. 1998 Feb;128(2
+  Suppl):356S-359S.'
+- ! '15899597|Tuma P, Samcova E, Balinova P: Determination of 3-methylhistidine and
+  1-methylhistidine in untreated urine samples by capillary electrophoresis. J Chromatogr
+  B Analyt Technol Biomed Life Sci. 2005 Jul 5;821(1):53-9.'
+- ! '9029312|Dunnett M, Harris RC: High-performance liquid chromatographic determination
+  of imidazole dipeptides, histidine, 1-methylhistidine and 3-methylhistidine in equine
+  and camel muscle and individual muscle fibres. J Chromatogr B Biomed Sci Appl. 1997
+  Jan 10;688(1):47-55.'
+- ! '1484110|Betto P, Ricciarello G, Pichini S, Dello Strologo L, Rizzoni G: High-performance
+  liquid chromatography-electrochemical detection of 3-methylhistidine in human urine.
+  J Chromatogr. 1992 Dec 23;584(2):256-60.'
+hmdb_id:
+- HMDB00001
+iupac:
+- (2S)-2-amino-3-(1-methylimidazol-4-yl)propanoic acid
+kegg_compound_id:
+- C01152
+name:
+- 1-Methylhistidine
+omim_id:
+- 104300|Alzheimer's disease
+- 125853|Diabetes mellitus type 2
+- 601665|Obesity
+synonyms:
+- 1 methylhistidine; 1-methyl histidine; 1-MHis; 1-Methyl-Histidine; 1-Methyl-L-histidine;
+  1-N-Methyl-L-histidine; L-1-Methylhistidine; N1-Methyl-L-histidine; pi-methylhistidine
+concentration:
+- !!null 
+- age:
+  - Children:1-13 yrs old
+  biofluid:
+  - Blood
+  comments:
+  - Not Available
+  concentration:
+  - 9.1 +/- 7.2
+  disorders:
+  - Not Available
+  patient_information:
+  - Normal
+  patient_status:
+  - normal
+  references:
+  - ! '|Geigy Scientific Tables, 8th Rev edition, pp. 85-97. Edited by C. Lentner,
+    West Cadwell, N.J.: Medical education Div., Ciba-Geigy Corp., Basel, Switzerland
+    c1981-1992.'
+  sex:
+  - N/A
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Blood
+  comments:
+  - Not Available
+  concentration:
+  - 4.0 +/- 8.0
+  disorders:
+  - Not Available
+  patient_information:
+  - Normal
+  patient_status:
+  - normal
+  references:
+  - ! '|Geigy Scientific Tables, 8th Rev edition, pp. 85-97. Edited by C. Lentner,
+    West Cadwell, N.J.: Medical education Div., Ciba-Geigy Corp., Basel, Switzerland
+    c1981-1992.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Elderly:>65 yrs old
+  biofluid:
+  - Blood
+  comments:
+  - Probable Alzheimer's disease
+  concentration:
+  - 10.66 +/- 2.68
+  disorders:
+  - Alzheimer's disease
+  patient_information:
+  - Not Available
+  patient_status:
+  - abnormal
+  references:
+  - ! '17031479|Fonteh AN, Harrington RJ, Tsai A, Liao P, Harrington MG: Free amino
+    acid and dipeptide changes in the body fluids from Alzheimer''s disease subjects.
+    Amino Acids. 2007 Feb;32(2):213-24. Epub 2006 Oct 10.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Blood
+  comments:
+  - Patients with chronic renal failure on maintenance hemodialysis. These subjects
+    were treated with nocturnal hemodialysis for 8 h during the night, 6 times/week.
+  concentration:
+  - 28.8 +/- 18.2
+  disorders:
+  - Kidney disease
+  patient_information:
+  - Not Available
+  patient_status:
+  - abnormal
+  references:
+  - ! '10838467|Raj DS, Ouwendyk M, Francoeur R, Pierratos A: Plasma amino acid profile
+    on nocturnal hemodialysis.  Blood Purif. 2000;18(2):97-102.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Blood
+  comments:
+  - Patients with chronic renal failure on maintenance hemodialysis. These subjects
+    were treated with conventional hemodialysis for 4 h, 3 times/week.
+  concentration:
+  - 83.1 +/- 21.7
+  disorders:
+  - Kidney disease
+  patient_information:
+  - Not Available
+  patient_status:
+  - abnormal
+  references:
+  - ! '10838467|Raj DS, Ouwendyk M, Francoeur R, Pierratos A: Plasma amino acid profile
+    on nocturnal hemodialysis.  Blood Purif. 2000;18(2):97-102.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Blood
+  comments:
+  - Not Available
+  concentration:
+  - 7.7 +/- 1.9
+  disorders:
+  - Not Available
+  patient_information:
+  - Runners (preexercise)
+  patient_status:
+  - normal
+  references:
+  - ! '7061274|Dohm GL, Williams RT, Kasperek GJ, van Rij AM: Increased excretion
+    of urea and N tau -methylhistidine by rats and humans after a bout of exercise.
+    J Appl Physiol. 1982 Jan;52(1):27-33.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Blood
+  comments:
+  - Not Available
+  concentration:
+  - 14.4 +/- 2.3
+  disorders:
+  - Not Available
+  patient_information:
+  - Runners (immediately postexercise)
+  patient_status:
+  - normal
+  references:
+  - ! '7061274|Dohm GL, Williams RT, Kasperek GJ, van Rij AM: Increased excretion
+    of urea and N tau -methylhistidine by rats and humans after a bout of exercise.
+    J Appl Physiol. 1982 Jan;52(1):27-33.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Blood
+  comments:
+  - Not Available
+  concentration:
+  - 19.6 +/- 2.6
+  disorders:
+  - Not Available
+  patient_information:
+  - Runners (6 hours postexercise)
+  patient_status:
+  - normal
+  references:
+  - ! '7061274|Dohm GL, Williams RT, Kasperek GJ, van Rij AM: Increased excretion
+    of urea and N tau -methylhistidine by rats and humans after a bout of exercise.
+    J Appl Physiol. 1982 Jan;52(1):27-33.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Blood
+  comments:
+  - Not Available
+  concentration:
+  - 12.7 +/- 2.9
+  disorders:
+  - Not Available
+  patient_information:
+  - Weight Lifters (preexercise)
+  patient_status:
+  - normal
+  references:
+  - ! '7061274|Dohm GL, Williams RT, Kasperek GJ, van Rij AM: Increased excretion
+    of urea and N tau -methylhistidine by rats and humans after a bout of exercise.
+    J Appl Physiol. 1982 Jan;52(1):27-33.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Blood
+  comments:
+  - Not Available
+  concentration:
+  - 20.2 +/- 4.0
+  disorders:
+  - Not Available
+  patient_information:
+  - Weight Lifters (postexercise)
+  patient_status:
+  - normal
+  references:
+  - ! '7061274|Dohm GL, Williams RT, Kasperek GJ, van Rij AM: Increased excretion
+    of urea and N tau -methylhistidine by rats and humans after a bout of exercise.
+    J Appl Physiol. 1982 Jan;52(1):27-33.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - CSF
+  comments:
+  - Not Available
+  concentration:
+  - 2.6 +/- 1.13
+  disorders:
+  - Alzheimer's disease
+  patient_information:
+  - Not Available
+  patient_status:
+  - abnormal
+  references:
+  - ! '17031479|Fonteh AN, Harrington RJ, Tsai A, Liao P, Harrington MG: Free amino
+    acid and dipeptide changes in the body fluids from Alzheimer''s disease subjects.
+    Amino Acids. 2007 Feb;32(2):213-24. Epub 2006 Oct 10.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - CSF
+  comments:
+  - Not Available
+  concentration:
+  - 4.0 +/- 1.74
+  disorders:
+  - Not Available
+  patient_information:
+  - Normal
+  patient_status:
+  - normal
+  references:
+  - ! '17031479|Fonteh AN, Harrington RJ, Tsai A, Liao P, Harrington MG: Free amino
+    acid and dipeptide changes in the body fluids from Alzheimer''s disease subjects.
+    Amino Acids. 2007 Feb;32(2):213-24. Epub 2006 Oct 10.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Saliva
+  comments:
+  - Not Available
+  concentration:
+  - '26.34'
+  disorders:
+  - Not Available
+  patient_information:
+  - Normal
+  patient_status:
+  - normal
+  references:
+  - ! '1819935|Vranic L, Granic P, Rajic Z: Basic amino acid in the pathogenesis of
+    caries.  Acta Stomatol Croat. 1991;25(2):71-6.'
+  sex:
+  - Both
+  units:
+  - uM
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Not Available
+  concentration:
+  - 10.9 +/- 10.1
+  disorders:
+  - Obesity
+  patient_information:
+  - Not Available
+  patient_status:
+  - abnormal
+  references:
+  - ! '15899597|Tuma P, Samcova E, Balinova P: Determination of 3-methylhistidine
+    and 1-methylhistidine in untreated urine samples by capillary electrophoresis.
+    J Chromatogr B Analyt Technol Biomed Life Sci. 2005 Jul 5;821(1):53-9.'
+  sex:
+  - Both
+  units:
+  - umol/mmol creatinine
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Not Available
+  concentration:
+  - 17.5 +/- 25.7
+  disorders:
+  - Diabetes mellitus type 2
+  patient_information:
+  - Not Available
+  patient_status:
+  - abnormal
+  references:
+  - ! '15899597|Tuma P, Samcova E, Balinova P: Determination of 3-methylhistidine
+    and 1-methylhistidine in untreated urine samples by capillary electrophoresis.
+    J Chromatogr B Analyt Technol Biomed Life Sci. 2005 Jul 5;821(1):53-9.'
+  sex:
+  - Both
+  units:
+  - umol/mmol creatinine
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Not Available
+  concentration:
+  - 4.6 +/- 2.7
+  disorders:
+  - Not Available
+  patient_information:
+  - Vegetarian (Black male)
+  patient_status:
+  - normal
+  references:
+  - ! '11052553|Myint T, Fraser GE, Lindsted KD, Knutsen SF, Hubbard RW, Bennett HW:
+    Urinary 1-methylhistidine is a marker of meat consumption in Black and in White
+    California Seventh-day Adventists. Am J Epidemiol. 2000 Oct 15;152(8):752-5.'
+  sex:
+  - Male
+  units:
+  - umol/mmol creatinine
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Not Available
+  concentration:
+  - 2.3 +/- 5.1
+  disorders:
+  - Not Available
+  patient_information:
+  - Vegetarian (White female)
+  patient_status:
+  - normal
+  references:
+  - ! '11052553|Myint T, Fraser GE, Lindsted KD, Knutsen SF, Hubbard RW, Bennett HW:
+    Urinary 1-methylhistidine is a marker of meat consumption in Black and in White
+    California Seventh-day Adventists. Am J Epidemiol. 2000 Oct 15;152(8):752-5.'
+  sex:
+  - Female
+  units:
+  - umol/mmol creatinine
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Not Available
+  concentration:
+  - 46.1 +/- 53.5
+  disorders:
+  - Not Available
+  patient_information:
+  - Omnivore (Black Female)
+  patient_status:
+  - normal
+  references:
+  - ! '11052553|Myint T, Fraser GE, Lindsted KD, Knutsen SF, Hubbard RW, Bennett HW:
+    Urinary 1-methylhistidine is a marker of meat consumption in Black and in White
+    California Seventh-day Adventists. Am J Epidemiol. 2000 Oct 15;152(8):752-5.'
+  sex:
+  - Female
+  units:
+  - umol/mmol creatinine
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Not Available
+  concentration:
+  - 15.9 +/- 19.5
+  disorders:
+  - Not Available
+  patient_information:
+  - Vegetarian (Black Female)
+  patient_status:
+  - normal
+  references:
+  - ! '11052553|Myint T, Fraser GE, Lindsted KD, Knutsen SF, Hubbard RW, Bennett HW:
+    Urinary 1-methylhistidine is a marker of meat consumption in Black and in White
+    California Seventh-day Adventists. Am J Epidemiol. 2000 Oct 15;152(8):752-5.'
+  sex:
+  - Female
+  units:
+  - umol/mmol creatinine
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Not Available
+  concentration:
+  - 28.1 +/- 31.8
+  disorders:
+  - Not Available
+  patient_information:
+  - Omnivore(White Male)
+  patient_status:
+  - normal
+  references:
+  - ! '11052553|Myint T, Fraser GE, Lindsted KD, Knutsen SF, Hubbard RW, Bennett HW:
+    Urinary 1-methylhistidine is a marker of meat consumption in Black and in White
+    California Seventh-day Adventists. Am J Epidemiol. 2000 Oct 15;152(8):752-5.'
+  sex:
+  - Male
+  units:
+  - umol/mmol creatinine
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Not Available
+  concentration:
+  - 1.3 +/- 2.76
+  disorders:
+  - Not Available
+  patient_information:
+  - Vegetarian(White Male)
+  patient_status:
+  - normal
+  references:
+  - ! '11052553|Myint T, Fraser GE, Lindsted KD, Knutsen SF, Hubbard RW, Bennett HW:
+    Urinary 1-methylhistidine is a marker of meat consumption in Black and in White
+    California Seventh-day Adventists. Am J Epidemiol. 2000 Oct 15;152(8):752-5.'
+  sex:
+  - Male
+  units:
+  - umol/mmol creatinine
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Not Available
+  concentration:
+  - 45.5 +/- 41.6
+  disorders:
+  - Not Available
+  patient_information:
+  - Omnivore(Black Male)
+  patient_status:
+  - normal
+  references:
+  - ! '11052553|Myint T, Fraser GE, Lindsted KD, Knutsen SF, Hubbard RW, Bennett HW:
+    Urinary 1-methylhistidine is a marker of meat consumption in Black and in White
+    California Seventh-day Adventists. Am J Epidemiol. 2000 Oct 15;152(8):752-5.'
+  sex:
+  - Male
+  units:
+  - umol/mmol creatinine
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Not Available
+  concentration:
+  - 33.6 +/- 36.4
+  disorders:
+  - Not Available
+  patient_information:
+  - Omnivore (White Female)
+  patient_status:
+  - normal
+  references:
+  - ! '11052553|Myint T, Fraser GE, Lindsted KD, Knutsen SF, Hubbard RW, Bennett HW:
+    Urinary 1-methylhistidine is a marker of meat consumption in Black and in White
+    California Seventh-day Adventists. Am J Epidemiol. 2000 Oct 15;152(8):752-5.'
+  sex:
+  - Female
+  units:
+  - umol/mmol creatinine
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Not Available
+  concentration:
+  - 30.0 +/- 43.0
+  disorders:
+  - Not Available
+  patient_information:
+  - Normal
+  patient_status:
+  - normal
+  references:
+  - ! '15899597|Tuma P, Samcova E, Balinova P: Determination of 3-methylhistidine
+    and 1-methylhistidine in untreated urine samples by capillary electrophoresis.
+    J Chromatogr B Analyt Technol Biomed Life Sci. 2005 Jul 5;821(1):53-9.'
+  sex:
+  - Both
+  units:
+  - umol/mmol creatinine
+- age:
+  - Adult:>18 yrs old
+  biofluid:
+  - Urine
+  comments:
+  - Probable Alzheimer's disease
+  concentration:
+  - 15.7 +/- 4.04
+  disorders:
+  - Alzheimer's disease
+  patient_information:
+  - Not Available
+  patient_status:
+  - abnormal
+  references:
+  - ! '17031479|Fonteh AN, Harrington RJ, Tsai A, Liao P, Harrington MG: Free amino
+    acid and dipeptide changes in the body fluids from Alzheimer''s disease subjects.
+    Amino Acids. 2007 Feb;32(2):213-24. Epub 2006 Oct 10.'
+  sex:
+  - Both
+  units:
+  - umol/mmol creatinine
+associated_disorder:
+- !!null 
+- metagene_id:
+  - Not Available
+  name:
+  - Alzheimer's disease
+  omim_id:
+  - '104300'
+  references:
+  - ! '17031479|Fonteh AN, Harrington RJ, Tsai A, Liao P, Harrington MG: Free amino
+    acid and dipeptide changes in the body fluids from Alzheimer''s disease subjects.
+    Amino Acids. 2007 Feb;32(2):213-24. Epub 2006 Oct 10.'
+- metagene_id:
+  - Not Available
+  name:
+  - Diabetes mellitus type 2
+  omim_id:
+  - '125853'
+  references:
+  - ! '15899597|Tuma P, Samcova E, Balinova P: Determination of 3-methylhistidine
+    and 1-methylhistidine in untreated urine samples by capillary electrophoresis.
+    J Chromatogr B Analyt Technol Biomed Life Sci. 2005 Jul 5;821(1):53-9.'
+- metagene_id:
+  - Not Available
+  name:
+  - Kidney disease
+  omim_id:
+  - Not Available
+  references:
+  - ! '10838467|Raj DS, Ouwendyk M, Francoeur R, Pierratos A: Plasma amino acid profile
+    on nocturnal hemodialysis.  Blood Purif. 2000;18(2):97-102.'
+- metagene_id:
+  - Not Available
+  name:
+  - Obesity
+  omim_id:
+  - '601665'
+  references:
+  - ! '15899597|Tuma P, Samcova E, Balinova P: Determination of 3-methylhistidine
+    and 1-methylhistidine in untreated urine samples by capillary electrophoresis.
+    J Chromatogr B Analyt Technol Biomed Life Sci. 2005 Jul 5;821(1):53-9.'
+

@@ -1,0 +1,94 @@
+<%= wide_column do %>
+  <%= box "About MarkerDB" do %>
+    <div><p>MarkerDB is a freely available electronic database that attempts to consolidate information on all known clinical and a selected set of pre-clinical biomarkers into a single resource. The database includes five major types of biomarkers (condition-specific, protein, chemical, karyotypic and genetic) and four biomarker categories (diagnostic, predictive, prognostic and exposure). MarkerDB provides information such as: biomarker names and synonyms, associated conditions or pathologies, detailed disease descriptions, detailed biomarker descriptions, biomarker specificity, sensitivity and ROC curves, standard reference values (for protein and chemical markers), variants (for SNP or genetic markers), sequence information (for genetic and protein markers), molecular structures (for protein and chemical markers), tissue or biofluid sources (for protein and chemical markers), chromosomal location and structure (for genetic and karyotype markers), clinical approval status and relevant literature references. Users can browse the data by conditions, condition categories, biomarker types, biomarker categories or search by sequence similarity through the advanced search function.
+    </p></div>
+    <div>
+      <table>
+        <tr>
+          <td colspan = 3><strong>Summary statistics</strong></td>
+        </tr>
+        <tr>
+          <td><strong># of conditions: </strong>670<%#=@condition_count%></td>
+          <td><strong># of protein markers: </strong>142<%#=@protein_count%></td>
+          <td><strong># of prognostic markers: </strong>102<%#=@prognostic_count%></td>
+        </tr>
+        <tr>
+          <td><strong># of chemical markers: </strong>1,089<%#=@chemical_count%></td>
+          <td><strong># of karyotype markers: </strong>154<%#=@karyotype_count%></td>
+          <td><strong># of predictive markers: </strong>6,746 <%#=@predictive_count%></td>
+        </tr>
+        <tr>
+          <td><strong># of genetic markers: </strong>26,374<%#=@gene_count%></td>
+          <td><strong># of diagnostic markers: </strong>25,560<%#=@diagnostic_count%></td>
+          <td><strong># of exposure markers: </strong>265<%#=@exposure_count%></td>
+        </tr>
+      </table>
+    </div>
+  <% end %>
+  <%= box "Please Cite:  " do %>
+    <div id="cite" >
+      Please Cite: Wishart DS, Bartok B, Oler E, Liang KYH, Budinski Z, Berjanskii M, Guo A, Cao X, Wilson M. <i>MarkerDB: an online database of molecular biomarkers.</i> Nucleic Acids Res. 2021 Jan 8;49(D1):D1259-D1267. <a href="https://pubmed.ncbi.nlm.nih.gov/33245771/">33245771</a>
+    </div>
+  <% end %>
+  <%= box "Licensing Details" do %>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0 margin-left:40%" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+    <br>This means that our data can be used in derivative works as long as proper attribution is given to the source of the data, but these derivative works may not be used for commercial purposes.
+  <% end %>
+  <%= box "FAIR Compliance " do %>
+    <div>
+      MarkerDB is FAIR. Specifically, it is:
+      <br>
+      <br>FINDABLE:
+      <br><strong>F1. (meta)data are assigned a globally unique and eternally persistent identifier.</strong>
+      <br>All biomarker data in MarkerDB is assigned an 8 digit globally unique MDB identifier. This identifier is searchable within the database and associated with all biomarker data in the online database. Furthermore, the identifier is associated with all data downloadable from the database.
+      <br><strong>F2. data are described with rich metadata.</strong>
+      <br>All biomarker data in MarkerDB are described with rich metadata. Every chemical, protein, gene and karyotype maker, along with every disease associated with each biomarker is described in detail. Additionally, citable scientific references are provided for each entry, structures (when available) are provided, sequences (when available) are provided and details about the performance, utility and reliability of the biomarker are provided.
+      <br><strong>F3. (meta)data are registered or indexed in a searchable resource.</strong>
+      <br>All the data and metadata in MarkerDB is indexed, viewable and registered through the MarkerDB online database at www.markerdb.ca
+      <br><strong>F4. metadata specify the data identifier.</strong>
+      <br>All metadata entries in MarkerDB are directly linked to the MarkerDB (MDB) identifier and the associated biomarker(s).
+      <br>
+      <br>ACCESSIBLE:
+      <br><strong>A1  (meta)data are retrievable by their identifier using a standardized communications protocol.</strong>
+      <br>All data and metadata are retrievable from their MDB identifier through the MarkerDB website. Similarly, all data in MarkerDB may be downloaded in JSON and/or XML format via MarkerDB’s download section through a standard internet communications protocol
+      <br><strong>A1.1 the protocol is open, free, and universally implementable.</strong>
+      <br>The MarkerDB website is open and free and its data download operation is compatible with all modern web browsers. MarkerDB’s downloadable data is in a format that is universally readable.
+      <br><strong>A1.2 the protocol allows for an authentication and authorization procedure, where necessary.</strong>
+      <br>No authentication or authorization is required for MarkerDB’s data.
+      <br><strong>A2 metadata are accessible, even when the data are no longer available.</strong>
+      <br>All of MarkerDB’s metadata are linked or linkable to more permanent data sources (PubMed, GenBank, UniProt, PDB). The availability of freely downloadable data (and metadata) for MarkerDB ensures that its metadata will exist and be accessible for an extended period of time.
+      <br>
+      <br>INTEROPERABLE:
+      <br><strong>I1. (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.</strong>
+      <br>All textual data and metadata in MarkerDB are written in English, all sequence data is in FASTA format, all images are stored in PNG format, all nomenclature for diseases, genes, proteins and metabolites follows standard ontologies or vocabularies used to describe these entities.
+      <br><strong>I2. (meta)data use vocabularies that follow FAIR principles.</strong>
+      <br>All data and metadata in MarkerDB uses ontologies and vocabularies that are open, findable, accessible, interoperable and re-usable.
+      <br><strong>I3. (meta)data include qualified references to other (meta)data.</strong>
+      <br>All data and metadata in MarkerDB is fully referenced with detailed descriptions of their provenance and sources.
+      <br>
+      <br>RE-USABLE:
+      <br><strong>R1. meta(data) have a plurality of accurate and relevant attributes.</strong>
+      <br>All data and metadata in MarkerDB have been carefully curated and vetted by multiple skilled curators and all data in MarkerDB have attributes that are relevant, up-to-date and accurate.
+      <br><strong>R1.1. (meta)data are released with a clear and accessible data usage license.</strong>
+      <br>All data and metadata in MarkerDB are released under the Creative Commons (CC) 4.0 License Suite according to the Attribution (BY) and Non-commercial (NC) licensing conditions.
+      <br><strong>R1.2. (meta)data are associated with their provenance.</strong>
+      <br>All data and metadata in MarkerDB have detailed descriptions of their provenance and sources
+      <br><strong>R1.3. (meta)data meet domain-relevant community standards.</strong>
+      <br>MarkerDB has undergone extensive peer review by members of the biomarker community and has met the standards for publication in Nucleic Acids Research’s database issue. All the data in MarkerDB has met the standards for publication in peer-reviewed scientific journals and international scientific conferences.
+    </div>
+  <% end %>
+
+  <%# render partial: '/pages/api_doc' %>
+<% end %>
+<script type="text/javascript">
+  code_text_config = {
+    matchBrackets: true,
+    smartIndent: true,
+    lineNumbers: true,
+    json: true
+  };
+
+  var code_mirror_width = 1000;
+  CodeMirror.fromTextArea(document.getElementById("code-2"), code_text_config).setSize(code_mirror_width, 100);
+</script>
+

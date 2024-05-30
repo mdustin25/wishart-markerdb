@@ -1,0 +1,14 @@
+<%= column_wrapper do %>
+	<%= right_column do %>
+		<%= render 'condition_categories', :categories => @categories, cached: true %>
+	<% end %>
+<%end%>
+
+
+<%= column_wrapper do %>
+	<%= left_column do %>
+		<div id="results_class">
+			<%= render 'results_category', conditions: @conditions, cached: true %>
+		</div>
+	<% end %>
+<% end %>

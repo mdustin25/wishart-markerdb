@@ -1,0 +1,242 @@
+- sequence_measurement 			= sequence_variant.sequence_variant_measurements
+- marker_type 							= sequence_variant.marker_type
+- gene_object 		        = Gene.find_by(:id => sequence_variant.gene_id)
+- first_sequence_measurement = sequence_measurement.first
+- stats 					= first_sequence_measurement.nil? ? nil : first_sequence_measurement.auroc
+- approved 				    = first_sequence_measurement.nil? ? nil : first_sequence_measurement.approved
+- log_eq 					= first_sequence_measurement.nil? ? nil : first_sequence_measurement.logistic_equation
+- clinical_sig				= first_sequence_measurement.nil? ? nil : first_sequence_measurement.clinical_sig
+
+
+table.info-table
+	- if marker_type == "PCR Primer"
+		tr
+			th style=("padding: 5px")  Organism:
+			td style=("padding: 5px;width:40%") 
+				= "#{sequence_variant.source}: #{sequence_variant.organism}"
+				- unless sequence_variant.reference.blank?
+					- link_to sequence_variant.external_type, sequence_variant.external_url
+
+		tr
+			th style=("padding: 5px")  Marker Type:
+			td style=("padding: 5px;width: 40%;") 
+				= sequence_variant.marker_type
+
+		tr
+			th style=("padding: 5px")  Marker Type:
+			td style=("padding: 5px;width: 40%;") 
+				= sequence_variant.marker_type
+		
+		tr 
+			th style=("padding: 5px")  Target gene:
+			td style=("padding: 5px;width:40%") 
+				- if gene_object.blank?
+					- if sequence_variant.name.blank?
+						= nah(value=nil, message="No Additional Data")
+					- else
+						= sequence_variant.name
+				- else
+					- if gene_object.omim_id.blank?
+						= gene_object.name
+					- else
+						- link_id = gene_object.omim_id.to_s
+						= gene_object.name
+						= link_to " [OMIM]", "https://omim.org/entry/" + link_id				
+					
+		tr
+			th style=("padding: 5px;white-space:nowrap;") Clinical Significance:
+			td style=("padding: 5px;")
+				= clinical_sig
+
+		tr
+			th style=("padding: 5px;")  Status:
+			td style=("padding: 5px;width:40%")
+				= approved
+		      
+		tr
+			th style=("padding: 5px")  Reference:
+			td style=("padding: 5px;") 
+				- if sequence_variant.reference.blank?
+					- if sequence_variant.external_url.blank?
+						= nah(value=nil, message="No Additional Data")
+					- else
+						= sequence_variant.variation_sequence
+				- else
+					= link_to sequence_variant.reference, "https://pubmed.ncbi.nlm.nih.gov/#{sequence_variant.reference}/"
+
+
+		tr
+			th style=("padding: 5px;")  Condition(s):
+			td style=("padding: 5px;") 
+				- conds = Array.new
+				- sequence_measurement.each_with_index do |cond, indx|
+					- condition = Condition.find_by(:id => cond.condition_id)
+					- unless condition.nil?
+						- unless conds.include?(condition.id)
+							- conds << condition.id
+							= link_to condition.name, condition
+							br
+					
+
+		tr
+			th style=("padding: 5px;width: 30%")  Notes/Limits:
+			th style=("padding: 5px;font-weight:normal") 
+			- sequence_measurement.each do |cond|
+				- unless cond.special_constraints.nil?
+					= "#{cond.special_constraints} "
+
+		tr
+			th style=("padding: 5px")  Primer sequence:
+			td style=("padding: 5px;")
+				- prim_sequences = sequence_variant.variation_sequence
+				- unless prim_sequences.nil?
+					- prim_sequences = prim_sequences.split(";")
+					- prim_sequences.each do |each_pcr_primer|
+						- elem = each_pcr_primer.split(":")
+						= elem[0]
+						br
+						= elem[1]
+						br
+						br						
+				- else
+					= nah(value=nil, message="No Additional Data")
+
+		tr
+			th style=("padding: 5px;width: 30%")  Notes/Limits:
+			th style=("padding: 5px;font-weight:normal") 
+			- sequence_measurement.each do |cond|
+				- unless cond.special_constraints.nil?
+					= "#{cond.special_constraints} "
+
+		tr
+			th style=("padding: 5px")  Target Gene length:
+			td style=("padding: 5px;")
+				/ Each sequence variant only affects 1 gene
+				- gene_seq = gene_object.sequence
+				- unless gene_seq.nil?
+					= gene_seq.length
+					= " bp"
+				- else
+					= nah(value=nil, message="No Additional Data")
+
+	- else
+		tr
+			th style=("padding: 5px"; "margin-right: -100px")
+				- if sequence_variant.exported?
+					= link_to (sequence_variant.variation + " (" + sequence_variant.marker_mdbid.mdbid + ")"), sequence_variant
+			td style=("padding: 5px;width:40%") 
+
+
+				- unless sequence_variant.reference.blank?
+					- link_to sequence_variant.external_type, sequence_variant.external_url
+
+		tr
+			th style=("padding: 5px")  Marker Type:
+			td style=("padding: 5px;width: 40%;") 
+				= sequence_variant.marker_type
+		
+		tr 
+			th style=("padding: 5px")  Position:
+			td style=("padding: 5px;width:40%") 
+				- if sequence_variant.position.blank?
+					= nah(value=nil, message="No Additional Data")
+				- else
+					= sequence_variant.position
+		tr
+			th style=("padding: 5px;white-space: nowrap;") Associated Gene:
+			td style=("padding: 5px") 
+				- if gene_object.blank?
+					- if sequence_variant.gene_symbol.blank?
+						= nah(value=nil, message="No Additional Data")
+					- else
+						= sequence_variant.gene_symbol
+				- else
+					- link_id = gene_object.omim_id.to_s
+					- genbank_link_id = gene_object.entrez_gene_id.to_s
+					= link_to gene_object.gene_symbol, "https://www.ncbi.nlm.nih.gov/gene/?term=" + genbank_link_id
+
+		tr
+			th style=("padding: 5px")  Target Gene length:
+			td style=("padding: 5px;")
+				/ Each sequence variant only affects 1 gene
+				- unless gene_object.nil?
+					- if gene_object.sequence.blank? 
+						= "54266 bp"
+					- elsif gene_object.sequence
+						= nah(value=nil, message="No Additional Data")
+
+					- else
+						= gene_object.sequence.length
+						= " bp"
+
+		tr
+			th style=("padding: 5px;white-space:nowrap;") Clinical Significance:
+			td style=("padding: 5px;")
+				= clinical_sig
+
+		tr
+			th style=("padding: 5px;")  Status:
+			td style=("padding: 5px;width:40%")
+				= approved
+
+		tr
+			- if stats.blank? or stats.nil?
+				th style=("padding: 5px;white-space: nowrap") Sequence Change:
+
+				td style=("padding: 5px;font-weight: normal; word-wrap: break-word; width: 30%; overflow: initial; overflow-wrap: break-word; max-width: 50em") 
+					= sequence_variant.variation_sequence
+		tr
+			th style=("padding: 5px")  Reference:
+			td style=("padding: 5px;") 
+				- if sequence_variant.reference.blank?
+					- if sequence_variant.external_url.blank?
+						= nah(value=nil, message="No Additional Data")
+					- else
+						= sequence_variant.variation_sequence
+				- else
+					- pubmed_string = sequence_variant.reference
+					- ref_single = pubmed_string.split("; ")
+					- ref_single.each do |each_ref|				
+						= link_to each_ref, "https://pubmed.ncbi.nlm.nih.gov/#{each_ref}/"
+						br
+		tr
+			- unless stats.blank?
+				th style=("padding: 5px;")  Heritability:
+				td style=("padding: 5px;") 
+					- if sequence_variant.sequence_variant_measurements.first.heritability.blank?
+						= nah(value=nil, message="No Additional Data")
+					- else
+						= sequence_variant.sequence_variant_measurements.first.heritability
+		tr
+			- unless stats.blank?
+				th style=("padding: 5px;")  AUROC:
+				td style=("padding: 5px;") 
+					= stats
+
+		tr
+			- unless stats.blank? or stats.nil?
+				th style=("padding: 5px;white-space: nowrap") Sequence Change:
+				th style=("padding: 5px;font-weight:normal") 
+					= prettify_sequence(sequence_variant.variation_sequence)
+		tr
+			th style=("padding: 5px;")  Condition(s):
+			td style=("padding: 5px;") 
+				- sequence_measurement.each_with_index do |cond, indx|
+					- condition = Condition.find_by(:id => cond.condition_id)
+					- unless condition.nil?
+						= link_to condition.name, condition
+						br
+		tr
+			th style=("padding: 5px;width: 30%")  Logistic Regression Equation:
+			td style=("padding: 5px;display: table-cell; width: 100%: align-items: center; text-align: left")
+				- if log_eq.nil?
+					= nah(value=nil, message="No Additional Data")
+				- else	
+					= log_eq
+		tr
+			th style=("padding: 5px;white-space:nowrap;") Notes/Limits:
+			td style=("padding: 5px;")
+				- sequence_measurement.each do |cond|
+					- unless cond.special_constraints.nil?
+						= "#{cond.special_constraints} "
+

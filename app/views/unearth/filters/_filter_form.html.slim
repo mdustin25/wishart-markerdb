@@ -1,0 +1,44 @@
+- if @filter_groups.present? || @sort_fields.present?
+  .search-info.well.well-sm id='filter-container'
+    = form_tag '', method: :get, class: 'form-inline' do
+      / Preserve the sorting/searching parameters
+      - params_as_hidden_fields(request.query_parameters, @filter_fields).each do |field|
+        = field.html_safe
+
+      / Add one bar for each filter group
+      - @filter_groups.each do |filter_group|
+        - next if locals[:exclude_groups].include? filter_group.id
+        h6.filter-title #{filter_group.title}:
+        .filter-controls.clearfix style="margin-bottom:5px;" id=filter_group.id 
+          ul style = "width: 100%;"
+            - filter_group.filters.each do |filter_id, filter|
+              - if filter.kind_of? String
+                  li style="float:left;
+                          width: 150px;
+                          list-style-type:none;"
+                    .checkbox
+                      label style="font-weight: normal;"
+                        = check_box_tag filter_id, '1', params[filter_id] == '1',
+                          class: 'checkbox-filter'
+                        = filter
+              - elsif filter.kind_of? Unearth::Filters::Filters::List
+                = render '/unearth/filters/list_filter',
+                    filter_id: filter_id, filter: filter
+
+      / Add a bar for sorting
+      - if @sort_fields.present?
+        h6.sort-title Sort results by:
+        .filter-controls.clearfix
+          / Note the sort values are coming from Wishart::SortParamsParser
+          = select_tag :d,
+              options_for_select([['Ascending', :up], ['Descending', :down]], @d)
+          ' &nbsp;
+          = select_tag :c,
+              options_for_select(@searcher.options_for_sort, @sorted_column)
+
+      div style="text-align: center;"
+        = button_tag "Apply Filter", class: 'btn btn-primary btn-xs',
+            name: 'filter', value: 'true'
+        = button_tag "Clear", class: 'btn btn-default btn-xs filter-clear',
+            name: 'filter', value: 'false'
+        

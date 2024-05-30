@@ -1,0 +1,2 @@
+module SingleNucleotidePolymorphismsHelper
+end

@@ -1,0 +1,10 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  frequency: 1.5
+  relative_risk: 1.5
+
+two:
+  frequency: 1.5
+  relative_risk: 1.5

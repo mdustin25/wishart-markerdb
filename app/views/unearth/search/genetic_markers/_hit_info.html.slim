@@ -1,0 +1,9 @@
+/ = render partial: "unearth/search/#{hit.type.downcase.pluralize}/hit_info", locals: {hit: hit}
+
+.hit-name = link_to hit.name, main_app.gene_path(hit.id)
+.unearth-search-highlights
+  - if hit.highlights.present?
+    - hit.highlights.each do |field, highlights|
+      ' Matched #{field}:
+      ' &hellip; #{highlights.join(' ... ').html_safe} &hellip;
+      br

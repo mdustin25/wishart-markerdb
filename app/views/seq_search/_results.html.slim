@@ -1,0 +1,79 @@
+#seq-search-results
+  - if @sequences.present?
+    .alert.alert-success.alert-block
+      h5 Search summary: #{pluralize @sequences.length, 'sequence'} entered:
+      ul
+        - @sequences.keys.each_with_index do |query, count|
+          li = link_to query, seq_search_url(anchor: "results-#{count+1}")
+    - @sequences.each_with_index do |(query, sequence_list), count|
+      - if lookup_context.find_all('seq_search/_hit_results').any?
+        = render '/seq_search/hit_results', query: query, sequence_list: sequence_list, count: count, hits: @hits
+      - else
+        - uniq_seq_list = Array.new
+        - seen = Array.new
+        - sequence_list.each do |sequence|
+          - unless seen.include?(sequence.header)
+            - uniq_seq_list << sequence
+            - seen << sequence.header
+        h2 id="results-#{count+1}"
+          | Search results for: #{query} (#{uniq_seq_list.size} matches)
+        - if uniq_seq_list.present?
+          - uniq_seq_list.each do |sequence|
+            .seq-search-hit
+              .seq-search-scores
+                | E value: #{@hits[[sequence.id, query]].evalue}
+                br
+                | Bit score: #{@hits[[sequence.id, query]].bit_score}
+                br
+                | Query length: #{@hits[[sequence.id, query]].query_seq.length}
+              .seq-search-title
+                - if lookup_context.find_all('seq_search/_hit_link').any?
+                  = render '/seq_search/hit_link', sequence: sequence
+                - else
+                  - if sequence.type == "PolypeptideSequence"
+                    strong = link_to "#{sequence.header}", {:controller => "proteins", :action => "show", :id => sequence.sequenceable_id}
+                  - elsif sequence.type == "GeneSequence"
+                    - if sequence.sequenceable_type == "Protein"
+                      strong = link_to "#{sequence.header}", {:controller => "proteins", :action => "show", :id => sequence.sequenceable_id}
+                    - elsif sequence.sequenceable_type == "Gene"
+                      strong = link_to "#{sequence.header}", {:controller => "genes", :action => "show", :id => sequence.sequenceable_id}
+                  
+              div
+                .seq-search-sequence-labels
+                  br
+                  | Query:
+                  br
+                  br
+                  | Subject:
+                  br
+                .seq-search-sequence-comparison
+                  - len = @hits[[sequence.id, query]].query_seq.length
+                  - query_seq = " " + @hits[[sequence.id, query]].query_seq
+                  - midline = " " + @hits[[sequence.id, query]].midline
+                  - subject = " " + @hits[[sequence.id, query]].target_seq
+                  - count = "1 "
+                  - offset = 1
+                  - for i in 2..len
+                    - if i % 60 == 0
+                      - count = count + " " + i.to_s
+                      - query_seq.insert(i + offset, " " * i.to_s.size)
+                      - midline.insert(i + offset, " " * i.to_s.size)
+                      - subject.insert(i + offset, " " * i.to_s.size)
+                      - offset = offset + i.to_s.size
+                    - else
+                      - count = count + " "
+                  - count = count + len.to_s
+                  - query_seq = query_seq + (" " * len.to_s.size)
+                  - midline = midline + (" "  * len.to_s.size)
+                  - subject = subject + (" "  * len.to_s.size)
+                  .seq-search-chain.seq-search-count= count
+                  .seq-search-chain.seq-search-query= query_seq
+                  .seq-search-chain.seq-search-midline= midline
+                  .seq-search-chain.seq-search-target= subject
+              .seq-search-hit-info
+                - if lookup_context.find_all('seq_search/_hit_info').any?
+                  = render '/seq_search/hit_info', sequence: sequence
+        - else
+          p.alert.alert-danger No matches.
+  - else
+    p.alert.alert-danger No matches.

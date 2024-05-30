@@ -1,0 +1,25 @@
+<td class="right" style = "width: 550px;">
+  <%= render partial: "sequence_variants/info_table", locals: { sequence_variant: sequence_variant }, cached: true %>
+  <% unless sequence_variant.gene_id.nil?%>
+  	<% gene_obj = Gene.find(sequence_variant.gene_id)%>
+  <%end%>
+	<%# Every mutation only affects 1 gene%>
+  <% unless gene_obj.nil? %>
+    <% if gene_obj.gene_sequences.length > 0 %>
+  	<% seq = gene_obj.gene_sequences[0]%>
+      <h4 style="word-break:break-all; max-width: 101ch"><%="> #{seq.header} "%><%= link_to "Download FASTA", gene_download_fasta_path(gene_obj.id) %>
+        <br>
+      </h4>
+
+      <span style=" font-family: Courier, monospace;"><%= prettify_sequence(seq.chain) %></span>
+  	<%end%>
+  <% end %>
+</td>
+<td class="left roc-image" style="padding:1px;">
+	<% sequence_variant.sequence_variant_measurements.each do |variant| %>
+	  <% if !variant.quality.nil? %>
+	    <a data-toggle="modal" data-target="#roc-image-modal-<%=variant.quality.id%>"><%= image_tag variant.quality.image.url(:original), :style => "background-color: white; width: 20em; height:auto;"%></a>
+	    <%= render partial: "sequence_variants/roc_modal", locals: { roc_stat_obj: variant.quality }, cached: true %>
+	  <% end %>
+	<% end %>
+</td>

@@ -1,0 +1,633 @@
+biomarker_type	id	name	hmdb_id	conditions	indication_types	concentration	age	sex	biofluid	citation
+Chemical	11	4-Pyridoxic acid	HMDB0000017	Vitamin B6 Consumption	Exposure	2.36 umol/day	NA	Both	Urine, 24-h	NA
+Chemical	519	Cotinine	HMDB0001046	Smoking	Exposure	0.05 mg/L	NA	Both	Urine, spot	NA
+Chemical	519	Cotinine	HMDB0001046	Cotinine Exposure	Exposure	0.0073 (0.0059-0.0091) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Normal	Exposure	0.00023 (0.00021-0.00026) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Cotinine Exposure	Exposure	0.0100 (0.0082-0.014) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Normal	Exposure	0.00032 (0.00027-0.00039) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Cotinine Exposure	Exposure	0.0083 (0.0065-0.011) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Normal	Exposure	0.00031 (0.00027-0.00035) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Cotinine Exposure	Exposure	0.012 (0.0100-0.014) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Normal	Exposure	0.00040 (0.00032-0.00051) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Cotinine Exposure	Exposure	0.0074 (0.0050-0.0091) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Cotinine Exposure	Exposure	0.011 (0.0091-0.015) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Cotinine Exposure	Exposure	0.012 (0.0100-0.014) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Normal	Exposure	0.00035 (0.00028-0.00044) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Cotinine Exposure	Exposure	0.0087 (0.0060-0.011) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	519	Cotinine	HMDB0001046	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	573	Molybdenum	HMDB0001302	Molybdenum Exposure	Exposure	0.15 (0.14-0.17) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	573	Molybdenum	HMDB0001302	Normal	Exposure	0.050 (0.048-0.051) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	573	Molybdenum	HMDB0001302	Molybdenum Exposure	Exposure	0.14 (0.13-0.15) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	573	Molybdenum	HMDB0001302	Normal	Exposure	0.046 (0.044-0.048) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	573	Molybdenum	HMDB0001302	Molybdenum Exposure	Exposure	0.15 (0.13-0.15) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	573	Molybdenum	HMDB0001302	Normal	Exposure	0.047 (0.045-0.049) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	621	Thiocyanate	HMDB0001453	Thiocyanate Exposure	Exposure	16.6 (13.1-21.2) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	621	Thiocyanate	HMDB0001453	Normal	Exposure	2.4 (2.3-2.5) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	621	Thiocyanate	HMDB0001453	Thiocyanate Exposure	Exposure	15.7 (13.9-18.2) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	621	Thiocyanate	HMDB0001453	Normal	Exposure	2.4 (2.2-2.5) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	658	m-Coumaric acid	HMDB0001713	Apple Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Peach Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Berries Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Grapefruit Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Grapefruit Juice Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Orange Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Orange Juice Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Citrus Fruits Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Fruits Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Fruit Juices Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Vegetables Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Onion Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Chocolate Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Black Tea Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Herbal Tea Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	658	m-Coumaric acid	HMDB0001713	Wine Consumption	Exposure	5.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Apple Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Peach Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Berries Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Grapefruit Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Grapefruit Juice Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Orange Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Orange Juice Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Citrus Fruits Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Fruits Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Fruit Juices Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Vegetables Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Onion Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Dark Bread Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Cereals Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Potato Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Chocolate Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Coffee Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Black Tea Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Herbal Tea Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	726	Caffeic acid	HMDB0001964	Wine Consumption	Exposure	11.4 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	736	Tungsten	HMDB0001989	Tungsten Exposure	Exposure	0.00027 (0.00025-0.00030) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	736	Tungsten	HMDB0001989	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	736	Tungsten	HMDB0001989	Tungsten Exposure	Exposure	0.00025 (0.00018-0.00033) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	736	Tungsten	HMDB0001989	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	736	Tungsten	HMDB0001989	Tungsten Exposure	Exposure	0.00020 (0.00019-0.00023) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	736	Tungsten	HMDB0001989	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	736	Tungsten	HMDB0001989	Tungsten Exposure	Exposure	0.00022 (0.00018-0.00030) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	736	Tungsten	HMDB0001989	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	780	Apigenin	HMDB0002124	Fruits Consumption	Exposure	0.9 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	780	Apigenin	HMDB0002124	Vegetables Consumption	Exposure	0.9 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	780	Apigenin	HMDB0002124	Fruits + Vegetables Consumption	Exposure	0.9 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	802	Equol	HMDB0002209	Fats Consumption	Exposure	0.11 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	802	Equol	HMDB0002209	Soy Foods Consumption	Exposure	0.11 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	802	Equol	HMDB0002209	Fruits Consumption	Exposure	0.11 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	802	Equol	HMDB0002209	Vegetables Consumption	Exposure	0.11 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	802	Equol	HMDB0002209	Dietary Fibre Consumption	Exposure	0.1 ug/mmol	NA	Both	Urine, spot	NA
+Chemical	802	Equol	HMDB0002209	Equol Exposure	Exposure	0.023 (0.020-0.031) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	802	Equol	HMDB0002209	Normal	Exposure	0.0036 (0.0032-0.0041) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	802	Equol	HMDB0002209	Equol Exposure	Exposure	0.024 (0.019-0.035) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	802	Equol	HMDB0002209	Normal	Exposure	0.0035 (0.0032-0.0039) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	802	Equol	HMDB0002209	Equol Exposure	Exposure	0.029 (0.023-0.040) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	802	Equol	HMDB0002209	Normal	Exposure	0.0040 (0.0034-0.0048) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	802	Equol	HMDB0002209	Equol Exposure	Exposure	0.032 (0.023-0.049) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	802	Equol	HMDB0002209	Normal	Exposure	0.0038 (0.0034-0.0043) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	802	Equol	HMDB0002209	Equol Exposure	Exposure	0.034 (0.025-0.057) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	802	Equol	HMDB0002209	Normal	Exposure	0.0039 (0.0035-0.0044) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	802	Equol	HMDB0002209	Equol Exposure	Exposure	0.028 (0.019-0.043) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	802	Equol	HMDB0002209	Normal	Exposure	0.0034 (0.0030-0.0040) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	811	Beta-Cryptoxanthin	HMDB0002268	Green Yellow Vegetables Consumption	Exposure	0.174 umol/L	NA	Both	Serum, fasting and non-fasting	NA
+Chemical	811	Beta-Cryptoxanthin	HMDB0002268	Vegetables Consumption	Exposure	0.174 umol/L	NA	Both	Serum, fasting and non-fasting	NA
+Chemical	811	Beta-Cryptoxanthin	HMDB0002268	Fruits Consumption	Exposure	0.174 umol/L	NA	Both	Serum, fasting and non-fasting	NA
+Chemical	811	Beta-Cryptoxanthin	HMDB0002268	Fruits + Vegetables Consumption	Exposure	141 nmol/L	NA	Both	Plasma, fasting	NA
+Chemical	811	Beta-Cryptoxanthin	HMDB0002268	Fruit Juices + Vegetable Juices Consumption	Exposure	0.167 umol/L	Adult: >=18 yrs old	Both	Plasma, non-fasting	NA
+Chemical	851	Isorhamnetin	HMDB0002655	Apple Consumption	Exposure	0.5 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	851	Isorhamnetin	HMDB0002655	Peach Consumption	Exposure	0.5 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	851	Isorhamnetin	HMDB0002655	Berries Consumption	Exposure	0.5 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	851	Isorhamnetin	HMDB0002655	Fruits Consumption	Exposure	0.5 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	851	Isorhamnetin	HMDB0002655	Fruit Juices Consumption	Exposure	0.5 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	851	Isorhamnetin	HMDB0002655	Vegetables Consumption	Exposure	0.5 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	851	Isorhamnetin	HMDB0002655	Onion Consumption	Exposure	0.5 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	851	Isorhamnetin	HMDB0002655	Black Tea Consumption	Exposure	0.5 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	851	Isorhamnetin	HMDB0002655	Herbal Tea Consumption	Exposure	0.5 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	856	Naringenin	HMDB0002670	Fruits Consumption	Exposure	221.4 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	856	Naringenin	HMDB0002670	Vegetables Consumption	Exposure	221.4 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	856	Naringenin	HMDB0002670	Fruits + Vegetables Consumption	Exposure	221.4 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	856	Naringenin	HMDB0002670	Grapefruit Consumption	Exposure	9.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	856	Naringenin	HMDB0002670	Grapefruit Juice Consumption	Exposure	9.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	856	Naringenin	HMDB0002670	Orange Consumption	Exposure	9.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	856	Naringenin	HMDB0002670	Orange Juice Consumption	Exposure	9.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	856	Naringenin	HMDB0002670	Citrus Fruits Consumption	Exposure	9.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	856	Naringenin	HMDB0002670	Fruit Juices Consumption	Exposure	9.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	887	Nitrate	HMDB0002878	Nitrate Exposure	Exposure	224.4 (211.6-242.6) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	887	Nitrate	HMDB0002878	Normal	Exposure	86.1 (82.5-90.1) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	887	Nitrate	HMDB0002878	Nitrate Exposure	Exposure	249.9 (213.4-279.1) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	887	Nitrate	HMDB0002878	Normal	Exposure	87.2 (82.6-92.0) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	919	Chlorogenic acid	HMDB0003164	Peach Consumption	Exposure	4.2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	919	Chlorogenic acid	HMDB0003164	Berries Consumption	Exposure	4.2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	919	Chlorogenic acid	HMDB0003164	Fruits Consumption	Exposure	4.2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	919	Chlorogenic acid	HMDB0003164	Fruit Juices Consumption	Exposure	4.2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	919	Chlorogenic acid	HMDB0003164	Vegetables Consumption	Exposure	4.2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	919	Chlorogenic acid	HMDB0003164	Potato Consumption	Exposure	4.2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	919	Chlorogenic acid	HMDB0003164	Coffee Consumption	Exposure	4.2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	919	Chlorogenic acid	HMDB0003164	Black Tea Consumption	Exposure	4.2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	919	Chlorogenic acid	HMDB0003164	Herbal Tea Consumption	Exposure	4.2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	919	Chlorogenic acid	HMDB0003164	Wine Consumption	Exposure	4.2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	925	Genistein	HMDB0003217	Fats Consumption	Exposure	2.41 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	925	Genistein	HMDB0003217	Soy Foods Consumption	Exposure	2.41 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	925	Genistein	HMDB0003217	Fruits Consumption	Exposure	2.41 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	925	Genistein	HMDB0003217	Vegetables Consumption	Exposure	2.41 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	925	Genistein	HMDB0003217	Dietary Fibre Consumption	Exposure	7.9 ug/mmol	NA	Both	Urine, spot	NA
+Chemical	925	Genistein	HMDB0003217	Genistein Exposure	Exposure	0.36 (0.26-0.46) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	925	Genistein	HMDB0003217	Normal	Exposure	0.015 (0.013-0.016) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	925	Genistein	HMDB0003217	Genistein Exposure	Exposure	0.18 (0.16-0.21) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	925	Genistein	HMDB0003217	Normal	Exposure	0.013 (0.012-0.014) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	925	Genistein	HMDB0003217	Genistein Exposure	Exposure	0.31 (0.19-0.47) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	925	Genistein	HMDB0003217	Normal	Exposure	0.013 (0.011-0.015) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	925	Genistein	HMDB0003217	Genistein Exposure	Exposure	0.21 (0.16-0.26) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	925	Genistein	HMDB0003217	Normal	Exposure	0.012 (0.011-0.013) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	925	Genistein	HMDB0003217	Genistein Exposure	Exposure	0.24 (0.17-0.31) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	925	Genistein	HMDB0003217	Normal	Exposure	0.012 (0.011-0.013) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	925	Genistein	HMDB0003217	Genistein Exposure	Exposure	0.16 (0.14-0.21) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	925	Genistein	HMDB0003217	Normal	Exposure	0.0093 (0.0074-0.012) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	936	Phloretin	HMDB0003306	Fruits Consumption	Exposure	62.7 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	936	Phloretin	HMDB0003306	Vegetables Consumption	Exposure	62.7 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	936	Phloretin	HMDB0003306	Fruits + Vegetables Consumption	Exposure	62.7 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	936	Phloretin	HMDB0003306	Apple Consumption	Exposure	0.73 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	936	Phloretin	HMDB0003306	Peach Consumption	Exposure	0.73 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	936	Phloretin	HMDB0003306	Berries Consumption	Exposure	0.73 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	936	Phloretin	HMDB0003306	Grapefruit Consumption	Exposure	0.73 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	936	Phloretin	HMDB0003306	Grapefruit Juice Consumption	Exposure	0.73 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	936	Phloretin	HMDB0003306	Orange Consumption	Exposure	0.73 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	936	Phloretin	HMDB0003306	Orange Juice Consumption	Exposure	0.73 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	936	Phloretin	HMDB0003306	Citrus Fruits Consumption	Exposure	0.73 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	936	Phloretin	HMDB0003306	Fruit Juices Consumption	Exposure	0.73 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	937	Daidzein	HMDB0003312	Fats Consumption	Exposure	5.57 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	937	Daidzein	HMDB0003312	Soy Foods Consumption	Exposure	5.57 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	937	Daidzein	HMDB0003312	Fruits Consumption	Exposure	5.57 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	937	Daidzein	HMDB0003312	Vegetables Consumption	Exposure	5.57 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	937	Daidzein	HMDB0003312	Dietary Fibre Consumption	Exposure	17.2 ug/mmol	NA	Both	Urine, spot	NA
+Chemical	970	Mercury	HMDB0003625	Mercury Exposure	Exposure	0.00062 (0.00051-0.00070) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	970	Mercury	HMDB0003625	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	970	Mercury	HMDB0003625	Mercury Exposure	Exposure	0.00091 (0.00083-0.00100) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	970	Mercury	HMDB0003625	Normal	Exposure	0.00016 (0.00015-0.00017) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	970	Mercury	HMDB0003625	Mercury Exposure	Exposure	0.00099 (0.00084-0.0013) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	970	Mercury	HMDB0003625	Normal	Exposure	0.00021 (0.00019-0.00023) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	970	Mercury	HMDB0003625	Mercury Exposure	Exposure	0.0026 (0.0024-0.0028) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	970	Mercury	HMDB0003625	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	970	Mercury	HMDB0003625	Mercury Exposure	Exposure	0.0030 (0.0026-0.0034) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	970	Mercury	HMDB0003625	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	970	Mercury	HMDB0003625	Mercury Exposure	Exposure	0.0024 (0.0021-0.0026) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	970	Mercury	HMDB0003625	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1004	Antimony	HMDB0004118	Antimony Exposure	Exposure	0.00015 (0.00013-0.00016) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1004	Antimony	HMDB0004118	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1004	Antimony	HMDB0004118	Antimony Exposure	Exposure	0.00021 (0.00017-0.00024) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1004	Antimony	HMDB0004118	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1004	Antimony	HMDB0004118	Antimony Exposure	Exposure	0.00016 (0.00014-0.00018) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1004	Antimony	HMDB0004118	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Lead Exposure	Exposure	0.00063 (0.00055-0.00071) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Normal	Exposure	0.00017 (0.00016-0.00019) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Lead Exposure	Exposure	0.00082 (0.00068-0.00093) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Normal	Exposure	0.00022 (0.00021-0.00024) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Lead Exposure	Exposure	0.00062 (0.00057-0.00069) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Normal	Exposure	0.00017 (0.00016-0.00019) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Lead Exposure	Exposure	0.13 (0.12-0.14) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Normal	Exposure	0.040 (0.037-0.042) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Lead Exposure	Exposure	0.14 (0.12-0.15) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Normal	Exposure	0.041 (0.039-0.044) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Lead Exposure	Exposure	0.15 (0.13-0.18) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1037	Lead	HMDB0004628	Normal	Exposure	0.047 (0.044-0.050) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	Fats Consumption	Exposure	1.52 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	Soy Foods Consumption	Exposure	1.52 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	Fruits Consumption	Exposure	1.52 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	Vegetables Consumption	Exposure	1.52 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	Dietary Fibre Consumption	Exposure	0.2 ug/mmol	NA	Both	Urine, spot	NA
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	O-Desmethylangolensin Exposure	Exposure	0.15 (0.087-0.23) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	Normal	Exposure	0.0020 (0.0018-0.0024) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	O-Desmethylangolensin Exposure	Exposure	0.19 (0.12-0.24) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	Normal	Exposure	0.0022 (0.0019-0.0026) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	O-Desmethylangolensin Exposure	Exposure	0.088 (0.080-0.11) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	Normal	Exposure	0.0020 (0.0018-0.0022) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	O-Desmethylangolensin Exposure	Exposure	0.094 (0.079-0.14) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	Normal	Exposure	0.0020 (0.0018-0.0023) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	O-Desmethylangolensin Exposure	Exposure	0.12 (0.065-0.18) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	Normal	Exposure	0.0017 (0.0015-0.0019) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	O-Desmethylangolensin Exposure	Exposure	0.073 (0.061-0.095) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1038	O-Desmethylangolensin	HMDB0004629	Normal	Exposure	0.0018 (0.0013-0.0024) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Fats Consumption	Exposure	0.3 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1124	Enterodiol	HMDB0005056	Soy Foods Consumption	Exposure	0.3 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1124	Enterodiol	HMDB0005056	Fruits Consumption	Exposure	0.3 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1124	Enterodiol	HMDB0005056	Vegetables Consumption	Exposure	0.3 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1124	Enterodiol	HMDB0005056	Peach Consumption	Exposure	2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1124	Enterodiol	HMDB0005056	Berries Consumption	Exposure	2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1124	Enterodiol	HMDB0005056	Fruit Juices Consumption	Exposure	2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1124	Enterodiol	HMDB0005056	Dark Bread Consumption	Exposure	2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1124	Enterodiol	HMDB0005056	Cereals Consumption	Exposure	2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1124	Enterodiol	HMDB0005056	Potato Consumption	Exposure	2 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1124	Enterodiol	HMDB0005056	Chocolate Consumption	Exposure	0.8 umol/L	Adult: >=18 yrs old	Both	Urine, first morning spot	NA
+Chemical	1124	Enterodiol	HMDB0005056	Dietary Fibre Consumption	Exposure	7.8 ug/mmol	NA	Both	Urine, spot	NA
+Chemical	1124	Enterodiol	HMDB0005056	Enterodiol Exposure	Exposure	0.090 (0.074-0.12) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Normal	Exposure	0.0091 (0.0076-0.011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Enterodiol Exposure	Exposure	0.20 (0.16-0.23) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Normal	Exposure	0.016 (0.015-0.017) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Enterodiol Exposure	Exposure	0.084 (0.074-0.094) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Normal	Exposure	0.013 (0.011-0.014) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Enterodiol Exposure	Exposure	0.11 (0.092-0.14) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Normal	Exposure	0.014 (0.013-0.015) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Enterodiol Exposure	Exposure	0.12 (0.100-0.16) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Normal	Exposure	0.014 (0.012-0.015) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Enterodiol Exposure	Exposure	0.15 (0.11-0.24) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1124	Enterodiol	HMDB0005056	Normal	Exposure	0.014 (0.012-0.016) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1266	Hesperetin	HMDB0005782	Fruits Consumption	Exposure	98 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	1266	Hesperetin	HMDB0005782	Vegetables Consumption	Exposure	98 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	1266	Hesperetin	HMDB0005782	Fruits + Vegetables Consumption	Exposure	98 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	1266	Hesperetin	HMDB0005782	Grapefruit Consumption	Exposure	3 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1266	Hesperetin	HMDB0005782	Grapefruit Juice Consumption	Exposure	3 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1266	Hesperetin	HMDB0005782	Orange Consumption	Exposure	3 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1266	Hesperetin	HMDB0005782	Orange Juice Consumption	Exposure	3 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1266	Hesperetin	HMDB0005782	Citrus Fruits Consumption	Exposure	3 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1266	Hesperetin	HMDB0005782	Fruit Juices Consumption	Exposure	3 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1270	Quercetin	HMDB0005794	Fruits Consumption	Exposure	61.2 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	1270	Quercetin	HMDB0005794	Vegetables Consumption	Exposure	61.2 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	1270	Quercetin	HMDB0005794	Fruits + Vegetables Consumption	Exposure	61.2 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	1270	Quercetin	HMDB0005794	Apple Consumption	Exposure	0.7 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1270	Quercetin	HMDB0005794	Peach Consumption	Exposure	0.7 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1270	Quercetin	HMDB0005794	Berries Consumption	Exposure	0.7 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1270	Quercetin	HMDB0005794	Fruit Juices Consumption	Exposure	0.7 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1270	Quercetin	HMDB0005794	Onion Consumption	Exposure	0.7 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1270	Quercetin	HMDB0005794	Black Tea Consumption	Exposure	0.7 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1270	Quercetin	HMDB0005794	Herbal Tea Consumption	Exposure	0.7 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Fruits Consumption	Exposure	7.9 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Vegetables Consumption	Exposure	7.9 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Fruits + Vegetables Consumption	Exposure	7.9 ug/day	NA	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Apple Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Peach Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Berries Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Grapefruit Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Grapefruit Juice Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Orange Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Orange Juice Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Citrus Fruits Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Fruit Juices Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Onion Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Dark Bread Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Cereals Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Potato Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Chocolate Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Coffee Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Black Tea Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Herbal Tea Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1271	Kaempferol	HMDB0005801	Wine Consumption	Exposure	0.8 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1272	Gallic acid	HMDB0005807	Apple Consumption	Exposure	1.6 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1272	Gallic acid	HMDB0005807	Peach Consumption	Exposure	1.6 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1272	Gallic acid	HMDB0005807	Berries Consumption	Exposure	1.6 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1272	Gallic acid	HMDB0005807	Fruits Consumption	Exposure	1.6 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1272	Gallic acid	HMDB0005807	Fruit Juices Consumption	Exposure	1.6 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1272	Gallic acid	HMDB0005807	Vegetables Consumption	Exposure	1.6 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1272	Gallic acid	HMDB0005807	Onion Consumption	Exposure	1.6 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1272	Gallic acid	HMDB0005807	Chocolate Consumption	Exposure	1.6 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1272	Gallic acid	HMDB0005807	Black Tea Consumption	Exposure	1.6 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1272	Gallic acid	HMDB0005807	Herbal Tea Consumption	Exposure	1.6 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1272	Gallic acid	HMDB0005807	Wine Consumption	Exposure	1.6 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1278	Dihydrogenistein	HMDB0005897	Fats Consumption	Exposure	0.19 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1278	Dihydrogenistein	HMDB0005897	Soy Foods Consumption	Exposure	0.19 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1278	Dihydrogenistein	HMDB0005897	Fruits Consumption	Exposure	0.19 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1278	Dihydrogenistein	HMDB0005897	Vegetables Consumption	Exposure	0.19 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1295	Enterolactone	HMDB0006101	Fats Consumption	Exposure	1.18 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1295	Enterolactone	HMDB0006101	Soy Foods Consumption	Exposure	1.18 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1295	Enterolactone	HMDB0006101	Fruits Consumption	Exposure	1.18 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1295	Enterolactone	HMDB0006101	Vegetables Consumption	Exposure	1.18 nmol/mg	Elderly: 65-100+ yrs old	Both	Urine, spot	NA
+Chemical	1295	Enterolactone	HMDB0006101	Peach Consumption	Exposure	23.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1295	Enterolactone	HMDB0006101	Berries Consumption	Exposure	23.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1295	Enterolactone	HMDB0006101	Fruit Juices Consumption	Exposure	23.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1295	Enterolactone	HMDB0006101	Dark Bread Consumption	Exposure	23.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1295	Enterolactone	HMDB0006101	Cereals Consumption	Exposure	23.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1295	Enterolactone	HMDB0006101	Potato Consumption	Exposure	23.9 umol/day	Adult: >=18 yrs old	Both	Urine, 24-h	NA
+Chemical	1295	Enterolactone	HMDB0006101	Dietary Fibre Consumption	Exposure	93.5 ug/mmol	NA	Both	Urine, spot	NA
+Chemical	1295	Enterolactone	HMDB0006101	Fruits + Vegetables Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Water Soluble Fibre Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Insoluble Fibre Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Coffee + Tea Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Ethanol Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Wine Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Beer Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Liquor Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Mushrooms Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Leafy Vegetables Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Lettuce Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Cabbage Family Vegetables Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Gourds Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Walnut Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Avocado Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Legume Family Vegetables Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Onion Family Vegetables Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Banana Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Olive Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Sesame Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Citrus Fruits Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Potato Family Vegetables Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Carrot Family Vegetables Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Grape Consumption	Exposure	13.97 nmol/L	Adult: >=18 yrs old	Both	Plasma, fasting	NA
+Chemical	1295	Enterolactone	HMDB0006101	Enterolactone Exposure	Exposure	0.85 (0.71-1.1) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1295	Enterolactone	HMDB0006101	Normal	Exposure	0.083 (0.070-0.099) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1295	Enterolactone	HMDB0006101	Enterolactone Exposure	Exposure	0.80 (0.65-0.93) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1295	Enterolactone	HMDB0006101	Normal	Exposure	0.092 (0.083-0.100) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1295	Enterolactone	HMDB0006101	Enterolactone Exposure	Exposure	0.91 (0.76-1.1) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1295	Enterolactone	HMDB0006101	Normal	Exposure	0.11 (0.093-0.12) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1295	Enterolactone	HMDB0006101	Enterolactone Exposure	Exposure	1.0 (0.85-1.3) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1295	Enterolactone	HMDB0006101	Normal	Exposure	0.100 (0.090-0.12) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1295	Enterolactone	HMDB0006101	Enterolactone Exposure	Exposure	1.0 (0.79-1.3) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1295	Enterolactone	HMDB0006101	Normal	Exposure	0.092 (0.080-0.11) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1295	Enterolactone	HMDB0006101	Enterolactone Exposure	Exposure	1.1 (0.91-1.3) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	1295	Enterolactone	HMDB0006101	Normal	Exposure	0.087 (0.078-0.098) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4238	Ethyl glucuronide	HMDB0010325	Ethanol Consumption	Exposure	239.5 ng/mL	NA	Both	Urine, first morning spot	NA
+Chemical	4238	Ethyl glucuronide	HMDB0010325	Ethanol Consumption	Exposure	239.5 ng/mL	NA	Both	Urine, first morning spot	NA
+Chemical	4974	1-Hydroxyphenanthrene	HMDB0059797	1-Hydroxyphenanthrene Exposure	Exposure	0.00021 (0.00019-0.00022) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4974	1-Hydroxyphenanthrene	HMDB0059797	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4974	1-Hydroxyphenanthrene	HMDB0059797	1-Hydroxyphenanthrene Exposure	Exposure	0.00030 (0.00028-0.00032) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4974	1-Hydroxyphenanthrene	HMDB0059797	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4975	1-Hydroxypyrene	HMDB0013139	1-Hydroxypyrene Exposure	Exposure	0.00028 (0.00024-0.00036) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4975	1-Hydroxypyrene	HMDB0013139	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4975	1-Hydroxypyrene	HMDB0013139	1-Hydroxypyrene Exposure	Exposure	0.00028 (0.00026-0.00030) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4975	1-Hydroxypyrene	HMDB0013139	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4976	1-Naphthol	HMDB0012138	1-Naphthol Exposure	Exposure	0.016 (0.014-0.019) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4976	1-Naphthol	HMDB0012138	Normal	Exposure	0.0014 (0.0013-0.0015) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4976	1-Naphthol	HMDB0012138	1-Naphthol Exposure	Exposure	0.016 (0.012-0.021) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4976	1-Naphthol	HMDB0012138	Normal	Exposure	0.0015 (0.0014-0.0016) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4977	2-Hydroxyfluorene	HMDB0013163	2-Hydroxyfluorene Exposure	Exposure	0.00091 (0.00079-0.00100) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4977	2-Hydroxyfluorene	HMDB0013163	Normal	Exposure	0.00013 (0.00012-0.00014) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4977	2-Hydroxyfluorene	HMDB0013163	2-Hydroxyfluorene Exposure	Exposure	0.0013 (0.0012-0.0014) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4977	2-Hydroxyfluorene	HMDB0013163	Normal	Exposure	0.00017 (0.00016-0.00018) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4978	2-Naphthol	HMDB0012322	2-Naphthol Exposure	Exposure	0.017 (0.016-0.019) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4978	2-Naphthol	HMDB0012322	Normal	Exposure	0.0038 (0.0037-0.0040) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4978	2-Naphthol	HMDB0012322	2-Naphthol Exposure	Exposure	0.018 (0.016-0.020) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4978	2-Naphthol	HMDB0012322	Normal	Exposure	0.0037 (0.0034-0.0040) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4979	2,4-Dichlorophenol	HMDB0004811	2,4-Dichlorophenol Exposure	Exposure	0.0056 (0.0039-0.0078) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4979	2,4-Dichlorophenol	HMDB0004811	Normal	Exposure	0.00055 (0.00049-0.00061) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4979	2,4-Dichlorophenol	HMDB0004811	2,4-Dichlorophenol Exposure	Exposure	0.0041 (0.0031-0.0058) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4979	2,4-Dichlorophenol	HMDB0004811	Normal	Exposure	0.00046 (0.00042-0.00051) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4980	2,4-Dichlorophenoxyacetic acid	HMDB0041797	2,4-Dichlorophenoxyacetic acid Exposure	Exposure	0.00094 (0.00084-0.0011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4980	2,4-Dichlorophenoxyacetic acid	HMDB0041797	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4980	2,4-Dichlorophenoxyacetic acid	HMDB0041797	2,4-Dichlorophenoxyacetic acid Exposure	Exposure	0.00079 (0.00067-0.0011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4980	2,4-Dichlorophenoxyacetic acid	HMDB0041797	Normal	Exposure	0.00016 (0.00015-0.00018) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4980	2,4-Dichlorophenoxyacetic acid	HMDB0041797	2,4-Dichlorophenoxyacetic acid Exposure	Exposure	0.00095 (0.00073-0.0013) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4980	2,4-Dichlorophenoxyacetic acid	HMDB0041797	Normal	Exposure	0.00012 (1.0e-04-0.00015) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4980	2,4-Dichlorophenoxyacetic acid	HMDB0041797	2,4-Dichlorophenoxyacetic acid Exposure	Exposure	0.00057 (0.00053-0.00064) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4980	2,4-Dichlorophenoxyacetic acid	HMDB0041797	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4981	2,4,5-Trichlorophenol	HMDB0061729	2,4,5-Trichlorophenol Exposure	Exposure	0.00020 (0.00018-0.00022) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4981	2,4,5-Trichlorophenol	HMDB0061729	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4981	2,4,5-Trichlorophenol	HMDB0061729	2,4,5-Trichlorophenol Exposure	Exposure	0.00021 (0.00019-0.00024) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4981	2,4,5-Trichlorophenol	HMDB0061729	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4981	2,4,5-Trichlorophenol	HMDB0061729	2,4,5-Trichlorophenol Exposure	Exposure	0.00023 (0.00021-0.00026) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4981	2,4,5-Trichlorophenol	HMDB0061729	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4981	2,4,5-Trichlorophenol	HMDB0061729	2,4,5-Trichlorophenol Exposure	Exposure	0.00022 (0.00019-0.00027) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4981	2,4,5-Trichlorophenol	HMDB0061729	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4982	2,4,6-Trichlorophenol	HMDB0061728	2,4,6-Trichlorophenol Exposure	Exposure	0.00096 (0.00089-0.0011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4982	2,4,6-Trichlorophenol	HMDB0061728	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4982	2,4,6-Trichlorophenol	HMDB0061728	2,4,6-Trichlorophenol Exposure	Exposure	0.00100 (0.00091-0.0012) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4982	2,4,6-Trichlorophenol	HMDB0061728	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4982	2,4,6-Trichlorophenol	HMDB0061728	2,4,6-Trichlorophenol Exposure	Exposure	0.00100 (0.00087-0.0013) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4982	2,4,6-Trichlorophenol	HMDB0061728	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4982	2,4,6-Trichlorophenol	HMDB0061728	2,4,6-Trichlorophenol Exposure	Exposure	0.00100 (0.00091-0.0011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4982	2,4,6-Trichlorophenol	HMDB0061728	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4983	2,5-Dichlorophenol	HMDB0041800	2,5-Dichlorophenol Exposure	Exposure	0.15 (0.100-0.24) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4983	2,5-Dichlorophenol	HMDB0041800	Normal	Exposure	0.0033 (0.0025-0.0044) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4984	2,5-Dimethylfuran	HMDB0033182	2,5-Dimethylfuran Exposure	Exposure	0.0015 (0.0013-0.0017) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4984	2,5-Dimethylfuran	HMDB0033182	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4984	2,5-Dimethylfuran	HMDB0033182	2,5-Dimethylfuran Exposure	Exposure	0.0015 (0.0013-0.0017) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4984	2,5-Dimethylfuran	HMDB0033182	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4984	2,5-Dimethylfuran	HMDB0033182	2,5-Dimethylfuran Exposure	Exposure	0.0016 (0.0012-0.0018) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4984	2,5-Dimethylfuran	HMDB0033182	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4985	3-Hydroxyfluorene	HMDB0059802	3-Hydroxyfluorene Exposure	Exposure	0.00073 (0.00065-0.00083) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4985	3-Hydroxyfluorene	HMDB0059802	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4985	3-Hydroxyfluorene	HMDB0059802	3-Hydroxyfluorene Exposure	Exposure	0.00058 (0.00055-0.00067) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4985	3-Hydroxyfluorene	HMDB0059802	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4986	3-Hydroxyphenanthrene	HMDB0059799	3-Hydroxyphenanthrene Exposure	Exposure	0.00019 (0.00016-0.00021) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4986	3-Hydroxyphenanthrene	HMDB0059799	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4987	9-Hydroxyfluorene	HMDB0059803	9-Hydroxyfluorene Exposure	Exposure	0.00085 (0.00071-0.00100) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4987	9-Hydroxyfluorene	HMDB0059803	Normal	Exposure	0.00017 (0.00016-0.00018) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4987	9-Hydroxyfluorene	HMDB0059803	9-Hydroxyfluorene Exposure	Exposure	0.00100 (0.00089-0.0012) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4987	9-Hydroxyfluorene	HMDB0059803	Normal	Exposure	0.00021 (0.00019-0.00023) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4987	9-Hydroxyfluorene	HMDB0059803	9-Hydroxyfluorene Exposure	Exposure	0.00078 (0.00072-0.00084) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4987	9-Hydroxyfluorene	HMDB0059803	Normal	Exposure	0.00017 (0.00016-0.00017) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4987	9-Hydroxyfluorene	HMDB0059803	9-Hydroxyfluorene Exposure	Exposure	0.00068 (0.00057-0.00086) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4987	9-Hydroxyfluorene	HMDB0059803	Normal	Exposure	0.00016 (0.00014-0.00017) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4987	9-Hydroxyfluorene	HMDB0059803	9-Hydroxyfluorene Exposure	Exposure	0.00094 (0.00084-0.0011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4987	9-Hydroxyfluorene	HMDB0059803	Normal	Exposure	0.00019 (0.00017-0.00020) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4988	Arsenic	HMDB0002290	Arsenic Exposure	Exposure	0.076 (0.058-0.11) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4988	Arsenic	HMDB0002290	Normal	Exposure	0.012 (0.0100-0.013) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4988	Arsenic	HMDB0002290	Arsenic Exposure	Exposure	0.069 (0.048-0.099) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4988	Arsenic	HMDB0002290	Normal	Exposure	0.0100 (0.0095-0.011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4988	Arsenic	HMDB0002290	Arsenic Exposure	Exposure	0.079 (0.066-0.092) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4988	Arsenic	HMDB0002290	Normal	Exposure	0.011 (0.0100-0.012) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4989	Barium	HMDB0004142	Barium Exposure	Exposure	0.0043 (0.0040-0.0049) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4989	Barium	HMDB0004142	Normal	Exposure	0.0011 (0.00099-0.0011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4989	Barium	HMDB0004142	Barium Exposure	Exposure	0.0046 (0.0041-0.0050) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4989	Barium	HMDB0004142	Normal	Exposure	0.00100 (0.00098-0.0011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4989	Barium	HMDB0004142	Barium Exposure	Exposure	0.0052 (0.0043-0.0055) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4989	Barium	HMDB0004142	Normal	Exposure	0.0011 (0.00100-0.0012) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4990	Bisphenol A	HMDB0032133	Bisphenol A Exposure	Exposure	0.0025 (0.0023-0.0030) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4990	Bisphenol A	HMDB0032133	Normal	Exposure	0.00063 (0.00058-0.00069) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4990	Bisphenol A	HMDB0032133	Bisphenol A Exposure	Exposure	0.0041 (0.0032-0.0055) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4990	Bisphenol A	HMDB0032133	Normal	Exposure	0.00085 (0.00080-0.00091) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4991	Chloroform	HMDB0029596	Chloroform Exposure	Exposure	0.00028 (0.00023-0.00034) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4991	Chloroform	HMDB0029596	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4991	Chloroform	HMDB0029596	Chloroform Exposure	Exposure	0.00039 (0.00035-0.00045) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4991	Chloroform	HMDB0029596	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4991	Chloroform	HMDB0029596	Chloroform Exposure	Exposure	0.00034 (0.00028-0.00042) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4991	Chloroform	HMDB0029596	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Chondrillasterol Exposure	Exposure	0.30 (0.19-0.44) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Normal	Exposure	0.0061 (0.0048-0.0077) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Chondrillasterol Exposure	Exposure	0.64 (0.38-0.83) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Normal	Exposure	0.0064 (0.0051-0.0080) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Chondrillasterol Exposure	Exposure	0.46 (0.28-0.69) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Normal	Exposure	0.0072 (0.0053-0.0099) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Chondrillasterol Exposure	Exposure	0.33 (0.23-0.50) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Normal	Exposure	0.0069 (0.0056-0.0085) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Chondrillasterol Exposure	Exposure	0.26 (0.14-0.49) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Normal	Exposure	0.0050 (0.0038-0.0067) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Chondrillasterol Exposure	Exposure	0.33 (0.22-0.54) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4992	Chondrillasterol	HMDB0033885	Normal	Exposure	0.0052 (0.0043-0.0062) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4993	Diethyldithiophosphate	HMDB0061736	Diethyldithiophosphate Exposure	Exposure	0.00025 (0.00021-0.00031) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4993	Diethyldithiophosphate	HMDB0061736	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4993	Diethyldithiophosphate	HMDB0061736	Diethyldithiophosphate Exposure	Exposure	0.00066 (0.00047-0.00092) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4993	Diethyldithiophosphate	HMDB0061736	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4993	Diethyldithiophosphate	HMDB0061736	Diethyldithiophosphate Exposure	Exposure	0.00052 (0.00041-0.00069) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4993	Diethyldithiophosphate	HMDB0061736	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4994	Dimethyldithiophosphate	HMDB0061737	Dimethyldithiophosphate Exposure	Exposure	0.0033 (0.0023-0.0051) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4994	Dimethyldithiophosphate	HMDB0061737	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4994	Dimethyldithiophosphate	HMDB0061737	Dimethyldithiophosphate Exposure	Exposure	0.0044 (0.0030-0.0059) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4994	Dimethyldithiophosphate	HMDB0061737	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4994	Dimethyldithiophosphate	HMDB0061737	Dimethyldithiophosphate Exposure	Exposure	0.0049 (0.0035-0.0058) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4994	Dimethyldithiophosphate	HMDB0061737	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4994	Dimethyldithiophosphate	HMDB0061737	Dimethyldithiophosphate Exposure	Exposure	0.0046 (0.0028-0.0070) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4994	Dimethyldithiophosphate	HMDB0061737	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4994	Dimethyldithiophosphate	HMDB0061737	Dimethyldithiophosphate Exposure	Exposure	0.016 (0.0092-0.024) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4994	Dimethyldithiophosphate	HMDB0061737	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4995	Dimethylphosphate	HMDB0061734	Dimethylphosphate Exposure	Exposure	0.030 (0.026-0.036) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4995	Dimethylphosphate	HMDB0061734	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4995	Dimethylphosphate	HMDB0061734	Dimethylphosphate Exposure	Exposure	0.025 (0.022-0.029) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4995	Dimethylphosphate	HMDB0061734	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4995	Dimethylphosphate	HMDB0061734	Dimethylphosphate Exposure	Exposure	0.013 (0.012-0.016) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4995	Dimethylphosphate	HMDB0061734	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4995	Dimethylphosphate	HMDB0061734	Dimethylphosphate Exposure	Exposure	0.012 (0.0100-0.013) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4995	Dimethylphosphate	HMDB0061734	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4995	Dimethylphosphate	HMDB0061734	Dimethylphosphate Exposure	Exposure	0.014 (0.012-0.016) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4995	Dimethylphosphate	HMDB0061734	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4996	Ethylbenzene	HMDB0059905	Ethylbenzene Exposure	Exposure	0.0011 (0.00098-0.0012) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4996	Ethylbenzene	HMDB0059905	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4996	Ethylbenzene	HMDB0059905	Ethylbenzene Exposure	Exposure	0.0011 (0.00092-0.0013) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4996	Ethylbenzene	HMDB0059905	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4996	Ethylbenzene	HMDB0059905	Ethylbenzene Exposure	Exposure	0.0011 (0.00096-0.0012) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4996	Ethylbenzene	HMDB0059905	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4997	Mono-(2-ethyl-5-carboxypentyl) phthalate	HMDB0094647	Mono-(2-ethyl-5-carboxypentyl) phthalate Exposure	Exposure	0.022 (0.020-0.023) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4997	Mono-(2-ethyl-5-carboxypentyl) phthalate	HMDB0094647	Normal	Exposure	0.0054 (0.0051-0.0058) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4997	Mono-(2-ethyl-5-carboxypentyl) phthalate	HMDB0094647	Mono-(2-ethyl-5-carboxypentyl) phthalate Exposure	Exposure	0.015 (0.013-0.017) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4997	Mono-(2-ethyl-5-carboxypentyl) phthalate	HMDB0094647	Normal	Exposure	0.0039 (0.0036-0.0043) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4997	Mono-(2-ethyl-5-carboxypentyl) phthalate	HMDB0094647	Mono-(2-ethyl-5-carboxypentyl) phthalate Exposure	Exposure	0.014 (0.013-0.017) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4997	Mono-(2-ethyl-5-carboxypentyl) phthalate	HMDB0094647	Normal	Exposure	0.0034 (0.0031-0.0036) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4998	Mono-(2-ethyl-5-hydroxyhexyl) phthalate	HMDB0094679	Mono-(2-ethyl-5-hydroxyhexyl) phthalate Exposure	Exposure	0.014 (0.013-0.017) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4998	Mono-(2-ethyl-5-hydroxyhexyl) phthalate	HMDB0094679	Normal	Exposure	0.0035 (0.0033-0.0036) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4998	Mono-(2-ethyl-5-hydroxyhexyl) phthalate	HMDB0094679	Mono-(2-ethyl-5-hydroxyhexyl) phthalate Exposure	Exposure	0.0099 (0.0088-0.011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4998	Mono-(2-ethyl-5-hydroxyhexyl) phthalate	HMDB0094679	Normal	Exposure	0.0025 (0.0023-0.0027) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4998	Mono-(2-ethyl-5-hydroxyhexyl) phthalate	HMDB0094679	Mono-(2-ethyl-5-hydroxyhexyl) phthalate Exposure	Exposure	0.0100 (0.0088-0.012) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4998	Mono-(2-ethyl-5-hydroxyhexyl) phthalate	HMDB0094679	Normal	Exposure	0.0023 (0.0022-0.0024) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4999	Mono-(2-ethyl-5-oxohexyl) phthalate	HMDB0094645	Mono-(2-ethyl-5-oxohexyl) phthalate Exposure	Exposure	0.0091 (0.0076-0.011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4999	Mono-(2-ethyl-5-oxohexyl) phthalate	HMDB0094645	Normal	Exposure	0.0022 (0.0021-0.0023) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4999	Mono-(2-ethyl-5-oxohexyl) phthalate	HMDB0094645	Mono-(2-ethyl-5-oxohexyl) phthalate Exposure	Exposure	0.0063 (0.0054-0.0070) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4999	Mono-(2-ethyl-5-oxohexyl) phthalate	HMDB0094645	Normal	Exposure	0.0016 (0.0015-0.0018) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4999	Mono-(2-ethyl-5-oxohexyl) phthalate	HMDB0094645	Mono-(2-ethyl-5-oxohexyl) phthalate Exposure	Exposure	0.0065 (0.0057-0.0071) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	4999	Mono-(2-ethyl-5-oxohexyl) phthalate	HMDB0094645	Normal	Exposure	0.0014 (0.0014-0.0015) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5000	Mono-(3-carboxypropyl) phthalate	HMDB0061748	Mono-(3-carboxypropyl) phthalate Exposure	Exposure	0.0075 (0.0063-0.0086) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5000	Mono-(3-carboxypropyl) phthalate	HMDB0061748	Normal	Exposure	0.00096 (0.00087-0.0011) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5000	Mono-(3-carboxypropyl) phthalate	HMDB0061748	Mono-(3-carboxypropyl) phthalate Exposure	Exposure	0.016 (0.0084-0.030) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5000	Mono-(3-carboxypropyl) phthalate	HMDB0061748	Normal	Exposure	0.0015 (0.0013-0.0018) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5000	Mono-(3-carboxypropyl) phthalate	HMDB0061748	Mono-(3-carboxypropyl) phthalate Exposure	Exposure	0.0034 (0.0024-0.0043) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5000	Mono-(3-carboxypropyl) phthalate	HMDB0061748	Normal	Exposure	0.00053 (0.00047-0.00061) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5001	Mono-benzyl phthalate	HMDB0061744	Mono-benzyl phthalate Exposure	Exposure	0.016 (0.014-0.019) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5001	Mono-benzyl phthalate	HMDB0061744	Normal	Exposure	0.0020 (0.0018-0.0023) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5001	Mono-benzyl phthalate	HMDB0061744	Mono-benzyl phthalate Exposure	Exposure	0.011 (0.0094-0.014) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5001	Mono-benzyl phthalate	HMDB0061744	Normal	Exposure	0.0020 (0.0018-0.0021) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5001	Mono-benzyl phthalate	HMDB0061744	Mono-benzyl phthalate Exposure	Exposure	0.012 (0.011-0.013) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5001	Mono-benzyl phthalate	HMDB0061744	Normal	Exposure	0.0023 (0.0021-0.0024) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5003	o-Xylene	HMDB0059851	o-Xylene Exposure	Exposure	0.00073 (0.00058-0.00086) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5003	o-Xylene	HMDB0059851	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5003	o-Xylene	HMDB0059851	o-Xylene Exposure	Exposure	0.00062 (0.00056-0.00071) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5003	o-Xylene	HMDB0059851	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5003	o-Xylene	HMDB0059851	o-Xylene Exposure	Exposure	0.00066 (0.00057-0.00074) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5003	o-Xylene	HMDB0059851	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5004	Pentachlorophenol	HMDB0041974	Pentachlorophenol Exposure	Exposure	0.0015 (0.0011-0.0017) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5004	Pentachlorophenol	HMDB0041974	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5005	perchlorate	HMDB0094714	Perchlorate Exposure	Exposure	0.0054 (0.0049-0.0063) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5005	perchlorate	HMDB0094714	Normal	Exposure	0.0015 (0.0014-0.0017) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5005	perchlorate	HMDB0094714	Perchlorate Exposure	Exposure	0.0074 (0.0056-0.0088) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5005	perchlorate	HMDB0094714	Normal	Exposure	0.0017 (0.0016-0.0018) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5006	Perchloroethylene	HMDB0041980	Perchloroethylene Exposure	Exposure	0.00045 (0-0.00067) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5006	Perchloroethylene	HMDB0041980	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5006	Perchloroethylene	HMDB0041980	Perchloroethylene Exposure	Exposure	0.00050 (0.00039-0.00063) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5006	Perchloroethylene	HMDB0041980	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5006	Perchloroethylene	HMDB0041980	Perchloroethylene Exposure	Exposure	0.00075 (0.00058-0.00092) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5006	Perchloroethylene	HMDB0041980	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5007	Perfluorodecanoic acid	HMDB0061738	Perfluorodecanoic acid Exposure	Exposure	0.0014 (0.00097-0.0018) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5007	Perfluorodecanoic acid	HMDB0061738	Normal	Exposure	0.00030 (0.00027-0.00033) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5007	Perfluorodecanoic acid	HMDB0061738	Perfluorodecanoic acid Exposure	Exposure	0.0013 (0.0012-0.0015) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5007	Perfluorodecanoic acid	HMDB0061738	Normal	Exposure	0.00039 (0.00035-0.00043) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5007	Perfluorodecanoic acid	HMDB0061738	Perfluorodecanoic acid Exposure	Exposure	0.0014 (0.0012-0.0018) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5007	Perfluorodecanoic acid	HMDB0061738	Normal	Exposure	0.00036 (0.00032-0.00040) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5008	Perfluorohexane sulfonic acid	HMDB0094700	Perfluorohexane sulfonic acid Exposure	Exposure	0.014 (0.012-0.017) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5008	Perfluorohexane sulfonic acid	HMDB0094700	Normal	Exposure	0.0032 (0.0029-0.0036) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5008	Perfluorohexane sulfonic acid	HMDB0094700	Perfluorohexane sulfonic acid Exposure	Exposure	0.012 (0.0100-0.014) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5008	Perfluorohexane sulfonic acid	HMDB0094700	Normal	Exposure	0.0029 (0.0027-0.0032) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5008	Perfluorohexane sulfonic acid	HMDB0094700	Perfluorohexane sulfonic acid Exposure	Exposure	0.014 (0.012-0.018) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5008	Perfluorohexane sulfonic acid	HMDB0094700	Normal	Exposure	0.0034 (0.0030-0.0038) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5009	Perfluorononanoic acid	HMDB0061739	Perfluorononanoic acid Exposure	Exposure	0.0055 (0.0049-0.0062) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5009	Perfluorononanoic acid	HMDB0061739	Normal	Exposure	0.0019 (0.0017-0.0021) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5009	Perfluorononanoic acid	HMDB0061739	Perfluorononanoic acid Exposure	Exposure	0.0043 (0.0039-0.0050) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5009	Perfluorononanoic acid	HMDB0061739	Normal	Exposure	0.0015 (0.0013-0.0016) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5009	Perfluorononanoic acid	HMDB0061739	Perfluorononanoic acid Exposure	Exposure	0.0041 (0.0032-0.0047) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5009	Perfluorononanoic acid	HMDB0061739	Normal	Exposure	0.0012 (0.0012-0.0013) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5010	Perfluorooctane sulfonamide	HMDB0061740	Perfluorooctane sulfonamide Exposure	Exposure	0.0028 (0.0020-0.0040) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5010	Perfluorooctane sulfonamide	HMDB0061740	Normal	Exposure	0.00071 (0.00059-0.00085) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5010	Perfluorooctane sulfonamide	HMDB0061740	Perfluorooctane sulfonamide Exposure	Exposure	0.00060 (0.00060-0.00080) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5010	Perfluorooctane sulfonamide	HMDB0061740	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5010	Perfluorooctane sulfonamide	HMDB0061740	Perfluorooctane sulfonamide Exposure	Exposure	0.00060 (0.00040-0.00100) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5010	Perfluorooctane sulfonamide	HMDB0061740	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.028 (0.022-0.033) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.0069 (0.0062-0.0077) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.043 (0.039-0.048) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.013 (0.012-0.014) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.037 (0.031-0.044) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.0100 (0.0090-0.011) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.015 (0.011-0.017) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.0050 (0.0046-0.0055) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.022 (0.018-0.025) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.0078 (0.0071-0.0085) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.15 (0.12-0.19) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.061 (0.054-0.068) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.026 (0.020-0.036) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.0064 (0.0059-0.0070) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.064 (0.045-0.097) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.019 (0.016-0.021) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.095 (0.085-0.11) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.034 (0.032-0.036) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.081 (0.071-0.095) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.026 (0.024-0.028) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.11 (0.088-0.13) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.041 (0.038-0.045) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Perfluorooctanesulfonic acid Exposure	Exposure	0.037 (0.031-0.045) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5011	Perfluorooctanesulfonic acid	HMDB0059586	Normal	Exposure	0.0094 (0.0088-0.0100) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Perfluorooctanoic acid Exposure	Exposure	0.0100 (0.0093-0.011) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Normal	Exposure	0.0038 (0.0036-0.0040) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Perfluorooctanoic acid Exposure	Exposure	0.0100 (0.0087-0.013) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Normal	Exposure	0.0046 (0.0042-0.0051) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Perfluorooctanoic acid Exposure	Exposure	0.0099 (0.0092-0.011) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Normal	Exposure	0.0035 (0.0033-0.0038) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Perfluorooctanoic acid Exposure	Exposure	0.013 (0.011-0.015) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Normal	Exposure	0.0047 (0.0043-0.0052) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Perfluorooctanoic acid Exposure	Exposure	0.0098 (0.0085-0.013) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Normal	Exposure	0.0044 (0.0040-0.0049) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Perfluorooctanoic acid Exposure	Exposure	0.014 (0.012-0.016) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Normal	Exposure	0.0050 (0.0047-0.0054) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Perfluorooctanoic acid Exposure	Exposure	0.013 (0.011-0.014) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5012	Perfluorooctanoic acid	HMDB0059587	Normal	Exposure	0.0044 (0.0040-0.0049) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5013	Perfluoroundecanoic acid	HMDB0061743	Perfluoroundecanoic acid Exposure	Exposure	0.0011 (0.00078-0.0014) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5013	Perfluoroundecanoic acid	HMDB0061743	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5013	Perfluoroundecanoic acid	HMDB0061743	Perfluoroundecanoic acid Exposure	Exposure	0.00089 (0.00071-0.0011) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5013	Perfluoroundecanoic acid	HMDB0061743	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5013	Perfluoroundecanoic acid	HMDB0061743	Perfluoroundecanoic acid Exposure	Exposure	0.00071 (0.00053-0.00089) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5013	Perfluoroundecanoic acid	HMDB0061743	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5013	Perfluoroundecanoic acid	HMDB0061743	Perfluoroundecanoic acid Exposure	Exposure	0.00050 (0.00037-0.00085) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5013	Perfluoroundecanoic acid	HMDB0061743	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5014	Styrene	HMDB0034240	Styrene Exposure	Exposure	0.0013 (0.00100-0.0018) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5014	Styrene	HMDB0034240	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5014	Styrene	HMDB0034240	Styrene Exposure	Exposure	0.0019 (0.0013-0.0025) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5014	Styrene	HMDB0034240	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5014	Styrene	HMDB0034240	Styrene Exposure	Exposure	0.0013 (0.0012-0.0015) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5014	Styrene	HMDB0034240	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5014	Styrene	HMDB0034240	Styrene Exposure	Exposure	0.0012 (0.0011-0.0014) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5014	Styrene	HMDB0034240	Normal	Exposure	0 uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5015	Thallium	HMDB0013724	Thallium Exposure	Exposure	0.00020 (0.00017-0.00023) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5015	Thallium	HMDB0013724	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5015	Thallium	HMDB0013724	Thallium Exposure	Exposure	0.00020 (0.00019-0.00022) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5015	Thallium	HMDB0013724	Normal	Exposure	0 umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Toluene Exposure	Exposure	0.0088 (0.0076-0.0100) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Normal	Exposure	0.0015 (0.0013-0.0016) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Toluene Exposure	Exposure	0.0074 (0.0061-0.0096) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Normal	Exposure	0.0012 (0.0011-0.0014) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Toluene Exposure	Exposure	0.0090 (0.0069-0.011) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Normal	Exposure	0.00092 (0.00081-0.00100) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Toluene Exposure	Exposure	0.012 (0.0076-0.016) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Normal	Exposure	0.0017 (0.0013-0.0021) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Toluene Exposure	Exposure	0.0080 (0.0069-0.0096) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Normal	Exposure	0.0011 (0.00098-0.0013) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Toluene Exposure	Exposure	0.0077 (0.0068-0.0088) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Normal	Exposure	0.00094 (0.00087-0.00100) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Toluene Exposure	Exposure	0.0080 (0.0070-0.0090) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5016	Toluene	HMDB0034168	Normal	Exposure	0.00100 (0.00089-0.0011) uM	All	Both	Serum	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Triclosan Exposure	Exposure	0.25 (0.20-0.31) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Normal	Exposure	0.0052 (0.0046-0.0059) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Triclosan Exposure	Exposure	0.18 (0.14-0.22) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Normal	Exposure	0.0059 (0.0052-0.0068) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Triclosan Exposure	Exposure	0.17 (0.13-0.22) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Normal	Exposure	0.0061 (0.0054-0.0068) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Triclosan Exposure	Exposure	0.21 (0.17-0.26) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Normal	Exposure	0.0070 (0.0063-0.0079) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Triclosan Exposure	Exposure	0.14 (0.11-0.18) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Normal	Exposure	0.0050 (0.0045-0.0055) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Triclosan Exposure	Exposure	0.14 (0.11-0.17) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019
+Chemical	5017	Triclosan	HMDB0061385	Normal	Exposure	0.0038 (0.0035-0.0042) umol/mmol creatinine	All	Both	Urine	National Health and Nutrition Examination Survey (NHANES Survey) 2019

@@ -1,0 +1,5 @@
+class BiomarkerConsumption < ActiveRecord::Migration
+  def change
+    has_and_belongs_to_many :
+  end
+end

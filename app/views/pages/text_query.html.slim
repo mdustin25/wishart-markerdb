@@ -1,0 +1,55 @@
+.page-header: h1= title 'Searching MarkerDB'
+
+- search_types = %w[ compounds proteins ]
+
+.search-help-bar
+  = form_tag unearth.search_path, method: :get, class: 'form-inline' do
+    .form-group
+      = label_tag :query, 'Query', class: "sr-only"
+      = text_field_tag :query, params[:query],
+          class: 'search-query form-control input-ms', placeholder: 'Search'
+    .form-group
+      = label_tag :searcher, 'Search type', class: "sr-only"
+      = select_tag :searcher,
+          options_for_select(search_types, params[:searcher]),
+          class: 'form-control input-ms'
+    = button_tag "#{glyphicon(:search)} Search".html_safe,
+        class: 'btn btn-default btn-md btn-search'
+br
+.well-content
+  p
+    ' ECMDB supports advanced searching using a powerful search engine based on the
+    ' #{link_to 'Lucene query language', 'http://lucene.apache.org/java/docs/index.html'}.
+    ' ECMDB text search supports boolean logic
+    ' (<span class="bool">AND</span>, <span class="bool">OR</span>,
+    ' <span class="bool">NOT</span> operations).  To match a string exactly,
+    ' place quotes around your search term (for example "acetic acid" will only
+    ' match the acetic followed by acid, it will not match acetic
+    ' or acid alone). You can also search using "wild cards" by inserting a "*"
+    ' in your search term. For example, searching for "acet*" will
+    ' match all words starting with "acet".
+    ' In addition, text search supports parenthetical groupings, and prepended
+    ' +plus and -minus operators.
+    br
+  table.table-standard.search-fields
+    thead
+      tr
+        th Example
+        th Description
+    tbody
+      tr
+        td= link_to 'methylhistidine AND poultry',
+              unearth.search_path(searcher: 'compounds', query: 'methylhistidine AND poultry')
+        td
+          ' Find all entries containing <strong>both</strong> methylhistidine
+          ' and poultry in the metabocard
+      tr
+        td= link_to '(histidine OR poultry) AND NOT glycolylneuraminic',
+              unearth.search_path(searcher: 'compounds', query: '(histidine OR poultry) AND NOT glycolylneuraminic')
+        td Find all metabolites containing histidine, poultry or both, but not containing glycolylneuraminic
+      tr
+        td= link_to '"acetic acid"', unearth.search_path(searcher: 'compounds', query: '"acetic acid"')
+        td
+          ' Find all metabolites where the <strong>entire term</strong>
+          ' "acetic acid" is found. In other words, don't match "acetic" or "acid" alone.
+

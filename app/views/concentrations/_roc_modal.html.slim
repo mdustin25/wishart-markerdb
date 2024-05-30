@@ -1,0 +1,20 @@
+div class="modal fade image-modal" id="roc-image-modal-#{concentration.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+  div class="modal-dialog"
+    div class="modal-content"
+      div class="modal-header"
+        button type="button" class="close" data-dismiss="modal" aria-label="Close"
+          span aria-hidden="true"
+            | &times;
+        h4 class="modal-title" id="myModalLabel"
+          | ROC Curve:
+          div class="modal-body"
+            = image_tag concentration.quality.image.url()
+            dl class="dl-horizontal"
+              - unless concentration.quality.roc_auc.nil?
+                dt AUC
+                dd = concentration.quality.roc_auc
+              - unless concentration.quality.specificity.nil?
+                dt Specificity
+                dd = concentration.quality.specificity
+                dt Sensitivity
+                dd = concentration.quality.sensitivity
